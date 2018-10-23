@@ -1,0 +1,224 @@
+@import "mixins"
+.h1
+  font-size: 2.4em
+  line-height: 1.1em
+  text-transform: uppercase
+.h2
+    display: block
+    font-size: 1.5em
+    font-weight: bold
+    text-transform: uppercase
+.remote-blue
+  color: #4A5680
+.globalnav
+  padding: 40px 0
+  &__logo, &__text-logo
+    display: inline-block
+    vertical-align: middle
+  &__logo
+    width: 115px
+    margin-right: 10px
+  &__text-logo
+    font-size: .87em
+  &__contact
+    border: 1px solid #FFF
+    -webkit-border-radius: 15px
+    -moz-border-radius: 15px
+    border-radius: 55px
+    padding-top: 6px
+    padding-bottom: 6px
+    img, a
+      vertical-align: middle
+    img
+      width: 18px
+    a
+      font-size: 1em
+      padding-top: .1em
+      display: inline-block
+.head-offer
+  height: 100vh
+  background-image: url(../img/bg.jpg)
+  -webkit-background-size: cover
+  background-size: cover
+  overflow: hidden
+  position: relative
+  z-index: 1
+  &__ball
+    height: 11vh
+    max-width: 100%
+    position: relative
+    img
+      height: 100%
+  &__bat
+    display: block
+    height: 65vh
+  &__offerbach
+    margin-bottom: 30vh
+    p
+      padding: 20px 0
+      text-transform: uppercase
+    button
+      font-size: 1.2em
+      background-color: #95AF0D
+      padding: 10px 20px
+      border: 1px solid #fff
+      -webkit-border-radius: 30px
+      -moz-border-radius: 30px
+      border-radius: 30px
+  &__svgball
+    cursor: pointer
+    position: fixed
+    display: block
+    height: 40px
+    width: 40px
+    bottom: 5vh
+    left: 0
+    right: 0
+    margin: auto
+    @include transition(.6s)
+    &:hover
+      @include transform(scale(1.07))
+    img
+      height: 100%
+.main
+  position: relative
+  z-index: 2
+.free-bat
+  background-image: url(../img/bg-white.jpg)
+  -webkit-background-size: cover
+  background-size: cover
+  position: relative
+  &__bat
+    width: 88%
+  &__ball
+    display: block
+    margin: -20px 13% 40px auto
+    width: 50px
+  &__half-ball
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 500px
+.teach-offer
+  z-index: 3
+  background-image: url(../img/bg.jpg)
+  -webkit-background-size: cover
+  background-size: cover
+  position: relative
+  &__ball
+    position: absolute
+    top: -25%
+    height: 150%
+    left: 0%
+  &__text
+    text-align: center
+  &__man
+    width: 160%
+    margin-top: 15px
+    margin-bottom: -80px
+  &__boy
+    width: 110%
+    margin-top: -60px
+.train-offer
+  background-image: url(../img/bg-white.jpg)
+  -webkit-background-size: cover
+  background-size: cover
+  position: relative
+  &__half-ball
+    position: absolute
+    top: 0
+    left: 0
+    width: 500px
+  &__second-ball
+    position: absolute
+    bottom: 0
+    right: 0
+    width: 500px
+  &__court
+    width: 100%
+    display: block
+.individual
+  background-image: url(../img/bg.jpg)
+  -webkit-background-size: cover
+  background-size: cover
+  position: relative
+  &__text
+    text-align: right
+  &__people
+    display: block
+    width: 100%
+.half-form
+  background-image: url(../img/bg-white.jpg)
+  -webkit-background-size: cover
+  background-size: cover
+  position: relative
+  z-index: 3
+  &__ball
+    position: absolute
+    top: 0
+    right: 0
+    width: 500px
+  &__form
+    width: 100%
+    margin-top: 170px
+    background-color: #fff
+    border: 1px solid rgba(0, 0, 0, 0.25)
+    border-radius: 10px
+    position: relative
+    overflow: hidden
+    margin-bottom: -50px
+  &__inform-first
+    background-color: #4A5680
+    padding: 50px 40px
+    text-align: center
+    border-radius: 0 0 30% 30%
+  &__inform-second
+    padding-top: 30px
+  &__half-ball
+    position: absolute
+    top: 15px
+    left: 15px
+    width: 40px
+.trainers
+  background-image: url(../img/bg.jpg)
+  -webkit-background-size: cover
+  background-size: cover
+  position: relative
+  padding: 180px 0 120px
+  .h1
+    margin-bottom: 10px
+  .h2
+    margin-bottom: 50px
+  &__item
+    background-color: #fff
+    overflow: hidden
+    padding-bottom: 10px
+    border-radius: 10px
+    margin-top: 30px
+    &-info
+      width: 200%
+      border-top: 1px solid #599255
+      border-radius: 100% 100% 0 0
+      margin-left: -50%
+      .for-100
+        width: 50%
+        margin: auto
+  &__text
+    &-name
+      display: block
+      font-size: 1.1em
+      margin: 15px 0 10px
+      text-align: center
+      color: #4A5680
+    &-about
+      display: block
+      font-size: 0.73em
+      color: #599255
+      padding-left: 18px
+      padding-top: 4px
+      &:before
+        position: absolute
+        content: url(../img/icons/ball-green.svg)
+        width: 10px
+        height: 10px
+        left: 20px

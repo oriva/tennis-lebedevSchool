@@ -1,0 +1,69 @@
+@import "mixins"
+.group
+  position: relative
+  margin-bottom: 30px
+  z-index: 4
+  &__button
+    display: block
+    width: 100%
+    background-color: #599255
+    padding: 10px 20px
+    margin-bottom: 10px
+    -webkit-border-radius: 68px
+    -moz-border-radius: 68px
+    border-radius: 68px
+    @include transition(.3s)
+    &:hover
+      @include transform(scale(.9))
+  input
+    display: block
+    margin: 15px auto
+    background-color: transparent
+    padding: 10px 5px
+    width: 100%
+    border: none
+    border-bottom: 1px solid #599255
+    color: transparent
+    font-size: 1em
+    font-weight: 600
+    @include placeholder
+      color: transparent
+    &:focus, &:not(:placeholder-shown)
+      color: #000
+    &:invalid, &:-moz-ui-invalid
+      border: none
+      border-bottom: 1px solid #599255
+      box-shadow: none
+  label
+    font-weight: 600
+    color: #000
+    position: absolute
+    pointer-events: none
+    left: 5px
+    top: 10px
+    @include transition(0.3s ease all)
+    @include noselect
+  input:focus ~ label, input:not(:placeholder-shown) ~ label
+    top: -15px
+    transform-origin: left center
+    @include transform(scale(.6))
+  .bar
+    position: relative
+    display: block
+    width: 100%
+    &:before, &:after
+      content: ""
+      height: 3px
+      width: 0
+      bottom: 14px
+      position: absolute
+      background: #4A5680
+      @include transition(0.3s ease all)
+    &:before
+      left: 50%
+    &:after
+      right: 50%
+  input:focus ~ .bar:before, input:focus ~ .bar:after
+    width: 50%
+  input:not(:placeholder-shown)  ~ .bar:before, input:not(:placeholder-shown)  ~ .bar:after
+    width: 50%

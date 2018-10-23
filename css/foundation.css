@@ -1,0 +1,170 @@
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/HelveticaMedium/HelveticaMedium.ttf"), url("../fonts/HelveticaMedium/HelveticaMedium.eot"), url("../fonts/HelveticaMedium/HelveticaMedium.woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/HelveticaBold/HelveticaBold.ttf"), url("../fonts/HelveticaBold/HelveticaBold.eot"), url("../fonts/HelveticaBold/HelveticaBold.woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* line 3, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+/* line 8, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+/* line 10, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+html {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* line 13, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+html, body {
+  min-height: 100%;
+}
+
+/* line 15, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+body {
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.38;
+  margin: 0;
+  font-family: 'Helvetica';
+  font-weight: normal;
+  font-style: normal;
+  width: 100%;
+  color: #fff;
+}
+
+/* line 26, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+body:active, body :hover, body :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+/* line 29, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+/* line 33, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+body::-webkit-scrollbar {
+  width: 8px;
+  background-color: #F5F5F5;
+}
+
+/* line 36, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+body::-webkit-scrollbar-thumb {
+  border-radius: 0px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #000;
+}
+
+/* line 40, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+button {
+  border: 0;
+  border-radius: 0;
+  cursor: pointer;
+  color: #FFF;
+  -moz-transition: 0.3s ease all;
+  -o-transition: 0.3s ease all;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+/* line 46, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+h1, h2, h3, h4, h5, p, a, i, button, span, address, li, label, small {
+  font-size: 18px;
+  margin: 0;
+  line-height: 1.36;
+}
+
+/* line 50, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, p::selection, a::selection, i::selection, button::selection, span::selection, address::selection, li::selection, label::selection, small::selection {
+  background-color: #599255;
+  color: #FFF;
+}
+
+/* line 53, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, p::-moz-selection, a::-moz-selection, i::-moz-selection, button::-moz-selection, span::-moz-selection, address::-moz-selection, li::-moz-selection, label::-moz-selection, small::-moz-selection {
+  background-color: #599255;
+  color: #FFF;
+}
+
+/* line 56, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+h1, h2, h3, h4, h5, p, span, address, li, label, a:not([href]):not([tabindex]) {
+  cursor: default;
+}
+
+/* line 58, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+/* line 61, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+h2 {
+  text-align: center;
+}
+
+/* line 63, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+h2, h3 {
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 900;
+}
+
+/* line 67, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+ul, li, ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* line 71, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+.overfloff {
+  overflow: hidden;
+}
+
+/* line 73, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+.text-left {
+  text-align: left !important;
+}
+
+/* line 75, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+.text-center {
+  text-align: center !important;
+}
+
+/* line 77, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+.text-right {
+  text-align: right !important;
+}
+
+/* line 79, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+.w-100 {
+  width: 100%;
+}
+
+/* line 81, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+.h-100 {
+  height: 100%;
+}
+
+/*# sourceMappingURL=../css/foundation.map */

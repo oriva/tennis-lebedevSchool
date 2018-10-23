@@ -1,0 +1,82 @@
+@import "mixins"
+@import "fonts"
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+  margin: 0
+input[type='number']
+  -moz-appearance: textfield
+html
+  overflow-x: hidden
+  width: 100%
+html, body
+  min-height: 100%
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: 1.38
+  margin: 0
+  font-family: 'Helvetica'
+  font-weight: normal
+  font-style: normal
+  width: 100%
+  color: #fff
+  &:active,:hover,:focus
+    outline: 0
+    outline-offset: 0
+  &::-webkit-scrollbar-track
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)
+    border-radius: 10px
+    background-color: #F5F5F5
+  &::-webkit-scrollbar
+    width: 8px
+    background-color: #F5F5F5
+  &::-webkit-scrollbar-thumb
+    border-radius: 0px
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3)
+    background-color: #000
+button
+  border: 0
+  border-radius: 0
+  cursor: pointer
+  color: #FFF
+  @include transition(0.3s ease all)
+h1,h2,h3,h4,h5,p,a,i,button,span,address,li,label,small
+  font-size: 18px
+  margin: 0
+  line-height: 1.36
+  &::selection
+    background-color: #599255
+    color: #FFF
+  &::-moz-selection
+    background-color: #599255
+    color: #FFF
+h1,h2,h3,h4,h5,p,span,address,li,label,a:not([href]):not([tabindex])
+  cursor: default
+a
+  color: #FFF
+  text-decoration: none
+h2
+  text-align: center
+h2, h3
+  text-transform: uppercase
+  font-size: 36px
+  font-weight: 900
+ul, li, ol
+  margin: 0
+  padding: 0
+  list-style-type: none
+.overfloff
+  overflow: hidden
+.text-left
+  text-align: left!important
+.text-center
+  text-align: center!important
+.text-right
+  text-align: right!important
+.w-100
+  width: 100%
+.h-100
+  height: 100%
