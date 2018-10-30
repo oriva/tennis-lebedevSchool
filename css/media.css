@@ -1,0 +1,79 @@
+@media screen and (max-width: 1200px) {
+  /* line 3, /Users/alexanderDev/Desktop/table-tennis/sass/media.sass */
+  h1, h4, h5, p, a, i, button, span, address, li, label, small {
+    font-size: 15px;
+  }
+  /* line 5, /Users/alexanderDev/Desktop/table-tennis/sass/media.sass */
+  h2, h3 {
+    font-size: 2em;
+  }
+  /* line 7, /Users/alexanderDev/Desktop/table-tennis/sass/media.sass */
+  .h1 {
+    font-size: 1.8em;
+  }
+  /* line 9, /Users/alexanderDev/Desktop/table-tennis/sass/media.sass */
+  .h2 {
+    font-size: 1.3em;
+  }
+  /* line 11, /Users/alexanderDev/Desktop/table-tennis/sass/media.sass */
+  .group {
+    margin-bottom: 20px;
+  }
+  /* line 13, /Users/alexanderDev/Desktop/table-tennis/sass/media.sass */
+  .button-form {
+    font-size: .9em;
+  }
+  /* line 16, /Users/alexanderDev/Desktop/table-tennis/sass/media.sass */
+  .globalnav__logo {
+    width: 95px;
+  }
+  /* line 19, /Users/alexanderDev/Desktop/table-tennis/sass/media.sass */
+  .head-offer__ball {
+    height: 9vh;
+  }
+  /* line 22, /Users/alexanderDev/Desktop/table-tennis/sass/media.sass */
+  .half-form__half-ball {
+    width: 25px;
+  }
+  /* line 24, /Users/alexanderDev/Desktop/table-tennis/sass/media.sass */
+  .half-form__inform-first {
+    padding: 35px 40px;
+  }
+  /* line 26, /Users/alexanderDev/Desktop/table-tennis/sass/media.sass */
+  .half-form .political {
+    margin-bottom: 20px;
+  }
+  /* line 29, /Users/alexanderDev/Desktop/table-tennis/sass/media.sass */
+  .learn__form-first {
+    padding: 25px;
+  }
+  /* line 31, /Users/alexanderDev/Desktop/table-tennis/sass/media.sass */
+  .contacts {
+    padding: 70px 0;
+  }
+  /* line 34, /Users/alexanderDev/Desktop/table-tennis/sass/media.sass */
+  .footer__logo {
+    width: 75px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  /* line 37, /Users/alexanderDev/Desktop/table-tennis/sass/media.sass */
+  h1, h4, h5, p, a, i, button, span, address, li, label, small {
+    font-size: 13px;
+  }
+  /* line 40, /Users/alexanderDev/Desktop/table-tennis/sass/media.sass */
+  .globalnav__logo {
+    width: 75px;
+  }
+  /* line 42, /Users/alexanderDev/Desktop/table-tennis/sass/media.sass */
+  .globalnav__text-logo {
+    font-size: 0.67em;
+  }
+  /* line 44, /Users/alexanderDev/Desktop/table-tennis/sass/media.sass */
+  .globalnav__contact {
+    padding: 7px 17px;
+  }
+}
+
+/*# sourceMappingURL=../css/media.map */

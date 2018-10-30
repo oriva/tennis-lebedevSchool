@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="/css/foundation.css">
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="/css/input.css">
+    <link rel="stylesheet" href="/css/media.css">
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=10e69f71-79bc-4882-89e4-edfcd0e43d5a" type="text/javascript"></script>
     <script src="js/mapYand.js" type="text/javascript"></script>
 </head>
@@ -512,5 +513,21 @@
 </div>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            responsive:{
+                900: {
+                    margin: 30,
+                    items: 1.5
+                },
+                1200: {
+                    margin: 30,
+                    items: 1
+                }
+            }
+        });
+    });
+</script>
 </body>
 </html>
