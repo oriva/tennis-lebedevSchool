@@ -25,16 +25,28 @@
     -webkit-border-radius: 15px
     -moz-border-radius: 15px
     border-radius: 55px
-    padding-top: 6px
-    padding-bottom: 6px
-    img, a
-      vertical-align: middle
-    img
+    padding: 10px 17px
+    font-size: 1em
+    display: inline-block
+    vertical-align: middle
+    @include transition(.3s)
+    span
+      cursor: pointer
+      @include transition(.3s)
+    svg
       width: 18px
-    a
-      font-size: 1em
-      padding-top: .1em
-      display: inline-block
+      vertical-align: middle
+      #white-power-top, #white-power-top-2
+        @include transition(.3s)
+        fill: #E9E9E9
+    &:hover
+      background-color: #fff
+      border-color: #4a5680
+      span
+        color: #4a5680
+      svg
+        #white-power-top, #white-power-top-2
+          fill: #4a5680
 .head-offer
   height: 100vh
   background-image: url(../img/bg.jpg)
@@ -57,14 +69,6 @@
     p
       padding: 20px 0
       text-transform: uppercase
-    button
-      font-size: 1.2em
-      background-color: #95AF0D
-      padding: 10px 20px
-      border: 1px solid #fff
-      -webkit-border-radius: 30px
-      -moz-border-radius: 30px
-      border-radius: 30px
   &__svgball
     cursor: pointer
     position: fixed
@@ -83,11 +87,17 @@
 .main
   position: relative
   z-index: 2
-.free-bat
-  background-image: url(../img/bg-white.jpg)
-  -webkit-background-size: cover
-  background-size: cover
+.bg
   position: relative
+  &:nth-child(odd)
+    background-image: url(../img/bg-white.jpg)
+    -webkit-background-size: cover
+    background-size: cover
+  &:nth-child(even)
+    background-image: url(../img/bg.jpg)
+    -webkit-background-size: cover
+    background-size: cover
+.free-bat
   &__bat
     width: 88%
   &__ball
@@ -101,10 +111,6 @@
     width: 500px
 .teach-offer
   z-index: 3
-  background-image: url(../img/bg.jpg)
-  -webkit-background-size: cover
-  background-size: cover
-  position: relative
   &__ball
     position: absolute
     top: -25%
@@ -120,10 +126,6 @@
     width: 110%
     margin-top: -60px
 .train-offer
-  background-image: url(../img/bg-white.jpg)
-  -webkit-background-size: cover
-  background-size: cover
-  position: relative
   &__half-ball
     position: absolute
     top: 0
@@ -138,21 +140,15 @@
     width: 100%
     display: block
 .individual
-  background-image: url(../img/bg.jpg)
-  -webkit-background-size: cover
-  background-size: cover
-  position: relative
   &__text
     text-align: right
   &__people
     display: block
     width: 100%
 .half-form
-  background-image: url(../img/bg-white.jpg)
-  -webkit-background-size: cover
-  background-size: cover
-  position: relative
   z-index: 3
+  .political
+    margin-bottom: 40px
   &__ball
     position: absolute
     top: 0
@@ -166,25 +162,29 @@
     border-radius: 10px
     position: relative
     overflow: hidden
-    margin-bottom: -50px
+    margin-bottom: -270px
+    .select-cokes
+      width: 100%
+      border: 1px #599255 solid
+      color: #4a5680
+      background-color: transparent
+      text-align: center
+      margin: 20px 0
+      font-size: 1.3em
   &__inform-first
     background-color: #4A5680
     padding: 50px 40px
     text-align: center
-    border-radius: 0 0 30% 30%
+    border-radius: 0 0 50% 50%
   &__inform-second
-    padding-top: 30px
+    padding: 30px 0
   &__half-ball
     position: absolute
     top: 15px
     left: 15px
     width: 40px
 .trainers
-  background-image: url(../img/bg.jpg)
-  -webkit-background-size: cover
-  background-size: cover
-  position: relative
-  padding: 180px 0 120px
+  padding: 360px 0 120px
   .h1
     margin-bottom: 10px
   .h2
@@ -222,3 +222,228 @@
         width: 10px
         height: 10px
         left: 20px
+.about
+  color: #4A5680
+  padding: 86px 0 0
+  margin-bottom: -170px
+  &__half-ball
+    position: absolute
+    width: 500px
+    top: 0
+    left: 0
+  h3
+    margin-bottom: 50px
+  p
+    padding-bottom: 20px
+  &__image
+    width: 100%
+    -webkit-border-radius: 10px
+    -moz-border-radius: 10px
+    border-radius: 10px
+    box-shadow: 3px 7px 4px rgba(0, 0, 0, 0.22)
+    &-mb
+      margin-bottom: 25px
+  .owl-carousel
+    padding-top: 150px
+    line-height: 0em
+    .owl-item
+      background-color: #fff
+      & > div
+        display: flex
+        align-items: center
+    &__img, &__text
+      display: block
+      width: 50%
+      padding-right: 30px
+    &__text
+      span:nth-child(2)
+        display: block
+        padding-top: 10px
+        font-size: 15px
+.instagram
+  padding: 180px 0 10px
+  &__link
+    display: block
+    width: 50px
+    height: 50px
+    margin:  80px auto
+    &-icon
+      width: 100%
+  &__pic
+    overflow: hidden
+    img
+      display: block
+      width: 100%
+    &:before
+      content: ''
+      position: absolute
+      top: 0
+      left: 15px
+      width: calc(100% - 30px)
+      height: 100%
+      opacity: 0
+      background-color: #000
+      @include transition(.3s)
+    &:hover
+      &:before
+        opacity: .4
+  &__button
+    background-color: transparent
+    border: 1px solid #FFF
+    -webkit-border-radius: 30px
+    -moz-border-radius: 30px
+    border-radius: 30px
+    padding: 8px 30px
+    margin: 70px auto
+    @include transition(.3s)
+    &:hover
+      background-color: #FFF
+      color: #4A5680
+      border-color: #4A5680
+.learn
+  padding-top: 88px
+  color: #4A5680
+  p
+    text-transform: uppercase
+    font-size: 1.1em
+    margin: 15px 0
+  &__man
+    display: block
+    width: 100%
+  &__half-ball
+    position: absolute
+    top: 0
+    right: 0
+  &__inMap
+    display: flex
+    position: relative
+    width: 100%
+    #map
+      position: absolute
+      top: 0
+      left: 0
+      height: 100%
+      width: 100%
+      padding: 0
+      margin: 0
+  &__form
+    position: relative
+    z-index: 4
+    background-color: #FFF
+    -webkit-border-radius: 10px
+    -moz-border-radius: 10px
+    border-radius: 10px
+    overflow: hidden
+    margin: 70px 0
+    -webkit-box-shadow: 2px 4px 12px rgba(0,0,0,0.5)
+    -moz-box-shadow: 2px 4px 12px rgba(0,0,0,0.5)
+    box-shadow: 2px 4px 12px rgba(0,0,0,0.5)
+    &-first
+      color: #FFF
+      background-color: #4A5680
+      padding: 35px
+      text-align: center
+      border-radius: 0 0 45% 45%
+    &-second
+      padding: 30px 0
+    &-spanec
+      display: block
+      text-align: center
+  .political
+    margin-bottom: 20px
+.contacts
+  padding: 110px 0
+  text-align: center
+  h2
+    line-height: 0.63em
+  p
+    margin: 25px 0
+    text-align: center
+  &__number
+    display: inline-block
+    position: relative
+    padding: 10px 20px
+    border: 1px #FFF solid
+    -webkit-border-radius: 30px
+    -moz-border-radius: 30px
+    border-radius: 30px
+    @include transition(.3s)
+    &:hover
+      background-color: #fff
+      border-color: #4a5680
+      #white-power, #white-power-2
+        fill: #4a5680
+      span
+        color: #4a5680
+    svg, span
+      vertical-align: middle
+      cursor: pointer
+      @include transition(.3s)
+    #white-power, #white-power-2
+      fill: #E9E9E9
+      @include transition(.3s)
+    svg
+      width: 15px
+      margin-right: 2px
+.form-last
+  padding: 60px 0
+  .political
+    margin-bottom: 20px
+  &__form
+    position: relative
+    z-index: 4
+    background-color: #FFF
+    -webkit-border-radius: 10px
+    -moz-border-radius: 10px
+    border-radius: 10px
+    overflow: hidden
+    -webkit-box-shadow: 2px 4px 12px rgba(0,0,0,0.5)
+    -moz-box-shadow: 2px 4px 12px rgba(0,0,0,0.5)
+    box-shadow: 2px 4px 12px rgba(0,0,0,0.5)
+  &__head
+    color: #FFF
+    background-color: #4A5680
+    padding: 35px
+    text-align: center
+    border-radius: 0 0 45% 45%
+  &__sub-head
+    padding: 30px 0
+  &__offer
+    display: block
+    text-align: center
+.footer
+  padding: 50px 0
+  &__school-name, &__logo
+    display: inline-block
+    vertical-align: middle
+  &__logo
+    width: 115px
+    margin-right: 10px
+  &__school-name
+    font-size: .87em
+  &__social
+    text-align: center
+    a
+      display: inline-block
+      line-height: 0.63em
+      width: 43px
+      margin: 0 5px
+      img, svg
+        width: 100%
+        @include transition(.3s)
+      svg
+        .vk__circle_blue, .inst__circle_gradient
+          fill: transparent
+          @include transition(.3s)
+        &:hover
+          @include transform(scale(1.1))
+          .vk__circle_blue
+            fill: #4A5680
+          .inst__circle_gradient
+            fill: #E4405B
+  &__rights
+    display: block
+    width: 178px
+    margin-left: auto
+    img
+      width: 100%

@@ -40,7 +40,7 @@
   border-bottom: 1px solid #599255;
   color: transparent;
   font-size: 1em;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 /* line 2, /Users/alexanderDev/Desktop/table-tennis/sass/_mixins.sass */
@@ -77,8 +77,8 @@
 
 /* line 37, /Users/alexanderDev/Desktop/table-tennis/sass/input.sass */
 .group label {
-  font-weight: 600;
-  color: #000;
+  font-weight: 400;
+  color: #4A5680;
   position: absolute;
   pointer-events: none;
   left: 5px;
