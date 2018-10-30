@@ -8,6 +8,9 @@
     font-size: 1.5em
     font-weight: bold
     text-transform: uppercase
+.absolute-width
+  position: absolute
+  width: 500px
 .remote-blue
   color: #4A5680
 .globalnav
@@ -105,10 +108,8 @@
     margin: -20px 13% 40px auto
     width: 50px
   &__half-ball
-    position: absolute
     bottom: 0
     left: 0
-    width: 500px
 .teach-offer
   z-index: 3
   &__ball
@@ -127,15 +128,11 @@
     margin-top: -60px
 .train-offer
   &__half-ball
-    position: absolute
     top: 0
     left: 0
-    width: 500px
   &__second-ball
-    position: absolute
     bottom: 0
     right: 0
-    width: 500px
   &__court
     width: 100%
     display: block
@@ -150,10 +147,8 @@
   .political
     margin-bottom: 40px
   &__ball
-    position: absolute
     top: 0
     right: 0
-    width: 500px
   &__form
     width: 100%
     margin-top: 170px
@@ -227,8 +222,6 @@
   padding: 86px 0 0
   margin-bottom: -170px
   &__half-ball
-    position: absolute
-    width: 500px
     top: 0
     left: 0
   h3
@@ -443,7 +436,7 @@
             fill: #E4405B
   &__rights
     display: block
-    width: 178px
+    max-width: 178px
     margin-left: auto
     img
       width: 100%
