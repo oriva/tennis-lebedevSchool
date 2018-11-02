@@ -28,7 +28,7 @@ input[type='number'] {
 /* line 10, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
 html {
   overflow-x: hidden;
-  width: 100%;
+  width: calc(100% + 8px);
 }
 
 /* line 13, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
@@ -43,7 +43,7 @@ body {
   position: relative;
   line-height: 1.38;
   margin: 0;
-  font-family: 'Helvetica';
+  font-family: 'Helvetica', serif;
   font-weight: normal;
   font-style: normal;
   width: 100%;
@@ -177,69 +177,71 @@ ul, li, ol {
 /* line 96, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
 .overfloff {
   overflow: hidden;
+  width: 100%;
 }
 
-/* line 98, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+/* line 99, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
 .text-left {
   text-align: left !important;
 }
 
-/* line 100, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+/* line 101, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
 .text-center {
   text-align: center !important;
 }
 
-/* line 102, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+/* line 103, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
 .text-right {
   text-align: right !important;
 }
 
-/* line 104, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+/* line 105, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
 .w-100 {
   width: 100%;
 }
 
-/* line 106, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+/* line 107, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
 .h-100 {
   height: 100%;
 }
 
-/* line 108, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+/* line 109, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
 .db {
   display: block;
 }
 
-/* line 110, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+/* line 111, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
 .mx-a {
   margin-right: auto;
   margin-left: auto;
 }
 
-/* line 113, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+/* line 114, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
 .political {
   text-align: left;
   position: relative;
+  margin-bottom: 30px;
 }
 
-/* line 116, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+/* line 118, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
 .political label {
   display: inline-block;
   padding-left: 30px;
 }
 
-/* line 119, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+/* line 121, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
 .political label, .political a {
   color: #4a5680;
   line-height: 1em;
 }
 
-/* line 122, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+/* line 124, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
 .political [type="checkbox"] {
   position: absolute;
   opacity: 0;
 }
 
-/* line 126, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+/* line 128, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
 .political [type="checkbox"] + label:before, .political [type="checkbox"] + label:after {
   content: '';
   position: absolute;
@@ -251,7 +253,7 @@ ul, li, ol {
   transition: 0.3s;
 }
 
-/* line 132, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+/* line 134, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
 .political [type="checkbox"] + label:after {
   content: url("../img/icons/politicalYes.svg");
   margin-top: 7px;
@@ -259,7 +261,7 @@ ul, li, ol {
   transform-origin: left bottom;
 }
 
-/* line 137, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+/* line 139, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
 .political [type="checkbox"] + label:before {
   width: 20px;
   height: 20px;
@@ -271,7 +273,7 @@ ul, li, ol {
   background: transparent;
 }
 
-/* line 148, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+/* line 150, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
 .political [type="checkbox"]:checked + label:after {
   -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
@@ -279,12 +281,12 @@ ul, li, ol {
   transform: scale(1.1);
 }
 
-/* line 151, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+/* line 153, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
 .political [type="checkbox"]:not(:checked) + label, .political [type="checkbox"]:not(:checked) + label a {
   color: #F00;
 }
 
-/* line 153, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+/* line 155, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
 .political [type="checkbox"]:not(:checked) + label:after, .political [type="checkbox"]:not(:checked) + label a:after {
   -moz-transform: scale(0);
   -o-transform: scale(0);
@@ -293,12 +295,12 @@ ul, li, ol {
   opacity: 0;
 }
 
-/* line 156, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+/* line 158, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
 .political [type="checkbox"]:not(:checked) + label:before, .political [type="checkbox"]:not(:checked) + label a:before {
   border-color: #F00;
 }
 
-/* line 158, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+/* line 160, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
 .political a {
   text-decoration: #4a5680 solid underline;
   -moz-transition: 0.3s;
@@ -307,19 +309,9 @@ ul, li, ol {
   transition: 0.3s;
 }
 
-/* line 161, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+/* line 163, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
 .political a:hover {
   opacity: .7;
-}
-
-/* line 163, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
-.footer {
-  z-index: 4;
-  position: relative;
-  background-image: url(../img/bg.jpg);
-  -webkit-background-size: cover;
-  background-size: cover;
-  overflow: hidden;
 }
 
 /*# sourceMappingURL=../css/foundation.map */

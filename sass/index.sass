@@ -50,6 +50,118 @@
       svg
         #white-power-top, #white-power-top-2
           fill: #4a5680
+
+.modal-bg, .modal-callback, .modal-success
+  position: fixed
+  top: 0
+  left: 0
+  height: 100vh
+  width: 100vw
+.modal-bg
+  z-index: 10
+  display: none
+  background-color: rgba(0, 0, 0, 0.56)
+  &.show
+    display: block
+    -webkit-animation: .3s linear 0s forwards show-bg-form
+    -moz-animation: .3s linear 0s forwards show-bg-form
+    -o-animation: .3s linear 0s forwards show-bg-form
+    animation: .3s linear 0s forwards show-bg-form
+  &.hide
+    -webkit-animation: .3s linear .2s forwards show-bg-form-rev
+    -moz-animation: .3s linear .2s forwards show-bg-form-rev
+    -o-animation: .3s linear .2s forwards show-bg-form-rev
+    animation: .3s linear .2s forwards show-bg-form-rev
+.modal-callback
+  z-index: 11
+  @include transform(scale(0))
+  display: flex
+  &.show
+    -webkit-animation: .3s linear .2s forwards show-callback
+    -moz-animation: .3s linear .2s forwards show-callback
+    -o-animation: .3s linear .2s forwards show-callback
+    animation: .3s linear .2s forwards show-callback
+    transition-delay: .2s
+    @include transform(scale(1))
+  &.hide
+    -webkit-animation: .3s linear 0s forwards show-callback-rev
+    -moz-animation: .3s linear 0s forwards show-callback-rev
+    -o-animation: .3s linear 0s forwards show-callback-rev
+    animation: .3s linear 0s forwards show-callback-rev
+  &__closed
+    position: absolute
+    top: 15px
+    right: 15px
+    width: 30px
+    cursor: pointer
+    @include transition(.3s)
+    &:hover
+      @include transform(scale(1.1))
+  &__form
+    position: relative
+    z-index: 4
+    background-color: #FFF
+    -webkit-border-radius: 10px
+    -moz-border-radius: 10px
+    border-radius: 10px
+    overflow: hidden
+    -webkit-box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.5)
+    -moz-box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.5)
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.5)
+    .select-cokes
+      width: 100%
+      border: 1px #599255 solid
+      color: #4a5680
+      background-color: transparent
+      text-align: center
+      margin: 20px 0
+      font-size: 1.3em
+.modal-success
+  z-index: 11
+  @include transform(scale(0))
+  display: flex
+  &.show
+    -webkit-animation: .3s linear .2s forwards show-callback
+    -moz-animation: .3s linear .2s forwards show-callback
+    -o-animation: .3s linear .2s forwards show-callback
+    animation: .3s linear .2s forwards show-callback
+    transition-delay: .2s
+    @include transform(scale(1))
+  &.hide
+    -webkit-animation: .3s linear 0s forwards show-callback-rev
+    -moz-animation: .3s linear 0s forwards show-callback-rev
+    -o-animation: .3s linear 0s forwards show-callback-rev
+    animation: .3s linear 0s forwards show-callback-rev
+  &__in-love
+    position: relative
+    z-index: 4
+    background-color: rgb(255, 255, 255)
+    box-shadow: rgba(0, 0, 0, 0.5) 2px 4px 12px
+    border-radius: 10px
+    overflow: hidden
+  &__circler
+    background-color: #4A5680
+    padding: 50px 40px
+    text-align: center
+    border-radius: 0 0 50% 50%
+  &__ball
+    position: absolute
+    top: 15px
+    left: 15px
+    width: 40px
+  &__closed
+    position: absolute
+    top: 15px
+    right: 15px
+    width: 30px
+    cursor: pointer
+    @include transition(.3s)
+    &:hover
+      @include transform(scale(1.1))
+  &__subcircler
+    text-align: center
+    padding: 50px 0
+
 .head-offer
   height: 100vh
   background-image: url(../img/bg.jpg)
@@ -89,7 +201,7 @@
       height: 100%
 .main
   position: relative
-  z-index: 2
+  z-index: 5
 .bg
   position: relative
   &:nth-child(odd)
@@ -224,10 +336,12 @@
   &__half-ball
     top: 0
     left: 0
-  h3
+  h1
     margin-bottom: 50px
   p
     padding-bottom: 20px
+  a
+    color: #00F
   &__image
     width: 100%
     -webkit-border-radius: 10px
@@ -241,8 +355,13 @@
     line-height: 0em
     .owl-item
       background-color: #fff
+      overflow: hidden
+      -webkit-border-radius: 20px
+      -moz-border-radius: 20px
+      border-radius: 20px
       & > div
         display: flex
+        flex-wrap: wrap
         align-items: center
     &__img, &__text
       display: block
@@ -405,6 +524,12 @@
     display: block
     text-align: center
 .footer
+  z-index: 4
+  position: relative
+  background-image: url(../img/bg.jpg)
+  -webkit-background-size: cover
+  background-size: cover
+  overflow: hidden
   padding: 50px 0
   &__school-name, &__logo
     display: inline-block
