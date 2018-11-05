@@ -14,7 +14,6 @@
     <link rel="shortcut icon" href="/favicon.ico?">
     <link rel="apple-touch-icon-precomposed" href="/favicon.png?">
     <!--  css   -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="/css/owl.carousel.min.css">
     <link rel="stylesheet" href="/css/foundation.css">
@@ -23,8 +22,8 @@
     <link rel="stylesheet" href="/css/keyframes.css">
     <link rel="stylesheet" href="/css/media.css?v=1.2">
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=10e69f71-79bc-4882-89e4-edfcd0e43d5a"
-            type="text/javascript"></script>
-    <script src="js/mapYand.js" type="text/javascript"></script>
+            type="text/javascript" defer></script>
+    <script src="js/mapYand.js" type="text/javascript" defer></script>
 </head>
 <body>
 
@@ -77,6 +76,58 @@
                         </div>
                     </div>
                 </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal-star">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-4">
+                <div class="modal-star__block">
+                    <div class="modal-star__closed"><svg width="35" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.792893 1.70711L32.7929 33.7071L34.2071 32.2929L2.20711 0.292893L0.792893 1.70711ZM32.7929 0.292893L0.792893 32.2929L2.20711 33.7071L34.2071 1.70711L32.7929 0.292893Z" fill="white"></path>
+                    </svg></div>
+                    <img src="img/train-offer/grey-block.svg" alt="" class="modal-star__pic-trainer">
+                    <span class="modal-star__name-trainer h2 remote-blue text-center">Маргарет Смит-Корт</span>
+                    <span class="modal-star__name-parameters">Скорость</span>
+                    <div class="modal-star__stars">
+                        <img src="img/train-offer/star-yellow.svg" alt="">
+                        <img src="img/train-offer/star-yellow.svg" alt="">
+                        <img src="img/train-offer/star-yellow.svg" alt="">
+                        <img src="img/train-offer/star-yellow.svg" alt="">
+                        <img src="img/train-offer/star-grey.svg" alt="">
+                    </div>
+                    <span class="modal-star__name-parameters">Выносливость</span>
+                    <div class="modal-star__stars">
+                        <img src="img/train-offer/star-yellow.svg" alt="">
+                        <img src="img/train-offer/star-yellow.svg" alt="">
+                        <img src="img/train-offer/star-grey.svg" alt="">
+                        <img src="img/train-offer/star-grey.svg" alt="">
+                        <img src="img/train-offer/star-grey.svg" alt="">
+                    </div>
+                    <span class="modal-star__name-parameters">Чувство юмора</span>
+                    <div class="modal-star__stars">
+                        <img src="img/train-offer/star-yellow.svg" alt="">
+                        <img src="img/train-offer/star-yellow.svg" alt="">
+                        <img src="img/train-offer/star-yellow.svg" alt="">
+                        <img src="img/train-offer/star-grey.svg" alt="">
+                        <img src="img/train-offer/star-grey.svg" alt="">
+                    </div>
+                    <button class="button-form show-call">ЗАПИСАТЬСЯ НА ТРЕНИРОВКУ</button>
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="modal-star__block modal-star__block_padding">
+                    <h3 class="h2 remote-blue">Название</h3>
+                    <div class="modal-star__gogo-text">
+                        <p>Тренерский стаж 33 года.</p>
+                        <p>Создатель и руководитель "Иркутского центра тенниса" с 1988 года.</p>
+                        <p>Президент Федерации тенниса Иркутской области с 1990 г. по 2010 г.</p>
+                        <p>Трёхкратный чемпион Иркутской области по теннису в парном разряде.</p>
+                        <p>Победитель и призер многих турниров.️</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -138,7 +189,9 @@
                 </nav>
             </div>
             <div class="offset-10 col-2 head-offer__ball">
-                <img src="img/icons/ball.png" alt="">
+                <div class="paraclass">
+                    <img src="img/icons/ball.png" alt="" data-depth="0.6">
+                </div>
             </div>
             <div class="col-12 d-sm-none d-block text-center">
                 <h2 class="h1 head-offer__mob-offer">школа большого
@@ -152,7 +205,7 @@
                     тенниса в иркутске</h1>
                 <p>групповые и индивидуальные тренировки
                     для взрослых и детей от 3 лет</p>
-                <button class="button-mod">ЗАПИСАТЬСЯ</button>
+                <button class="button-mod show-call">ЗАПИСАТЬСЯ</button>
             </div>
             <div class="head-offer__svgball"><img src="img/icons/ball.svg" alt=""></div>
         </div>
@@ -164,7 +217,9 @@
             <div class="row align-items-center">
                 <div class="col-sm-4 offset-sm-2 d-sm-block d-none">
                     <img src="img/free-bat/bat.png" alt="" class="free-bat__bat">
-                    <img src="img/icons/ball.png" alt="" class="free-bat__ball">
+                    <div class="paraclass">
+                        <img src="img/icons/ball.png" alt="" class="free-bat__ball" data-depth="0.7">
+                    </div>
                 </div>
                 <div class="col-sm-4 col-12">
                     <span class="free-bat__offer h2 remote-blue">Мы бесплатно выдаем ракетки и мячи</span>
@@ -180,10 +235,18 @@
         <!-- <img src="img/icons/ball.svg" alt="" class="teach-offer__ball"> -->
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-sm-3 col-12 mob-order-3"><img src="img/teach-offer/tennis-man.png" alt="" class="teach-offer__man"></div>
+                <div class="col-sm-3 col-12 mob-order-3">
+                    <div class="paraclass">
+                        <img src="img/teach-offer/tennis-man.png" alt="" class="teach-offer__man" data-depth="0.4">
+                    </div>
+                </div>
                 <div class="col-sm-6 col-12 mob-order-2"><span class="teach-offer__text h2">у нас преподают опытные
                     <br>тренеры и инструкторы</span></div>
-                <div class="col-sm-3 col-12 mob-order-1"><img src="img/teach-offer/tennis-boy.png" alt="" class="teach-offer__boy"></div>
+                <div class="col-sm-3 col-12 mob-order-1">
+                    <div class="paraclass">
+                        <img src="img/teach-offer/tennis-boy.png" alt="" class="teach-offer__boy" data-depth="0.2">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -266,12 +329,13 @@
                     <h2 class="h1">Иркутский центр тенниса</h2>
                     <span class="h2 text-center">Наша команда тренеров и инструкторов</span>
                 </div>
+                <div class="col-lg-1 d-lg-block d-none"></div>
                 <div class="col-lg-3 col-md-4 col-sm-6 col-10">
                     <div class="trainers__item">
                         <br><br><br><br><br><br><br><br><br><br><br><br><br>
                         <div class="trainers__item-info">
                             <div class="for-100">
-                                <span class="trainers__text-name">Аркадий Лебедев</span>
+                                <span class="trainers__text-name">Лебедев Аркадий Георгиевич</span>
                                 <span class="trainers__text-about">Тренерский стаж 30 лет</span>
                                 <span class="trainers__text-about">Прошли обучение более 5000 учеников</span>
                             </div>
@@ -283,7 +347,7 @@
                         <br><br><br><br><br><br><br><br><br><br><br><br><br>
                         <div class="trainers__item-info">
                             <div class="for-100">
-                                <span class="trainers__text-name">Дмитрий Лебедев</span>
+                                <span class="trainers__text-name">Лебедев Дмитрий Аркадьевич</span>
                                 <span class="trainers__text-about">Тренерский стаж 30 лет</span>
                                 <span class="trainers__text-about">Прошли обучение более 5000 учеников</span>
                             </div>
@@ -295,22 +359,23 @@
                         <br><br><br><br><br><br><br><br><br><br><br><br><br>
                         <div class="trainers__item-info">
                             <div class="for-100">
-                                <span class="trainers__text-name">Рафаэль Надаль</span>
+                                <span class="trainers__text-name">Иринцеев Артем</span>
                                 <span class="trainers__text-about">Тренерский стаж 30 лет</span>
                                 <span class="trainers__text-about">Прошли обучение более 5000 учеников</span>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-1 d-lg-block d-none"></div>
                 <div class="col-12 d-sm-none d-none">
-                    <button>Нажми, чтобы увидеть больше тренеров</button>
+                    <button class="show-call">Нажми, чтобы увидеть больше тренеров</button>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 col-10">
                     <div class="trainers__item">
                         <br><br><br><br><br><br><br><br><br><br><br><br><br>
                         <div class="trainers__item-info">
                             <div class="for-100">
-                                <span class="trainers__text-name">Бьорн Борг</span>
+                                <span class="trainers__text-name">Закарчевский Сергей</span>
                                 <span class="trainers__text-about">Тренерский стаж 30 лет</span>
                                 <span class="trainers__text-about">Прошли обучение более 5000 учеников</span>
                             </div>
@@ -322,19 +387,7 @@
                         <br><br><br><br><br><br><br><br><br><br><br><br><br>
                         <div class="trainers__item-info">
                             <div class="for-100">
-                                <span class="trainers__text-name">Маргарет Смит-Корт</span>
-                                <span class="trainers__text-about">Тренерский стаж 30 лет</span>
-                                <span class="trainers__text-about">Прошли обучение более 5000 учеников</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-10">
-                    <div class="trainers__item">
-                        <br><br><br><br><br><br><br><br><br><br><br><br><br>
-                        <div class="trainers__item-info">
-                            <div class="for-100">
-                                <span class="trainers__text-name">Род Лейвер</span>
+                                <span class="trainers__text-name">Ушаков Вячеслав</span>
                                 <span class="trainers__text-about">Тренерский стаж 30 лет</span>
                                 <span class="trainers__text-about">Прошли обучение более 5000 учеников</span>
                             </div>
@@ -384,46 +437,105 @@
                 </div>
                 <div class="col-12">
                     <div class="owl-carousel">
-                        <div>
-                            <div class="owl-carousel__img"><img src="img/about/slider/1.jpg" alt=""></div>
+                        <div class="owl-carousel__bdrs">
+                            <div class="owl-carousel__img"><img src="img/about/slider/1/1.jpg" alt=""></div>
                             <div class="owl-carousel__text">
-                                <span class="h2">Соревнования в 1989</span>
-                                <span>Изобретение лаун-тенниса В настоящее время достоверно неизвестно, кто изобрёл теннис, но, по наиболее распространённой версии, родоначальником игры был майор Уолтер Уингфилд. Он придумал игру для развлечения гостей на приёмах в своем особняке в Уэльсе и в 1873 году опубликовал первые правила игры.</span>
+                                <span class="h2">2002 год</span>
+                                <span>Аркадий Лебедев и Дмитрий Лебедев, теннисные корты Спорткомбината Труд</span>
                             </div>
                         </div>
-                        <div>
-                            <div class="owl-carousel__img"><img src="img/about/slider/1.jpg" alt=""></div>
+                        <div class="owl-carousel__bdrs">
+                            <div class="owl-carousel__img"><img src="img/about/slider/2/1.jpg" alt=""></div>
                             <div class="owl-carousel__text">
-                                <span class="h2">Соревнования в 1989</span>
-                                <span>Изобретение лаун-тенниса В настоящее время достоверно неизвестно, кто изобрёл теннис, но, по наиболее распространённой версии, родоначальником игры был майор Уолтер Уингфилд. Он придумал игру для развлечения гостей на приёмах в своем особняке в Уэльсе и в 1873 году опубликовал первые правила игры.</span>
+                                <span class="h2">1997 год</span>
+                                <span>Турнир во Дворце Спорта "Труд" команда "Иркутского центра тенниса"</span>
                             </div>
                         </div>
-                        <div>
-                            <div class="owl-carousel__img"><img src="img/about/slider/1.jpg" alt=""></div>
+                        <div class="owl-carousel__bdrs">
+                            <div class="owl-carousel__img"><img src="img/about/slider/3/1.jpg" alt=""></div>
                             <div class="owl-carousel__text">
-                                <span class="h2">Соревнования в 1989</span>
-                                <span>Изобретение лаун-тенниса В настоящее время достоверно неизвестно, кто изобрёл теннис, но, по наиболее распространённой версии, родоначальником игры был майор Уолтер Уингфилд. Он придумал игру для развлечения гостей на приёмах в своем особняке в Уэльсе и в 1873 году опубликовал первые правила игры.</span>
+                                <span class="h2">Первое место</span>
+                                <span>По Иркутской области</span>
                             </div>
                         </div>
-                        <div>
-                            <div class="owl-carousel__img"><img src="img/about/slider/1.jpg" alt=""></div>
+                        <div class="owl-carousel__bdrs">
+                            <div class="owl-carousel__img">
+                                <div class="inner-carousel">
+                                    <div><img src="img/about/slider/4/1.jpg" alt="Теннис. Турнир семейных команд"></div>
+                                    <div><img src="img/about/slider/4/2.jpg" alt="Теннис. Турнир семейных команд"></div>
+                                    <div><img src="img/about/slider/4/3.jpg" alt="Теннис. Турнир семейных команд"></div>
+                                    <div><img src="img/about/slider/4/4.jpg" alt="Теннис. Турнир семейных команд"></div>
+                                </div>
+                            </div>
                             <div class="owl-carousel__text">
-                                <span class="h2">Соревнования в 1989</span>
-                                <span>Изобретение лаун-тенниса В настоящее время достоверно неизвестно, кто изобрёл теннис, но, по наиболее распространённой версии, родоначальником игры был майор Уолтер Уингфилд. Он придумал игру для развлечения гостей на приёмах в своем особняке в Уэльсе и в 1873 году опубликовал первые правила игры.</span>
+                                <span class="h2">2002 год</span>
+                                <span>Турнир семейных команд</span>
                             </div>
                         </div>
-                        <div>
-                            <div class="owl-carousel__img"><img src="img/about/slider/1.jpg" alt=""></div>
+                        <div class="owl-carousel__bdrs">
+                            <div class="owl-carousel__img"><img src="img/about/slider/5/1.jpg" alt=""></div>
                             <div class="owl-carousel__text">
-                                <span class="h2">Соревнования в 1989</span>
-                                <span>Изобретение лаун-тенниса В настоящее время достоверно неизвестно, кто изобрёл теннис, но, по наиболее распространённой версии, родоначальником игры был майор Уолтер Уингфилд. Он придумал игру для развлечения гостей на приёмах в своем особняке в Уэльсе и в 1873 году опубликовал первые правила игры.</span>
+                                <span class="h2">1988 год</span>
+                                <span>Аркадий Лебедев на кортах Труда</span>
                             </div>
                         </div>
-                        <div>
-                            <div class="owl-carousel__img"><img src="img/about/slider/1.jpg" alt=""></div>
+                        <div class="owl-carousel__bdrs">
+                            <div class="owl-carousel__img"><img src="img/about/slider/6/1.jpg" alt=""></div>
                             <div class="owl-carousel__text">
-                                <span class="h2">Соревнования в 1989</span>
-                                <span>Изобретение лаун-тенниса В настоящее время достоверно неизвестно, кто изобрёл теннис, но, по наиболее распространённой версии, родоначальником игры был майор Уолтер Уингфилд. Он придумал игру для развлечения гостей на приёмах в своем особняке в Уэльсе и в 1873 году опубликовал первые правила игры.</span>
+                                <span class="h2">1998 год</span>
+                                <span>Корты Труда</span>
+                            </div>
+                        </div>
+                        <div class="owl-carousel__bdrs">
+                            <div class="owl-carousel__img">
+                                <div class="inner-carousel">
+                                    <div class="inner-carousel__arrow inner-carousel__arrow_left"></div>
+                                    <div><img src="img/about/slider/7/1.jpg" alt="Теннис Иркутск"></div>
+                                    <div><img src="img/about/slider/7/2.jpg" alt="Теннис Иркутск"></div>
+                                    <div class="inner-carousel__arrow inner-carousel__arrow_right"></div>
+                                </div>
+                            </div>
+                            <div class="owl-carousel__text">
+                                <span class="h2">2000 год</span>
+                            </div>
+                        </div>
+                        <div class="owl-carousel__bdrs">
+                            <div class="owl-carousel__img"><img src="img/about/slider/8/1.jpg" alt=""></div>
+                            <div class="owl-carousel__text">
+                                <span class="h2">1984 год</span>
+                                <span>Аркадий Лебедев</span>
+                            </div>
+                        </div>
+                        <div class="owl-carousel__bdrs">
+                            <div class="owl-carousel__img"><img src="img/about/slider/9/1.jpg" alt=""></div>
+                            <div class="owl-carousel__text">
+                                <span class="h2">Аркадий Лебедев</span>
+                                <span>Корты Труда</span>
+                            </div>
+                        </div>
+                        <div class="owl-carousel__bdrs">
+                            <div class="owl-carousel__img"><img src="img/about/slider/10/1.jpg" alt=""></div>
+                            <div class="owl-carousel__text">
+                                <span class="h2">2002 год</span>
+                                <span>Беру автограф у Винус Уильямс на Кубке Кремля</span>
+                            </div>
+                        </div>
+                        <div class="owl-carousel__bdrs">
+                            <div class="owl-carousel__img"><img src="img/about/slider/11/1.jpg" alt=""></div>
+                            <div class="owl-carousel__text">
+                                <span class="h2">2001 год</span>
+                            </div>
+                        </div>
+                        <div class="owl-carousel__bdrs">
+                            <div class="owl-carousel__img"><img src="img/about/slider/12/1.jpg" alt=""></div>
+                            <div class="owl-carousel__text">
+                                <span class="h2">2003 год</span>
+                            </div>
+                        </div>
+                        <div class="owl-carousel__bdrs">
+                            <div class="owl-carousel__img"><img src="img/about/slider/13/1.jpg" alt=""></div>
+                            <div class="owl-carousel__text">
+                                <span class="h2">2002 год</span>
                             </div>
                         </div>
                     </div>
@@ -468,7 +580,7 @@
                 <div class="col-lg-8 col-sm-6 col-12 mob-order-1">
                     <h3 class="h1">научим играть в теннис, даже если вы никогда раньше не пробовали</h3>
                     <p>поможем стать частью уникального сообщества и незаметно преодолеть все барьеры в игре</p>
-                    <button class="button-mod">ЗАПИСАТЬСЯ</button>
+                    <button class="button-mod show-call">ЗАПИСАТЬСЯ</button>
                 </div>
             </div>
         </div>
@@ -622,9 +734,22 @@
             </div>
         </div>
     </div>
+    <div class="footer__political">
+        <a href="/legal" class="">Политика конфиденциальности</a>
+    </div>
 </div>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/index.js"></script>
+<!--<script src="js/parallax.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<script>
+    for(i=0;i<$('.paraclass').length;i++) {
+        var scene = new Parallax($('.paraclass').get(i), {
+            calibrateX: true
+        });
+    }
+
+</script>
 <script src="js/owl.carousel.min.js"></script>
 <script>
     $( window ).on( "load",function () {
@@ -649,6 +774,11 @@
                     items: 2
                 }
             }
+        });
+        $('.inner-carousel').owlCarousel({
+            items: 1,
+            mouseDrag: false,
+            nav: true
         });
     });
 </script>

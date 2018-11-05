@@ -57,6 +57,72 @@
   left: 0
   height: 100vh
   width: 100vw
+.modal-star
+  z-index: 11
+  display: flex
+  align-items: center
+  position: fixed
+  top: 0
+  left: 0
+  min-height: 100vh
+  width: 100vw
+  @include transform(scale(0))
+  &.show
+    -webkit-animation: .3s linear .2s forwards show-callback
+    -moz-animation: .3s linear .2s forwards show-callback
+    -o-animation: .3s linear .2s forwards show-callback
+    animation: .3s linear .2s forwards show-callback
+    transition-delay: .2s
+    @include transform(scale(1))
+  &.hide
+    -webkit-animation: .3s linear 0s forwards show-callback-rev
+    -moz-animation: .3s linear 0s forwards show-callback-rev
+    -o-animation: .3s linear 0s forwards show-callback-rev
+    animation: .3s linear 0s forwards show-callback-rev
+  &__block
+    background-color: #fff
+    overflow: hidden
+    -webkit-border-radius: 10px
+    -moz-border-radius: 10px
+    border-radius: 10px
+    p
+      color: #4A5680
+    &_padding
+      padding: 45px
+    .button-form
+      display: block
+      margin: 25px auto
+      font-size: 1.1em
+  &__name-parameters
+    display: block
+    text-align: center
+    color: #599255
+    font-size: .7em
+    margin-top: 20px
+  &__closed
+    position: absolute
+    width: 40px
+    height: 40px
+    -webkit-border-radius: 30px
+    -moz-border-radius: 30px
+    border-radius: 30px
+    background: #000
+    svg
+      width: 100%
+      height: 100%
+  &__stars
+    display: flex
+    margin: 5px 0
+    img
+      display: block
+      width: 40px
+      &:nth-child(1)
+        margin-left: auto
+      &:nth-child(5)
+        margin-right: auto
+  &__pic-trainer
+    width: 100%
+    margin-bottom: 15px
 .modal-bg
   z-index: 10
   display: none
@@ -170,7 +236,7 @@
   overflow: hidden
   position: relative
   z-index: 1
-  &__ball
+  &__ball div
     height: 11vh
     max-width: 100%
     position: relative
@@ -292,6 +358,10 @@
     width: 40px
 .trainers
   padding: 360px 0 120px
+  .col-lg-3
+    -ms-flex: 0 0 29%
+    flex: 0 0 29%
+    max-width: 29%
   .h1
     margin-bottom: 10px
   .h2
@@ -302,6 +372,8 @@
     padding-bottom: 10px
     border-radius: 10px
     margin-top: 30px
+    cursor: pointer
+    @include transition(.3s)
     &-info
       width: 200%
       border-top: 1px solid #599255
@@ -310,6 +382,9 @@
       .for-100
         width: 50%
         margin: auto
+    &:hover
+      opacity: .9
+      @include transform(translateY(-10px))
   &__text
     &-name
       display: block
@@ -323,12 +398,13 @@
       color: #599255
       padding-left: 18px
       padding-top: 4px
+      position: relative
       &:before
         position: absolute
         content: url(../img/icons/ball-green.svg)
         width: 10px
         height: 10px
-        left: 20px
+        left: 5px
 .about
   color: #4A5680
   padding: 86px 0 0
@@ -350,24 +426,53 @@
     box-shadow: 3px 7px 4px rgba(0, 0, 0, 0.22)
     &-mb
       margin-bottom: 25px
+  .inner-carousel
+    overflow: hidden
+    position: relative
+    .owl-nav
+      position: absolute
+      top: 50%
+      width: 100%
+    .owl-prev, .owl-next
+      position: absolute
+      width: 30px
+    .owl-prev
+      left: 10px
+    .owl-next
+      right: 10px
+    &__arrow
+      content: ''
+      top: 50%
+      width: 30px
+      height: 30px
+      -webkit-border-radius: 50%
+      -moz-border-radius: 50%
+      border-radius: 50%
+      background-color: #fff
   .owl-carousel
     padding-top: 150px
     line-height: 0em
-    .owl-item
-      background-color: #fff
+    cursor: pointer
+    color: #000
+    &__bdrs
+      display: flex
+      flex-wrap: wrap
+      align-items: center
       overflow: hidden
+      background-color: #fff
       -webkit-border-radius: 20px
       -moz-border-radius: 20px
       border-radius: 20px
-      & > div
-        display: flex
-        flex-wrap: wrap
-        align-items: center
     &__img, &__text
       display: block
-      width: 50%
       padding-right: 30px
+      cursor: pointer
+    &__img
+      width: 58%
     &__text
+      width: 42%
+      span
+        cursor: pointer
       span:nth-child(2)
         display: block
         padding-top: 10px
@@ -565,3 +670,45 @@
     margin-left: auto
     img
       width: 100%
+  &__political
+    display: block
+    position: absolute
+    left: 0
+    right: 0
+    bottom: 10px
+    text-align: center
+    a
+      @include transition(.3s)
+      font-size: .8em
+      &:hover
+        opacity: .6
+
+//legal
+.head-political
+  background-image: url(../img/bg.jpg)
+  -webkit-background-size: cover
+  background-size: cover
+  position: relative
+  z-index: 5
+  padding-bottom: 150px
+  h1
+    text-align: center
+    margin: 50px 0
+  button
+    display: block
+    margin: auto
+.legal-page
+  background-image: url(../img/bg-white.jpg)
+  -webkit-background-size: cover
+  background-size: cover
+  padding: 120px 0
+  position: relative
+  p
+    color: #000
+.what-is-ball img
+  width: 65px
+  position: absolute
+  bottom: 0
+  left: 0
+  right: 0
+  margin: 0 auto -40px
