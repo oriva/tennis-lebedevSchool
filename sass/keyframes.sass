@@ -29,12 +29,17 @@
     @include transform(scale(0))
 +keyframes(preloader-heart)
   0%
-    @include transform(scale(1))
+    @include transform(scale(.9))
   10%
-    @include transform(scale(1))
+    @include transform(scale(.9))
   35%
     @include transform(scale(1.1))
   90%
+    @include transform(scale(.9))
+  100%
+    @include transform(scale(.9))
++keyframes(preloader-die)
+  0%
     @include transform(scale(1))
   100%
-    @include transform(scale(1))
+    @include transform(scale(0))

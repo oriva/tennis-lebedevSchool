@@ -276,16 +276,16 @@
 
 @-webkit-keyframes preloader-heart {
   0% {
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    -webkit-transform: scale(1);
-    transform: scale(1);
+    -moz-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
   }
   10% {
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    -webkit-transform: scale(1);
-    transform: scale(1);
+    -moz-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
   }
   35% {
     -moz-transform: scale(1.1);
@@ -294,31 +294,31 @@
     transform: scale(1.1);
   }
   90% {
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    -webkit-transform: scale(1);
-    transform: scale(1);
+    -moz-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
   }
   100% {
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    -webkit-transform: scale(1);
-    transform: scale(1);
+    -moz-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
   }
 }
 
 @-moz-keyframes preloader-heart {
   0% {
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    -webkit-transform: scale(1);
-    transform: scale(1);
+    -moz-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
   }
   10% {
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    -webkit-transform: scale(1);
-    transform: scale(1);
+    -moz-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
   }
   35% {
     -moz-transform: scale(1.1);
@@ -327,33 +327,33 @@
     transform: scale(1.1);
   }
   90% {
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    -webkit-transform: scale(1);
-    transform: scale(1);
+    -moz-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
   }
   100% {
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    -webkit-transform: scale(1);
-    transform: scale(1);
+    -moz-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
   }
 }
 
 @-ms-keyframes preloader-heart {
   /* line 31, /Users/alexanderDev/Desktop/table-tennis/sass/keyframes.sass */
   0% {
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    -webkit-transform: scale(1);
-    transform: scale(1);
+    -moz-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
   }
   /* line 33, /Users/alexanderDev/Desktop/table-tennis/sass/keyframes.sass */
   10% {
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    -webkit-transform: scale(1);
-    transform: scale(1);
+    -moz-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
   }
   /* line 35, /Users/alexanderDev/Desktop/table-tennis/sass/keyframes.sass */
   35% {
@@ -364,32 +364,32 @@
   }
   /* line 37, /Users/alexanderDev/Desktop/table-tennis/sass/keyframes.sass */
   90% {
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    -webkit-transform: scale(1);
-    transform: scale(1);
+    -moz-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
   }
   /* line 39, /Users/alexanderDev/Desktop/table-tennis/sass/keyframes.sass */
   100% {
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    -webkit-transform: scale(1);
-    transform: scale(1);
+    -moz-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
   }
 }
 
 @keyframes preloader-heart {
   0% {
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    -webkit-transform: scale(1);
-    transform: scale(1);
+    -moz-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
   }
   10% {
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    -webkit-transform: scale(1);
-    transform: scale(1);
+    -moz-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
   }
   35% {
     -moz-transform: scale(1.1);
@@ -398,16 +398,78 @@
     transform: scale(1.1);
   }
   90% {
+    -moz-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  100% {
+    -moz-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+@-webkit-keyframes preloader-die {
+  0% {
     -moz-transform: scale(1);
     -o-transform: scale(1);
     -webkit-transform: scale(1);
     transform: scale(1);
   }
   100% {
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+}
+
+@-moz-keyframes preloader-die {
+  0% {
     -moz-transform: scale(1);
     -o-transform: scale(1);
     -webkit-transform: scale(1);
     transform: scale(1);
+  }
+  100% {
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+}
+
+@-ms-keyframes preloader-die {
+  /* line 42, /Users/alexanderDev/Desktop/table-tennis/sass/keyframes.sass */
+  0% {
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  /* line 44, /Users/alexanderDev/Desktop/table-tennis/sass/keyframes.sass */
+  100% {
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+}
+
+@keyframes preloader-die {
+  0% {
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    -webkit-transform: scale(0);
+    transform: scale(0);
   }
 }
 

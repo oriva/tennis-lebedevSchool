@@ -65,6 +65,7 @@
   background-color: #FFF
   align-items: center
   justify-content: center
+  @include transition(.3s all .4s)
   img
     -webkit-animation: 1.2s infinite preloader-heart
     -moz-animation: 1.2s infinite preloader-heart
@@ -82,11 +83,12 @@
       -o-animation-duration: 0.3s
       animation-duration: 0.3s
   &.hide
+    opacity: 0
     img
-      -webkit-animation: 1.2s infinite show-callback-rev
-      -moz-animation: 1.2s infinite show-callback-rev
-      -o-animation: 1.2s infinite show-callback-rev
-      animation: 1.2s infinite show-callback-rev
+      -webkit-animation: 0.4s linear both preloader-die
+      -moz-animation: 0.4s linear both preloader-die
+      -o-animation: 0.4s linear both preloader-die
+      animation: 0.4s linear both preloader-die
       @include transform(scale(0))
 .modal-bg, .modal-callback, .modal-success
   position: fixed
