@@ -103,6 +103,62 @@
 }
 
 /* line 54, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+.preloader {
+  z-index: 15;
+  position: fixed;
+  display: -webkit-flex;
+  display: flex;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #FFF;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 68, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+.preloader img {
+  -webkit-animation: 1.2s infinite preloader-heart;
+  -moz-animation: 1.2s infinite preloader-heart;
+  -o-animation: 1.2s infinite preloader-heart;
+  animation: 1.2s infinite preloader-heart;
+  max-width: 100%;
+  max-height: 100%;
+  width: 400px;
+  -moz-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+/* line 79, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+.preloader.fast img {
+  -webkit-animation-duration: 0.3s;
+  -moz-animation-duration: 0.3s;
+  -o-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+}
+
+/* line 85, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+.preloader.hide img {
+  -webkit-animation: 1.2s infinite show-callback-rev;
+  -moz-animation: 1.2s infinite show-callback-rev;
+  -o-animation: 1.2s infinite show-callback-rev;
+  animation: 1.2s infinite show-callback-rev;
+  -moz-transform: scale(0);
+  -o-transform: scale(0);
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+/* line 91, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .modal-bg, .modal-callback, .modal-success {
   position: fixed;
   top: 0;
@@ -111,7 +167,7 @@
   width: 100vw;
 }
 
-/* line 60, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 97, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .modal-star {
   z-index: 11;
   display: flex;
@@ -127,7 +183,7 @@
   transform: scale(0);
 }
 
-/* line 70, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 107, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .modal-star.show {
   -webkit-animation: .3s linear .2s forwards show-callback;
   -moz-animation: .3s linear .2s forwards show-callback;
@@ -140,7 +196,7 @@
   transform: scale(1);
 }
 
-/* line 77, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 114, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .modal-star.hide {
   -webkit-animation: .3s linear 0s forwards show-callback-rev;
   -moz-animation: .3s linear 0s forwards show-callback-rev;
@@ -148,7 +204,7 @@
   animation: .3s linear 0s forwards show-callback-rev;
 }
 
-/* line 82, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 119, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .modal-star__block {
   background-color: #fff;
   overflow: hidden;
@@ -157,24 +213,24 @@
   border-radius: 10px;
 }
 
-/* line 88, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 125, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .modal-star__block p {
   color: #4A5680;
 }
 
-/* line 90, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 127, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .modal-star__block_padding {
   padding: 45px;
 }
 
-/* line 92, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 129, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .modal-star__block .button-form {
   display: block;
   margin: 25px auto;
   font-size: 1.1em;
 }
 
-/* line 96, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 133, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .modal-star__name-parameters {
   display: block;
   text-align: center;
@@ -183,59 +239,70 @@
   margin-top: 20px;
 }
 
-/* line 102, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 139, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .modal-star__closed {
   position: absolute;
-  width: 40px;
-  height: 40px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px;
-  background: #000;
+  cursor: pointer;
+  top: 10px;
+  right: 25px;
+  width: 20px;
+  height: 20px;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-/* line 110, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 147, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .modal-star__closed svg {
   width: 100%;
   height: 100%;
 }
 
-/* line 113, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 150, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+.modal-star__closed:hover {
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* line 152, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .modal-star__stars {
   display: flex;
   margin: 5px 0;
 }
 
-/* line 116, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 155, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .modal-star__stars img {
   display: block;
   width: 40px;
 }
 
-/* line 119, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 158, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .modal-star__stars img:nth-child(1) {
   margin-left: auto;
 }
 
-/* line 121, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 160, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .modal-star__stars img:nth-child(5) {
   margin-right: auto;
 }
 
-/* line 123, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 162, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .modal-star__pic-trainer {
   width: 100%;
   margin-bottom: 15px;
 }
 
-/* line 126, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 165, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .modal-bg {
   z-index: 10;
   display: none;
   background-color: rgba(0, 0, 0, 0.56);
 }
 
-/* line 130, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 169, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .modal-bg.show {
   display: block;
   -webkit-animation: .3s linear 0s forwards show-bg-form;
@@ -244,7 +311,7 @@
   animation: .3s linear 0s forwards show-bg-form;
 }
 
-/* line 136, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 175, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .modal-bg.hide {
   -webkit-animation: .3s linear .2s forwards show-bg-form-rev;
   -moz-animation: .3s linear .2s forwards show-bg-form-rev;
@@ -252,7 +319,7 @@
   animation: .3s linear .2s forwards show-bg-form-rev;
 }
 
-/* line 141, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 180, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .modal-callback {
   z-index: 11;
   -moz-transform: scale(0);
@@ -262,7 +329,7 @@
   display: flex;
 }
 
-/* line 145, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 184, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .modal-callback.show {
   -webkit-animation: .3s linear .2s forwards show-callback;
   -moz-animation: .3s linear .2s forwards show-callback;
@@ -275,7 +342,7 @@
   transform: scale(1);
 }
 
-/* line 152, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 191, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .modal-callback.hide {
   -webkit-animation: .3s linear 0s forwards show-callback-rev;
   -moz-animation: .3s linear 0s forwards show-callback-rev;
@@ -283,7 +350,7 @@
   animation: .3s linear 0s forwards show-callback-rev;
 }
 
-/* line 157, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 196, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .modal-callback__closed {
   position: absolute;
   top: 15px;
@@ -296,7 +363,7 @@
   transition: 0.3s;
 }
 
-/* line 164, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 203, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .modal-callback__closed:hover {
   -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
@@ -304,7 +371,7 @@
   transform: scale(1.1);
 }
 
-/* line 166, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 205, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .modal-callback__form {
   position: relative;
   z-index: 4;
@@ -318,7 +385,7 @@
   box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.5);
 }
 
-/* line 177, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 216, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .modal-callback__form .select-cokes {
   width: 100%;
   border: 1px #599255 solid;
@@ -329,7 +396,7 @@
   font-size: 1.3em;
 }
 
-/* line 185, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 224, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .modal-success {
   z-index: 11;
   -moz-transform: scale(0);
@@ -339,7 +406,7 @@
   display: flex;
 }
 
-/* line 189, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 228, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .modal-success.show {
   -webkit-animation: .3s linear .2s forwards show-callback;
   -moz-animation: .3s linear .2s forwards show-callback;
@@ -352,7 +419,7 @@
   transform: scale(1);
 }
 
-/* line 196, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 235, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .modal-success.hide {
   -webkit-animation: .3s linear 0s forwards show-callback-rev;
   -moz-animation: .3s linear 0s forwards show-callback-rev;
@@ -360,7 +427,7 @@
   animation: .3s linear 0s forwards show-callback-rev;
 }
 
-/* line 201, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 240, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .modal-success__in-love {
   position: relative;
   z-index: 4;
@@ -370,7 +437,7 @@
   overflow: hidden;
 }
 
-/* line 208, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 247, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .modal-success__circler {
   background-color: #4A5680;
   padding: 50px 40px;
@@ -378,7 +445,7 @@
   border-radius: 0 0 50% 50%;
 }
 
-/* line 213, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 252, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .modal-success__ball {
   position: absolute;
   top: 15px;
@@ -386,7 +453,7 @@
   width: 40px;
 }
 
-/* line 218, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 257, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .modal-success__closed {
   position: absolute;
   top: 15px;
@@ -399,7 +466,7 @@
   transition: 0.3s;
 }
 
-/* line 225, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 264, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .modal-success__closed:hover {
   -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
@@ -407,13 +474,13 @@
   transform: scale(1.1);
 }
 
-/* line 227, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 266, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .modal-success__subcircler {
   text-align: center;
   padding: 50px 0;
 }
 
-/* line 231, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 270, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .head-offer {
   height: 100vh;
   background-image: url(../img/bg.jpg);
@@ -424,36 +491,36 @@
   z-index: 1;
 }
 
-/* line 239, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 278, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .head-offer__ball div {
   height: 11vh;
   max-width: 100%;
   position: relative;
 }
 
-/* line 243, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 282, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .head-offer__ball div img {
   height: 100%;
 }
 
-/* line 245, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 284, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .head-offer__bat {
   display: block;
   height: 65vh;
 }
 
-/* line 248, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 287, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .head-offer__offerbach {
   margin-bottom: 30vh;
 }
 
-/* line 250, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 289, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .head-offer__offerbach p {
   padding: 20px 0;
   text-transform: uppercase;
 }
 
-/* line 253, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 292, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .head-offer__svgball {
   cursor: pointer;
   position: fixed;
@@ -470,7 +537,7 @@
   transition: 0.6s;
 }
 
-/* line 264, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 303, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .head-offer__svgball:hover {
   -moz-transform: scale(1.07);
   -o-transform: scale(1.07);
@@ -478,60 +545,60 @@
   transform: scale(1.07);
 }
 
-/* line 266, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 305, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .head-offer__svgball img {
   height: 100%;
 }
 
-/* line 268, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 307, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .main {
   position: relative;
   z-index: 5;
 }
 
-/* line 271, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 310, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .bg {
   position: relative;
 }
 
-/* line 273, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 312, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .bg:nth-child(odd) {
   background-image: url(../img/bg-white.jpg);
   -webkit-background-size: cover;
   background-size: cover;
 }
 
-/* line 277, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 316, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .bg:nth-child(even) {
   background-image: url(../img/bg.jpg);
   -webkit-background-size: cover;
   background-size: cover;
 }
 
-/* line 282, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 321, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .free-bat__bat {
   width: 88%;
 }
 
-/* line 284, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 323, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .free-bat__ball {
   display: block;
   margin: -20px 13% 40px auto;
   width: 50px;
 }
 
-/* line 288, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 327, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .free-bat__half-ball {
   bottom: 0;
   left: 0;
 }
 
-/* line 291, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 330, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .teach-offer {
   z-index: 3;
 }
 
-/* line 293, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 332, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .teach-offer__ball {
   position: absolute;
   top: -25%;
@@ -539,72 +606,72 @@
   left: 0%;
 }
 
-/* line 298, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 337, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .teach-offer__text {
   text-align: center;
 }
 
-/* line 300, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 339, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .teach-offer__man {
   width: 160%;
   margin-top: 15px;
   margin-bottom: -80px;
 }
 
-/* line 304, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 343, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .teach-offer__boy {
   width: 110%;
   margin-top: -60px;
 }
 
-/* line 308, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 347, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .train-offer__half-ball {
   top: 0;
   left: 0;
 }
 
-/* line 311, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 350, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .train-offer__second-ball {
   bottom: 0;
   right: 0;
 }
 
-/* line 314, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 353, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .train-offer__court {
   width: 100%;
   display: block;
 }
 
-/* line 318, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 357, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .individual__text {
   text-align: right;
 }
 
-/* line 320, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 359, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .individual__people {
   display: block;
   width: 110%;
   margin-top: -70px;
 }
 
-/* line 324, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 363, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .half-form {
   z-index: 3;
   padding: 100px 0;
 }
 
-/* line 327, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 366, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .half-form .political {
   margin-bottom: 40px;
 }
 
-/* line 329, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 368, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .half-form__ball {
   top: 0;
   right: 0;
 }
 
-/* line 332, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 371, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .half-form__form {
   width: 100%;
   background-color: #fff;
@@ -614,7 +681,7 @@
   overflow: hidden;
 }
 
-/* line 339, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 378, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .half-form__form .select-cokes {
   width: 100%;
   border: 1px #599255 solid;
@@ -625,7 +692,7 @@
   font-size: 1.3em;
 }
 
-/* line 347, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 386, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .half-form__inform-first {
   background-color: #4A5680;
   padding: 50px 40px;
@@ -633,12 +700,12 @@
   border-radius: 0 0 50% 50%;
 }
 
-/* line 352, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 391, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .half-form__inform-second {
   padding: 30px 0;
 }
 
-/* line 354, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 393, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .half-form__half-ball {
   position: absolute;
   top: 15px;
@@ -646,29 +713,29 @@
   width: 40px;
 }
 
-/* line 359, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 398, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .trainers {
   padding: 120px 0;
 }
 
-/* line 361, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 400, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .trainers .col-lg-3 {
   -ms-flex: 0 0 29%;
   flex: 0 0 29%;
   max-width: 29%;
 }
 
-/* line 365, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 404, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .trainers .h1 {
   margin-bottom: 10px;
 }
 
-/* line 367, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 406, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .trainers .h2 {
   margin-bottom: 50px;
 }
 
-/* line 369, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 408, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .trainers__item {
   background-color: #fff;
   overflow: hidden;
@@ -682,7 +749,7 @@
   transition: 0.3s;
 }
 
-/* line 377, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 416, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .trainers__item video {
   position: relative;
   z-index: 1;
@@ -690,7 +757,7 @@
   margin-bottom: -25px;
 }
 
-/* line 382, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 421, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .trainers__item-info {
   z-index: 2;
   position: relative;
@@ -701,13 +768,13 @@
   margin-left: -50%;
 }
 
-/* line 390, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 429, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .trainers__item-info .for-100 {
   width: 50%;
   margin: auto;
 }
 
-/* line 393, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 432, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .trainers__item:hover {
   -moz-transform: translateY(-10px);
   -o-transform: translateY(-10px);
@@ -715,7 +782,7 @@
   transform: translateY(-10px);
 }
 
-/* line 396, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 435, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .trainers__text-name {
   display: block;
   font-size: 1.1em;
@@ -724,17 +791,17 @@
   color: #4A5680;
 }
 
-/* line 402, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 441, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .trainers__text-about {
   display: block;
-  font-size: 0.73em;
+  font-size: 0.78em;
   color: #599255;
   padding-left: 18px;
   padding-top: 4px;
   position: relative;
 }
 
-/* line 409, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 448, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .trainers__text-about:before {
   position: absolute;
   content: url(../img/icons/ball-green.svg);
@@ -743,35 +810,34 @@
   left: 5px;
 }
 
-/* line 415, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 454, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .about {
   color: #4A5680;
   padding: 86px 0 0;
-  margin-bottom: -170px;
 }
 
-/* line 419, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 457, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .about__half-ball {
   top: 0;
   left: 0;
 }
 
-/* line 422, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 460, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .about h1 {
   margin-bottom: 50px;
 }
 
-/* line 424, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 462, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .about p {
   padding-bottom: 20px;
 }
 
-/* line 426, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 464, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .about a {
   color: #00F;
 }
 
-/* line 428, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 466, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .about__image {
   width: 100%;
   -webkit-border-radius: 10px;
@@ -780,47 +846,47 @@
   box-shadow: 3px 7px 4px rgba(0, 0, 0, 0.22);
 }
 
-/* line 434, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 472, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .about__image-mb {
   margin-bottom: 25px;
 }
 
-/* line 436, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 474, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .about .inner-carousel {
   display: flex;
   overflow: hidden;
   position: relative;
 }
 
-/* line 440, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 478, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .about .inner-carousel button {
   margin-top: -15px;
 }
 
-/* line 442, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 480, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .about .inner-carousel .owl-nav {
   position: absolute;
   top: 50%;
   width: 100%;
 }
 
-/* line 446, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 484, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .about .inner-carousel .owl-prev, .about .inner-carousel .owl-next {
   position: absolute;
   width: 30px;
 }
 
-/* line 449, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 487, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .about .inner-carousel .owl-prev {
   left: 10px;
 }
 
-/* line 451, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 489, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .about .inner-carousel .owl-next {
   right: 10px;
 }
 
-/* line 453, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 491, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .about .inner-carousel__arrow {
   content: '';
   top: 50%;
@@ -832,7 +898,7 @@
   background-color: #fff;
 }
 
-/* line 462, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 500, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .about .inner-carousel__arrow img {
   display: block;
   width: auto;
@@ -842,7 +908,7 @@
   margin-right: auto;
 }
 
-/* line 470, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 508, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .about .inner-carousel__arrow_right img {
   -moz-transform: rotate(180deg);
   -o-transform: rotate(180deg);
@@ -850,15 +916,15 @@
   transform: rotate(180deg);
 }
 
-/* line 472, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 510, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .about .owl-carousel {
-  padding-top: 150px;
+  padding: 80px 0;
   line-height: 0em;
   cursor: pointer;
   color: #000;
 }
 
-/* line 477, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 515, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .about .owl-carousel__bdrs {
   display: flex;
   flex-wrap: wrap;
@@ -870,41 +936,36 @@
   border-radius: 20px;
 }
 
-/* line 486, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 524, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .about .owl-carousel__img, .about .owl-carousel__text {
   display: block;
   padding-right: 30px;
   cursor: pointer;
 }
 
-/* line 490, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 528, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .about .owl-carousel__img {
   width: 58%;
 }
 
-/* line 492, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 530, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .about .owl-carousel__text {
   width: 42%;
 }
 
-/* line 494, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 532, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .about .owl-carousel__text span {
   cursor: pointer;
 }
 
-/* line 496, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 534, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .about .owl-carousel__text span:nth-child(2) {
   display: block;
   padding-top: 10px;
   font-size: 15px;
 }
 
-/* line 500, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
-.instagram {
-  padding: 180px 0 10px;
-}
-
-/* line 502, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 539, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .instagram__link {
   display: block;
   width: 50px;
@@ -912,23 +973,23 @@
   margin: 80px auto;
 }
 
-/* line 507, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 544, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .instagram__link-icon {
   width: 100%;
 }
 
-/* line 509, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 546, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .instagram__pic {
   overflow: hidden;
 }
 
-/* line 511, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 548, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .instagram__pic img {
   display: block;
   width: 100%;
 }
 
-/* line 514, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 551, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .instagram__pic:before {
   content: '';
   position: absolute;
@@ -944,12 +1005,12 @@
   transition: 0.3s;
 }
 
-/* line 525, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 562, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .instagram__pic:hover:before {
   opacity: .4;
 }
 
-/* line 527, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 564, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .instagram__button {
   background-color: transparent;
   border: 1px solid #FFF;
@@ -964,47 +1025,47 @@
   transition: 0.3s;
 }
 
-/* line 536, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 573, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .instagram__button:hover {
   background-color: #FFF;
   color: #4A5680;
   border-color: #4A5680;
 }
 
-/* line 540, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 577, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .learn {
   padding-top: 88px;
   color: #4A5680;
 }
 
-/* line 543, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 580, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .learn p {
   text-transform: uppercase;
   font-size: 1.1em;
   margin: 15px 0;
 }
 
-/* line 547, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 584, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .learn__man {
   display: block;
   width: 100%;
 }
 
-/* line 550, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 587, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .learn__half-ball {
   position: absolute;
   top: 0;
   right: 0;
 }
 
-/* line 554, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 591, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .learn__inMap {
   display: flex;
   position: relative;
   width: 100%;
 }
 
-/* line 558, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 595, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .learn__inMap #map {
   position: absolute;
   top: 0;
@@ -1015,7 +1076,7 @@
   margin: 0;
 }
 
-/* line 566, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 603, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .learn__form {
   position: relative;
   z-index: 4;
@@ -1030,7 +1091,7 @@
   box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.5);
 }
 
-/* line 578, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 615, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .learn__form-first {
   color: #FFF;
   background-color: #4A5680;
@@ -1039,40 +1100,40 @@
   border-radius: 0 0 45% 45%;
 }
 
-/* line 584, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 621, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .learn__form-second {
   padding: 30px 0;
 }
 
-/* line 586, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 623, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .learn__form-spanec {
   display: block;
   text-align: center;
 }
 
-/* line 589, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 626, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .learn .political {
   margin-bottom: 20px;
 }
 
-/* line 591, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 628, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .contacts {
   padding: 110px 0;
   text-align: center;
 }
 
-/* line 594, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 631, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .contacts h2 {
   line-height: 0.63em;
 }
 
-/* line 596, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 633, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .contacts p {
   margin: 25px 0;
   text-align: center;
 }
 
-/* line 599, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 636, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .contacts__number {
   display: inline-block;
   position: relative;
@@ -1087,23 +1148,23 @@
   transition: 0.3s;
 }
 
-/* line 608, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 645, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .contacts__number:hover {
   background-color: #fff;
   border-color: #4a5680;
 }
 
-/* line 611, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 648, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .contacts__number:hover #white-power, .contacts__number:hover #white-power-2 {
   fill: #4a5680;
 }
 
-/* line 613, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 650, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .contacts__number:hover span {
   color: #4a5680;
 }
 
-/* line 615, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 652, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .contacts__number svg, .contacts__number span {
   vertical-align: middle;
   cursor: pointer;
@@ -1113,7 +1174,7 @@
   transition: 0.3s;
 }
 
-/* line 619, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 656, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .contacts__number #white-power, .contacts__number #white-power-2 {
   fill: #E9E9E9;
   -moz-transition: 0.3s;
@@ -1122,23 +1183,23 @@
   transition: 0.3s;
 }
 
-/* line 622, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 659, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .contacts__number svg {
   width: 15px;
   margin-right: 2px;
 }
 
-/* line 625, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 662, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .form-last {
   padding: 60px 0;
 }
 
-/* line 627, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 664, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .form-last .political {
   margin-bottom: 20px;
 }
 
-/* line 629, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 666, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .form-last__form {
   position: relative;
   z-index: 4;
@@ -1152,7 +1213,7 @@
   box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.5);
 }
 
-/* line 640, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 677, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .form-last__head {
   color: #FFF;
   background-color: #4A5680;
@@ -1161,18 +1222,18 @@
   border-radius: 0 0 45% 45%;
 }
 
-/* line 646, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 683, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .form-last__sub-head {
   padding: 30px 0;
 }
 
-/* line 648, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 685, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .form-last__offer {
   display: block;
   text-align: center;
 }
 
-/* line 651, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 688, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .footer {
   z-index: 4;
   position: relative;
@@ -1183,29 +1244,29 @@
   padding: 50px 0;
 }
 
-/* line 659, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 696, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .footer__school-name, .footer__logo {
   display: inline-block;
   vertical-align: middle;
 }
 
-/* line 662, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 699, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .footer__logo {
   width: 115px;
   margin-right: 10px;
 }
 
-/* line 665, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 702, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .footer__school-name {
   font-size: .87em;
 }
 
-/* line 667, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 704, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .footer__social {
   text-align: center;
 }
 
-/* line 669, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 706, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .footer__social a {
   display: inline-block;
   line-height: 0.63em;
@@ -1213,7 +1274,7 @@
   margin: 0 5px;
 }
 
-/* line 674, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 711, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .footer__social a img, .footer__social a svg {
   width: 100%;
   -moz-transition: 0.3s;
@@ -1222,7 +1283,7 @@
   transition: 0.3s;
 }
 
-/* line 678, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 715, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .footer__social a svg .vk__circle_blue, .footer__social a svg .inst__circle_gradient {
   fill: transparent;
   -moz-transition: 0.3s;
@@ -1231,7 +1292,7 @@
   transition: 0.3s;
 }
 
-/* line 681, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 718, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .footer__social a svg:hover {
   -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
@@ -1239,29 +1300,29 @@
   transform: scale(1.1);
 }
 
-/* line 683, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 720, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .footer__social a svg:hover .vk__circle_blue {
   fill: #4A5680;
 }
 
-/* line 685, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 722, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .footer__social a svg:hover .inst__circle_gradient {
   fill: #E4405B;
 }
 
-/* line 687, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 724, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .footer__rights {
   display: block;
   max-width: 178px;
   margin-left: auto;
 }
 
-/* line 691, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 728, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .footer__rights img {
   width: 100%;
 }
 
-/* line 693, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 730, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .footer__political {
   display: block;
   position: absolute;
@@ -1271,7 +1332,7 @@
   text-align: center;
 }
 
-/* line 700, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 737, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .footer__political a {
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
@@ -1280,17 +1341,17 @@
   font-size: .8em;
 }
 
-/* line 703, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 740, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .footer__political a:hover {
   opacity: .6;
 }
 
-/* line 707, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 744, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .head-political {
   padding-bottom: 150px;
 }
 
-/* line 709, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 746, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .head-political, .head-error {
   background-image: url(../img/bg.jpg);
   -webkit-background-size: cover;
@@ -1299,19 +1360,19 @@
   z-index: 5;
 }
 
-/* line 715, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 752, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .head-political h1, .head-error h1 {
   text-align: center;
   margin: 50px 0;
 }
 
-/* line 718, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 755, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .head-political button, .head-error button {
   display: block;
   margin: auto;
 }
 
-/* line 721, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 758, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .legal-page {
   background-image: url(../img/bg-white.jpg);
   -webkit-background-size: cover;
@@ -1320,12 +1381,12 @@
   position: relative;
 }
 
-/* line 727, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 764, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .legal-page p {
   color: #000;
 }
 
-/* line 729, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 766, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .what-is-ball img {
   width: 65px;
   position: absolute;
@@ -1335,7 +1396,7 @@
   margin: 0 auto -40px;
 }
 
-/* line 738, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
+/* line 775, /Users/alexanderDev/Desktop/table-tennis/sass/index.sass */
 .head-error .what-is-tennis {
   width: 100%;
   margin-bottom: -150px;

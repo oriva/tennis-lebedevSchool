@@ -51,6 +51,43 @@
         #white-power-top, #white-power-top-2
           fill: #4a5680
 
+.preloader
+  z-index: 15
+  position: fixed
+  display: -webkit-flex
+  display: flex
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  height: 100vh
+  width: 100vw
+  background-color: #FFF
+  align-items: center
+  justify-content: center
+  img
+    -webkit-animation: 1.2s infinite preloader-heart
+    -moz-animation: 1.2s infinite preloader-heart
+    -o-animation: 1.2s infinite preloader-heart
+    animation: 1.2s infinite preloader-heart
+    max-width: 100%
+    max-height: 100%
+    width: 400px
+    @include transition(.3s all)
+    @include transform(scale(1))
+  &.fast
+    img
+      -webkit-animation-duration: 0.3s
+      -moz-animation-duration: 0.3s
+      -o-animation-duration: 0.3s
+      animation-duration: 0.3s
+  &.hide
+    img
+      -webkit-animation: 1.2s infinite show-callback-rev
+      -moz-animation: 1.2s infinite show-callback-rev
+      -o-animation: 1.2s infinite show-callback-rev
+      animation: 1.2s infinite show-callback-rev
+      @include transform(scale(0))
 .modal-bg, .modal-callback, .modal-success
   position: fixed
   top: 0
@@ -101,15 +138,17 @@
     margin-top: 20px
   &__closed
     position: absolute
-    width: 40px
-    height: 40px
-    -webkit-border-radius: 30px
-    -moz-border-radius: 30px
-    border-radius: 30px
-    background: #000
+    cursor: pointer
+    top: 10px
+    right: 25px
+    width: 20px
+    height: 20px
+    @include transition(.3s)
     svg
       width: 100%
       height: 100%
+    &:hover
+      @include transform(scale(1.1))
   &__stars
     display: flex
     margin: 5px 0
@@ -401,7 +440,7 @@
       color: #4A5680
     &-about
       display: block
-      font-size: 0.73em
+      font-size: 0.78em
       color: #599255
       padding-left: 18px
       padding-top: 4px
@@ -415,7 +454,6 @@
 .about
   color: #4A5680
   padding: 86px 0 0
-  margin-bottom: -170px
   &__half-ball
     top: 0
     left: 0
@@ -470,7 +508,7 @@
         img
           @include transform(rotate(180deg))
   .owl-carousel
-    padding-top: 150px
+    padding: 80px 0
     line-height: 0em
     cursor: pointer
     color: #000
@@ -498,7 +536,6 @@
         padding-top: 10px
         font-size: 15px
 .instagram
-  padding: 180px 0 10px
   &__link
     display: block
     width: 50px
