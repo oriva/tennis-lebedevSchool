@@ -319,9 +319,11 @@
     text-align: right
   &__people
     display: block
-    width: 100%
+    width: 110%
+    margin-top: -70px
 .half-form
   z-index: 3
+  padding: 100px 0
   .political
     margin-bottom: 40px
   &__ball
@@ -329,13 +331,11 @@
     right: 0
   &__form
     width: 100%
-    margin-top: 170px
     background-color: #fff
     border: 1px solid rgba(0, 0, 0, 0.25)
     border-radius: 10px
     position: relative
     overflow: hidden
-    margin-bottom: -270px
     .select-cokes
       width: 100%
       border: 1px #599255 solid
@@ -357,7 +357,7 @@
     left: 15px
     width: 40px
 .trainers
-  padding: 360px 0 120px
+  padding: 120px 0
   .col-lg-3
     -ms-flex: 0 0 29%
     flex: 0 0 29%
@@ -374,7 +374,15 @@
     margin-top: 30px
     cursor: pointer
     @include transition(.3s)
+    video
+      position: relative
+      z-index: 1
+      width: 100%
+      margin-bottom: -25px
     &-info
+      z-index: 2
+      position: relative
+      background-color: #FFF
       width: 200%
       border-top: 1px solid #599255
       border-radius: 100% 100% 0 0
@@ -383,7 +391,6 @@
         width: 50%
         margin: auto
     &:hover
-      opacity: .9
       @include transform(translateY(-10px))
   &__text
     &-name
@@ -427,8 +434,11 @@
     &-mb
       margin-bottom: 25px
   .inner-carousel
+    display: flex
     overflow: hidden
     position: relative
+    button
+      margin-top: -15px
     .owl-nav
       position: absolute
       top: 50%
@@ -449,6 +459,16 @@
       -moz-border-radius: 50%
       border-radius: 50%
       background-color: #fff
+      img
+        display: block
+        width: auto
+        height: 100%
+        padding: 5px 0
+        margin-left: auto
+        margin-right: auto
+      &_right
+        img
+          @include transform(rotate(180deg))
   .owl-carousel
     padding-top: 150px
     line-height: 0em
@@ -683,14 +703,15 @@
       &:hover
         opacity: .6
 
-//legal
+//legal, 404
 .head-political
+  padding-bottom: 150px
+.head-political, .head-error
   background-image: url(../img/bg.jpg)
   -webkit-background-size: cover
   background-size: cover
   position: relative
   z-index: 5
-  padding-bottom: 150px
   h1
     text-align: center
     margin: 50px 0
@@ -712,3 +733,8 @@
   left: 0
   right: 0
   margin: 0 auto -40px
+//404
+.head-error
+  .what-is-tennis
+    width: 100%
+    margin-bottom: -150px
