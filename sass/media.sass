@@ -1,4 +1,5 @@
 @import "mixins"
+@import "media-height"
 @media screen and (max-width:1200px)
   h1, h4, h5, p, a, i, button, span, address, li, label, small
     font-size: 15px
@@ -128,9 +129,18 @@
 @media screen and (max-width:575.98px)
   h1, h4, h5, p, a, i, button, span, address, li, label, small
     font-size: 16px
+  .overfloff
+    -webkit-overflow-scrolling: auto
+    touch-action: none
+  html
+    width: 100%
   .group
     input
       padding: 7px
+  .political label
+    font-size: .8em
+  .political a
+    font-size: 1em
   .mob-order-1
     order: 1
   .mob-order-2
@@ -149,22 +159,49 @@
         #white-power-top, #white-power-top-2
           fill: #E9E9E9
   .button-mod
+    display: inline-block
+    line-height: 1.3em
     font-size: 0.7em
     padding: 5px 15px
+  .modal-callback
+    &__form
+      .select-cokes
+        font-size: 0.9em
+    &__closed
+      width: 20px
+  .modal-star
+    -webkit-overflow-scrolling: touch
+    touch-action: pan-y
+    &__closed
+      &_mob
+        display: block
+      &_desc
+        display: none
+    &__stars img
+      width: 20px
+    &__pic-trainer
+      height: 180px
   .head-offer
-    &__ball div
+    &__ball
       position: absolute
-      top: 0
-      right: 0
-      text-align: right
-      padding: 0
+      top: -15px
+      right: -15px
+      div
+        position: absolute
+        top: 0
+        right: 0
+        text-align: right
+        padding: 0
+        height: 70px
+    &__svgball
+      bottom: 10px
     &__bat
       height: auto
       width: 100%
     &__offerbach
-      margin-bottom: 110px
+      margin-bottom: 140px
       p
-        font-size: .7em
+        font-size: .9em
     &__mob-offer
       margin-bottom: 30px
   .free-bat
@@ -187,7 +224,7 @@
     &__text
       margin: 30px 0
   .train-offer
-    padding: 90px 0
+    padding: 70px 0
     &__court
       display: block
       margin-left: auto
@@ -197,18 +234,28 @@
     &__text
       text-align: center
       padding: 80px 0 20px
+    &__people
+      width: 100%
+      margin-top: 0
   .half-form
     &__inform-first
       .h2
         font-size: .9em
-    &__form
-      margin-top: 100px
+  .trainers
+    video
+      display: none
+    &__image-mob
+      display: block
+      width: 100%
+      margin-bottom: -20px
   .about
     padding-top: 55px
     p
       padding-bottom: 35px
     h1
-      margin-bottom: 30px
+      margin-bottom: 10px
+    .h2
+      margin-bottom: 15px
     .owl-carousel
       padding-top: 30px
       &__img, &__text
@@ -240,12 +287,7 @@
       margin-left: 10%
   .contacts
     padding: 410px 0 70px
-  .form-last
-    padding-bottom: 0
-    &__form
-      margin-bottom: -50px
   .footer
-    padding-top: 110px
     &__rights
       min-width: 45%
       margin-top: 20px
@@ -258,3 +300,9 @@
       width: 95px
     &__school-name
       font-size: .75em
+  .head-political
+    padding-bottom: 60px
+  .legal-page
+    padding: 50px 0
+    p
+      font-size: 0.8em

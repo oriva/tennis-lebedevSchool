@@ -1,0 +1,22 @@
+@import "mixins"
+@media screen and (max-height:769px)
+  .modal-star
+    &__stars
+      margin: 3px 0
+    &__name-parameters
+      margin-top: 13px
+    &__pic-trainer
+      margin-bottom: 5px
+      height: 200px
+      object-fit: cover
+      object-position: top
+    &__block
+      .button-form
+        margin: 17px auto
+        font-size: 0.9em
+@media (min-width: 1200px)
+  .trainers
+    .col-lg-3
+      -ms-flex: 0 0 29%
+      flex: 0 0 29%
+      max-width: 29%

@@ -16,13 +16,13 @@ body
   font-size: 16px
   min-width: 320px
   position: relative
-  line-height: 1.38
   margin: 0
   font-family: 'Helvetica', serif
   font-weight: normal
   font-style: normal
   width: 100%
   color: #fff
+  overflow: hidden
   &:active,:hover,:focus
     outline: 0
     outline-offset: 0
@@ -43,10 +43,10 @@ button
   cursor: pointer
   color: #FFF
   @include transition(0.3s ease all)
-h1,h2,h3,h4,h5,p,a,i,button,span,address,li,label,small
+h1,h2,h3,h4,h5,p,a,i,span,address,li,label,small
   font-size: 18px
   margin: 0
-  line-height: 1.36
+  line-height: 1.3
   font-style: normal
   &::selection
     background-color: #599255
@@ -54,6 +54,9 @@ h1,h2,h3,h4,h5,p,a,i,button,span,address,li,label,small
   &::-moz-selection
     background-color: #599255
     color: #FFF
+button
+  font-size: 18px
+  margin: 0
 h1,h2,h3,h4,h5,p,span,address,li,label,a:not([href]):not([tabindex])
   cursor: default
 a
@@ -135,6 +138,7 @@ ul, li, ol
         content: url("../img/icons/politicalYes.svg")
         margin-top: 7px
         margin-left: 4px
+        will-change: transform
         transform-origin: left bottom
       &:before
         width: 20px

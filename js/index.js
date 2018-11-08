@@ -2,8 +2,8 @@ function lastHide(e) {
     $('.modal-bg').addClass('hide');
     e.addClass('hide');
     setTimeout(function(){
-        $('.modal-bg').removeClass('hide').removeClass('show');
-        e.removeClass('hide').removeClass('show');
+        $('.modal-bg').removeClass('hide show');
+        e.removeClass('hide show');
     },500);
     $('html').removeClass('overfloff');
 }
@@ -12,6 +12,10 @@ $( window ).on( "load", function () {
     setTimeout(function () {
         $('.preloader').addClass('hide').removeClass('fast');
     }, 1500);
+    setTimeout(function () {
+        $('.preloader').hide();
+        $('html').removeClass('overfloff');
+    }, 2100);
     let trainers = $('.trainers__item');
     for(var i=0; i<trainers.length; i++)
     {
@@ -42,7 +46,7 @@ $('form').on('submit', function (e) {
             }
             $('.modal-success').addClass('show');
             setTimeout(function(){
-                $('.modal-callback').removeClass('hide').removeClass('show');
+                $('.modal-callback').removeClass('hide show');
             },500);
             setTimeout(function(){
                 lastHide($('.modal-success'));
@@ -57,7 +61,7 @@ $('.show-call').on('click', function() {
     if ($('.modal-star').hasClass('show')){
         $('.modal-star').addClass('hide');
         setTimeout(function(){
-            $('.modal-star').removeClass('hide').removeClass('show');
+            $('.modal-star').removeClass('hide show');
         },500);
     } else {
         $('.modal-bg').addClass('show');
@@ -67,7 +71,14 @@ $('.show-call').on('click', function() {
 });
 
 $('.modal-callback__closed').on('click', function() {
-    lastHide($('.modal-callback'));
+//    lastHide($('.modal-callback'));
+    $('.modal-bg').addClass('hide');
+    $('.modal-callback').addClass('hide');
+    setTimeout(function(){
+      $('.modal-callback').removeClass('hide show');
+      $('.modal-bg').removeClass('hide show');
+    },500);
+    $('html').removeClass('overfloff');
 });
 
 $('.modal-success__closed').on('click', function () {
@@ -86,11 +97,11 @@ $('.trainers__item').on({
         $('.modal-star__name-trainer').html($(this).find('.trainers__text-name').html());
         switch ($('.modal-star__name-trainer').html()) {
             case 'Аркадий Георгиевич Лебедев':
-                starCount = [5, 3, 4];
+                starCount = [5, 5, 4];
                 description = '<p>Создатель и руководитель "Иркутского центра тенниса" с 1988 года. Президент Федерации тенниса Иркутской области с 1990 г. по 2010 г. Трёхкратный чемпион Иркутской области по теннису в парном разряде. Победитель и призер многих турниров. Тренерский стаж 33 года.</p>';
                 break;
             case 'Дмитрий Аркадьевич Лебедев':
-                starCount = [2, 3, 4];
+                starCount = [5, 4, 5];
                 description = '<p>Тренерский стаж 14 лет.</p>' +
                     '<p>Тренер и руководитель "Иркутского центра тенниса".</p>' +
                     '<p>Чемпион Иркутской области по теннису:</p>' +
@@ -100,7 +111,7 @@ $('.trainers__item').on({
                     '<p>Победитель и призер многих других турниров.</p>';
                 break;
             case 'Артем Иринцеев':
-                starCount = [5, 5, 4];
+                starCount = [5, 4, 4];
                 description = '<p>Инструктор.</p>' +
                     '<p>Играет в теннис 6 лет.</p>' +
                     '<p>Неоднократный призёр областных турниров.</p>' +
@@ -124,7 +135,7 @@ $('.trainers__item').on({
         }
         // $('.modal-star h3').html(offer);
         $('.modal-star__gogo-text').html(description);
-
+        $('.modal-star__pic-trainer').attr('src', $(this).data('photo'));
         let allStars = $('.modal-star__stars');
         allStars.toArray().forEach(function (x, number) {
             allStars.eq(number).find('img').toArray().forEach(function (value, index) {

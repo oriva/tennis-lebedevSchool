@@ -1,808 +1,654 @@
 <!doctype html>
 <html lang="ru" class="overfloff">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="author" content="Oriva">
-    <meta property="og:locale" content="ru_RU">
-    <meta name=«title» content="Фестиваль MCM">
-    <meta name="description" content="">
-    <title>Теннис</title>
-    <!--  icon  -->
-    <link rel="shortcut icon" href="/favicon.ico?">
-    <link rel="apple-touch-icon-precomposed" href="/favicon.png?">
-    <!--  css   -->
-    <link rel="stylesheet" href="/css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="/css/foundation.css">
-    <link rel="stylesheet" href="/css/index.css?v=1.2">
-    <link rel="stylesheet" href="/css/input.css">
-    <link rel="stylesheet" href="/css/keyframes.css">
-    <link rel="stylesheet" href="/css/media.css?v=1.2">
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=10e69f71-79bc-4882-89e4-edfcd0e43d5a"
-            type="text/javascript" defer></script>
-    <script src="js/mapYand.js" type="text/javascript" defer></script>
-</head>
-<body>
 
-<!--modal party-->
-<div class="preloader">
-    <img src="preloader_tennis.gif" alt="">
-</div>
-<div class="modal-bg"></div>
-<div class="modal-callback">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Oriva">
+  <meta property="og:locale" content="ru_RU">
+  <meta name=«title» content="Теннис">
+  <meta name="description" content="">
+  <title>Теннис</title>
+  <!--  icon  -->
+  <link rel="shortcut icon" href="/favicon.ico?">
+  <link rel="apple-touch-icon-precomposed" href="/favicon.png?">
+  <meta name='wmail-verification' content='a2949f8607c5c97ae5b0502268ce4184' />
+  <!--  css   -->
+  <link rel="stylesheet" href="/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/index.css?v=1.2">
+  <link rel="stylesheet" href="/css/input.css">
+  <link rel="stylesheet" href="/css/keyframes.css">
+  <link rel="stylesheet" href="/css/media.css?v=1.3">
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=10e69f71-79bc-4882-89e4-edfcd0e43d5a" type="text/javascript" defer></script>
+  <script src="js/mapYand.js" type="text/javascript" defer></script>
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (d, w, c) {
+      (w[c] = w[c] || []).push(function () {
+        try {
+          w.yaCounter51033320 = new Ya.Metrika2({
+            id: 51033320
+            , clickmap: true
+            , trackLinks: true
+            , accurateTrackBounce: true
+            , webvisor: true
+          });
+        }
+        catch (e) {}
+      });
+      var n = d.getElementsByTagName("script")[0]
+        , s = d.createElement("script")
+        , f = function () {
+          n.parentNode.insertBefore(s, n);
+        };
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = "https://mc.yandex.ru/metrika/tag.js";
+      if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+      }
+      else {
+        f();
+      }
+    })(document, window, "yandex_metrika_callbacks2");
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/51033320" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+</head>
+
+<body>
+  <!--modal party-->
+  <div class="preloader"> <img src="preloader_tennis.gif" alt=""> </div>
+  <div class="modal-bg"></div>
+  <div class="modal-callback">
     <div class="container align-self-center">
-        <div class="row justify-content-center">
-            <div class="col-lg-6 col-sm-8 col-11">
-                <form action="" class="modal-callback__form">
-                    <div class="half-form__inform-first">
-                        <img src="img/icons/ball.svg" alt="" class="half-form__half-ball">
-                        <img src="img/icons/closed.svg" alt="" class="modal-callback__closed">
-                        <span class="h2">заполните форму и мы свяжемся с вами в ближайшее время!</span>
-                    </div>
-                    <div class="half-form__inform-second">
-                        <div class="row justify-content-center">
-                            <div class="col-8">
-                                <div class="group">
-                                    <input type="text" class="name" name="name" autocomplete="off"
-                                           placeholder="Имя*" required>
-                                    <span class="bar"></span>
-                                    <label>Имя*</label>
-                                </div>
-                            </div>
-                            <div class="col-8">
-                                <div class="group">
-                                    <input type="text" class="phone" name="phone" autocomplete="off"
-                                           placeholder="Телефон*" required>
-                                    <span class="bar"></span>
-                                    <label>Телефон*</label>
-                                </div>
-                            </div>
-                            <div class="col-8">
-                                <select name="occupation" class="select-cokes" title="Выберите тип занятий">
-                                    <option value="Не выбрал" hidden>Выберите тип занятий</option>
-                                    <option value="Групповой">Групповый</option>
-                                    <option value="Индивидуальный">Индивидуальные</option>
-                                </select>
-                            </div>
-                            <div class="col-auto">
-                                <div class="political">
-                                    <input type="checkbox" id="modal-callback__box" checked required>
-                                    <label for="modal-callback__box">Я принимаю <a href="/legal/">условия политики<br>конфиденциальности</a></label>
-                                </div>
-                            </div>
-                            <div class="col-7">
-                                <button class="button-form d-block mx-a">ХОЧУ В ТЕННИС</button>
-                            </div>
-                        </div>
-                    </div>
-                </form>
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-sm-8 col-11">
+          <form action="" class="modal-callback__form">
+            <div class="half-form__inform-first"> <img src="img/icons/ball.svg" alt="" class="half-form__half-ball"> <img src="img/icons/closed.svg" alt="" class="modal-callback__closed"> <span class="h2">заполните форму и мы свяжемся с вами в ближайшее время!</span> </div>
+            <div class="half-form__inform-second">
+              <div class="row justify-content-center">
+                <div class="col-8">
+                  <div class="group">
+                    <input type="text" class="name" name="name" autocomplete="off" placeholder="Имя*" required> <span class="bar"></span>
+                    <label>Имя*</label>
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="group">
+                    <input type="text" class="phone" name="phone" autocomplete="off" placeholder="Телефон*" required> <span class="bar"></span>
+                    <label>Телефон*</label>
+                  </div>
+                </div>
+                <div class="col-8">
+                  <select name="occupation" class="select-cokes" title="Выберите тип занятий">
+                    <option value="Не выбрал" hidden>Выберите тип занятий</option>
+                    <option value="Групповой">Групповый</option>
+                    <option value="Индивидуальный">Индивидуальные</option>
+                  </select>
+                </div>
+                <div class="col-auto">
+                  <div class="political">
+                    <input type="checkbox" id="modal-callback__box" checked required>
+                    <label for="modal-callback__box">Я принимаю <a href="/legal/">условия политики<br>конфиденциальности</a></label>
+                  </div>
+                </div>
+                <div class="col-7">
+                  <button class="button-form d-block mx-a">ХОЧУ В ТЕННИС</button>
+                </div>
+              </div>
             </div>
+          </form>
         </div>
+      </div>
     </div>
-</div>
-<div class="modal-star">
+  </div>
+  <div class="modal-star">
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-4">
-                <div class="modal-star__block">
-                    <img src="img/train-offer/grey-block.svg" alt="" class="modal-star__pic-trainer">
-                    <span class="modal-star__name-trainer h2 remote-blue text-center">Маргарет Смит-Корт</span>
-                    <span class="modal-star__name-parameters">Скорость</span>
-                    <div class="modal-star__stars">
-                        <img src="img/train-offer/star-yellow.svg" alt="">
-                        <img src="img/train-offer/star-yellow.svg" alt="">
-                        <img src="img/train-offer/star-yellow.svg" alt="">
-                        <img src="img/train-offer/star-yellow.svg" alt="">
-                        <img src="img/train-offer/star-grey.svg" alt="">
-                    </div>
-                    <span class="modal-star__name-parameters">Выносливость</span>
-                    <div class="modal-star__stars">
-                        <img src="img/train-offer/star-yellow.svg" alt="">
-                        <img src="img/train-offer/star-yellow.svg" alt="">
-                        <img src="img/train-offer/star-grey.svg" alt="">
-                        <img src="img/train-offer/star-grey.svg" alt="">
-                        <img src="img/train-offer/star-grey.svg" alt="">
-                    </div>
-                    <span class="modal-star__name-parameters">Чувство юмора</span>
-                    <div class="modal-star__stars">
-                        <img src="img/train-offer/star-yellow.svg" alt="">
-                        <img src="img/train-offer/star-yellow.svg" alt="">
-                        <img src="img/train-offer/star-yellow.svg" alt="">
-                        <img src="img/train-offer/star-grey.svg" alt="">
-                        <img src="img/train-offer/star-grey.svg" alt="">
-                    </div>
-                    <button class="button-form show-call">ЗАПИСАТЬСЯ НА ТРЕНИРОВКУ</button>
-                </div>
-            </div>
-            <div class="col-8">
-                <div class="modal-star__block modal-star__block_padding">
-                    <div class="modal-star__closed">
-                        <svg width="35" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.792893 1.70711L32.7929 33.7071L34.2071 32.2929L2.20711 0.292893L0.792893 1.70711ZM32.7929 0.292893L0.792893 32.2929L2.20711 33.7071L34.2071 1.70711L32.7929 0.292893Z" fill="#000"></path>
-                        </svg>
-                    </div>
-                    <h3 class="h2 remote-blue">Обо мне</h3>
-                    <div class="modal-star__gogo-text">
-                        <p>Создатель и руководитель "Иркутского центра тенниса" с 1988 года. Президент Федерации тенниса Иркутской области с 1990 г. по 2010 г. Трёхкратный чемпион Иркутской области по теннису в парном разряде. Победитель и призер многих турниров.
-                            Тренерский стаж 33 года.️</p>
-                    </div>
-                </div>
-            </div>
+      <div class="row align-items-center justify-content-center">
+        <div class="col-sm-4 col-12">
+          <div class="modal-star__block">
+            <div class="modal-star__closed modal-star__closed_mob">
+              <svg width="35" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.792893 1.70711L32.7929 33.7071L34.2071 32.2929L2.20711 0.292893L0.792893 1.70711ZM32.7929 0.292893L0.792893 32.2929L2.20711 33.7071L34.2071 1.70711L32.7929 0.292893Z" fill="#000"></path>
+              </svg>
+            </div> <img src="img/train-offer/grey-block.svg" alt="" class="modal-star__pic-trainer"> <span class="modal-star__name-trainer h2 remote-blue text-center">Маргарет Смит-Корт</span> <span class="modal-star__name-parameters">Скорость</span>
+            <div class="modal-star__stars"> <img src="img/train-offer/star-yellow.svg" alt=""> <img src="img/train-offer/star-yellow.svg" alt=""> <img src="img/train-offer/star-yellow.svg" alt=""> <img src="img/train-offer/star-yellow.svg" alt=""> <img src="img/train-offer/star-grey.svg" alt=""> </div> <span class="modal-star__name-parameters">Выносливость</span>
+            <div class="modal-star__stars"> <img src="img/train-offer/star-yellow.svg" alt=""> <img src="img/train-offer/star-yellow.svg" alt=""> <img src="img/train-offer/star-grey.svg" alt=""> <img src="img/train-offer/star-grey.svg" alt=""> <img src="img/train-offer/star-grey.svg" alt=""> </div> <span class="modal-star__name-parameters">Чувство юмора</span>
+            <div class="modal-star__stars"> <img src="img/train-offer/star-yellow.svg" alt=""> <img src="img/train-offer/star-yellow.svg" alt=""> <img src="img/train-offer/star-yellow.svg" alt=""> <img src="img/train-offer/star-grey.svg" alt=""> <img src="img/train-offer/star-grey.svg" alt=""> </div>
+            <button class="button-form show-call">ЗАПИСАТЬСЯ НА ТРЕНИРОВКУ</button>
+          </div>
         </div>
+        <div class="col-8">
+          <div class="modal-star__block">
+            <div class="modal-star__closed modal-star__closed_desc">
+              <svg width="35" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.792893 1.70711L32.7929 33.7071L34.2071 32.2929L2.20711 0.292893L0.792893 1.70711ZM32.7929 0.292893L0.792893 32.2929L2.20711 33.7071L34.2071 1.70711L32.7929 0.292893Z" fill="#000"></path>
+              </svg>
+            </div>
+            <h3 class="h2 remote-blue">Обо мне</h3>
+            <div class="modal-star__gogo-text">
+              <p>Создатель и руководитель "Иркутского центра тенниса" с 1988 года. Президент Федерации тенниса Иркутской области с 1990 г. по 2010 г. Трёхкратный чемпион Иркутской области по теннису в парном разряде. Победитель и призер многих турниров. Тренерский стаж 33 года.️</p>
+            </div> <img src="img/train-offer/bg-modal.jpg" alt="" class="modal-star__image"> </div>
+        </div>
+      </div>
     </div>
-</div>
-<div class="modal-success">
+  </div>
+  <div class="modal-success">
     <div class="container align-self-center">
-        <div class="row justify-content-center">
-            <div class="col-lg-6 col-sm-8 col-11">
-                <div class="modal-success__in-love">
-                    <div class="modal-success__circler">
-                        <img src="img/icons/ball.svg" alt="" class="modal-success__ball">
-                        <img src="img/icons/closed.svg" alt="" class="modal-success__closed">
-                        <span class="h2">Спасибо!<br>Ваша заявка принята!</span>
-                    </div>
-                    <div class="modal-success__subcircler">
-                        <span class="h2 remote-blue">Теннис уже близко ;)</span>
-                    </div>
-                </div>
-            </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-sm-8 col-11">
+          <div class="modal-success__in-love">
+            <div class="modal-success__circler"> <img src="img/icons/ball.svg" alt="" class="modal-success__ball"> <img src="img/icons/closed.svg" alt="" class="modal-success__closed"> <span class="h2">Спасибо!<br>Ваша заявка принята!</span> </div>
+            <div class="modal-success__subcircler"> <span class="h2 remote-blue">Теннис уже близко ;)</span> </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<!--main content-->
-<div class="head-offer">
+  </div>
+  <!--main content-->
+  <div class="head-offer">
     <div class="container h-100">
-        <div class="row h-100">
-            <div class="col-12">
-                <nav class="row globalnav align-items-center justify-content-sm-between justify-content-center">
-                    <div class="col-auto">
-                        <img src="img/logo.png" alt="логотип главный" class="globalnav__logo">
-                        <p class="globalnav__text-logo">ШКОЛА ЛЕБЕДЕВЫХ
-                            <br>ИРКУТСКИЙ ЦЕНТР ТЕННИСА
-                            <a href="" class="d-sm-none d-block globalnav__number-mob">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M13.7274 2.27258C12.2618 0.807007 10.3137 0 8.24097 0C8.24085 0 8.24036 0 8.24024 0C7.21509 0.00012207 6.21607 0.198608 5.27112 0.590088C4.32605 0.981567 3.47937 1.54761 2.7544 2.27258C1.28894 3.73804 0.481935 5.68652 0.481935 7.75903C0.481935 8.995 0.780153 10.2233 1.34522 11.3176L0.0410175 15.0435C-0.0509015 15.3063 0.014162 15.5919 0.211183 15.7888C0.349001 15.9268 0.530397 16 0.716921 16C0.796877 16 0.877687 15.9866 0.956545 15.959L4.68237 14.6549C5.77673 15.22 7.00501 15.5182 8.24097 15.5182C10.3135 15.5182 12.2618 14.7111 13.7274 13.2456C15.1929 11.7802 16 9.83167 16 7.75916C16 5.68652 15.193 3.73804 13.7274 2.27258ZM13.0638 12.582C11.7756 13.8704 10.0627 14.5797 8.24097 14.5797C7.12647 14.5797 6.01929 14.3041 5.03906 13.7823C4.86133 13.6879 4.65125 13.6716 4.46265 13.7377L1.07764 14.9224L2.26245 11.5374C2.32849 11.3485 2.31214 11.1384 2.21765 10.9608C1.69605 9.98083 1.42029 8.87366 1.42029 7.75903C1.42029 5.93726 2.12976 4.22437 3.41797 2.93616C4.70606 1.64807 6.4187 0.938599 8.24036 0.938354H8.24097C10.0629 0.938354 11.7756 1.64783 13.0638 2.93616C14.3522 4.22437 15.0616 5.93713 15.0616 7.75903C15.0616 9.58093 14.3522 11.2938 13.0638 12.582Z"
-                                          id="white-power-top"></path>
-                                    <path d="M10.8835 8.65755C10.5301 8.30414 9.95503 8.30414 9.60165 8.65755L9.21515 9.04407C8.25542 8.52109 7.47879 7.74442 6.95572 6.78464L7.34222 6.39811C7.69573 6.04471 7.69573 5.46964 7.34222 5.11623L6.30068 4.07463C5.94729 3.72122 5.37225 3.72122 5.01887 4.07463L4.18568 4.90786C3.70842 5.38515 3.68461 6.2057 4.11861 7.21842C4.49544 8.0977 5.18505 9.06413 6.06041 9.93955C6.93578 10.815 7.90215 11.5046 8.78139 11.8815C9.26252 12.0877 9.70014 12.1905 10.0783 12.1905C10.4961 12.1905 10.8413 12.0649 11.0918 11.8144L11.925 10.981V10.9812C12.0963 10.8099 12.1905 10.5823 12.1905 10.3402C12.1905 10.098 12.0963 9.87042 11.925 9.69927L10.8835 8.65755ZM10.4348 11.1574C10.2986 11.2936 9.87974 11.3413 9.14747 11.0276C8.37422 10.6962 7.51118 10.0764 6.71739 9.28253C5.9236 8.4887 5.30397 7.62573 4.97258 6.85244C4.65872 6.12013 4.70645 5.70109 4.84266 5.56488L5.65989 4.7476L6.66929 5.75717L6.1855 6.24111C5.96675 6.45988 5.91394 6.79165 6.05425 7.06673C6.69032 8.31405 7.68582 9.30961 8.93306 9.94572C9.20826 10.086 9.54001 10.0333 9.75876 9.81446L10.2426 9.33064L11.2521 10.3402L10.4348 11.1574Z"
-                                          id="white-power-top-2"></path>
-                                </svg>
-                                <span>8(924) 607-01-75</span>
-                            </a>
-                        </p>
-                    </div>
-                    <div class="col-auto d-md-block d-none">
-                        <address>г. Иркутск, ул. Игошина, 1Б</address>
-                    </div>
-                    <div class="col-auto d-sm-block d-none">
-                        <a href="tel:89246070175" class="globalnav__contact">
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path d="M13.7274 2.27258C12.2618 0.807007 10.3137 0 8.24097 0C8.24085 0 8.24036 0 8.24024 0C7.21509 0.00012207 6.21607 0.198608 5.27112 0.590088C4.32605 0.981567 3.47937 1.54761 2.7544 2.27258C1.28894 3.73804 0.481935 5.68652 0.481935 7.75903C0.481935 8.995 0.780153 10.2233 1.34522 11.3176L0.0410175 15.0435C-0.0509015 15.3063 0.014162 15.5919 0.211183 15.7888C0.349001 15.9268 0.530397 16 0.716921 16C0.796877 16 0.877687 15.9866 0.956545 15.959L4.68237 14.6549C5.77673 15.22 7.00501 15.5182 8.24097 15.5182C10.3135 15.5182 12.2618 14.7111 13.7274 13.2456C15.1929 11.7802 16 9.83167 16 7.75916C16 5.68652 15.193 3.73804 13.7274 2.27258ZM13.0638 12.582C11.7756 13.8704 10.0627 14.5797 8.24097 14.5797C7.12647 14.5797 6.01929 14.3041 5.03906 13.7823C4.86133 13.6879 4.65125 13.6716 4.46265 13.7377L1.07764 14.9224L2.26245 11.5374C2.32849 11.3485 2.31214 11.1384 2.21765 10.9608C1.69605 9.98083 1.42029 8.87366 1.42029 7.75903C1.42029 5.93726 2.12976 4.22437 3.41797 2.93616C4.70606 1.64807 6.4187 0.938599 8.24036 0.938354H8.24097C10.0629 0.938354 11.7756 1.64783 13.0638 2.93616C14.3522 4.22437 15.0616 5.93713 15.0616 7.75903C15.0616 9.58093 14.3522 11.2938 13.0638 12.582Z"
-                                      id="white-power-top"></path>
-                                <path d="M10.8835 8.65755C10.5301 8.30414 9.95503 8.30414 9.60165 8.65755L9.21515 9.04407C8.25542 8.52109 7.47879 7.74442 6.95572 6.78464L7.34222 6.39811C7.69573 6.04471 7.69573 5.46964 7.34222 5.11623L6.30068 4.07463C5.94729 3.72122 5.37225 3.72122 5.01887 4.07463L4.18568 4.90786C3.70842 5.38515 3.68461 6.2057 4.11861 7.21842C4.49544 8.0977 5.18505 9.06413 6.06041 9.93955C6.93578 10.815 7.90215 11.5046 8.78139 11.8815C9.26252 12.0877 9.70014 12.1905 10.0783 12.1905C10.4961 12.1905 10.8413 12.0649 11.0918 11.8144L11.925 10.981V10.9812C12.0963 10.8099 12.1905 10.5823 12.1905 10.3402C12.1905 10.098 12.0963 9.87042 11.925 9.69927L10.8835 8.65755ZM10.4348 11.1574C10.2986 11.2936 9.87974 11.3413 9.14747 11.0276C8.37422 10.6962 7.51118 10.0764 6.71739 9.28253C5.9236 8.4887 5.30397 7.62573 4.97258 6.85244C4.65872 6.12013 4.70645 5.70109 4.84266 5.56488L5.65989 4.7476L6.66929 5.75717L6.1855 6.24111C5.96675 6.45988 5.91394 6.79165 6.05425 7.06673C6.69032 8.31405 7.68582 9.30961 8.93306 9.94572C9.20826 10.086 9.54001 10.0333 9.75876 9.81446L10.2426 9.33064L11.2521 10.3402L10.4348 11.1574Z"
-                                      id="white-power-top-2"></path>
-                            </svg>
-                            <span>8(924) 607-01-75</span></a>
-                    </div>
-                </nav>
+      <div class="row h-100">
+        <div class="col-12">
+          <nav class="row globalnav align-items-center justify-content-sm-between justify-content-center">
+            <div class="col-auto"> <img src="img/logo.png" alt="логотип главный" class="globalnav__logo">
+              <p class="globalnav__text-logo">ШКОЛА ЛЕБЕДЕВЫХ
+                <br>ИРКУТСКИЙ ЦЕНТР ТЕННИСА
+                <a href="" class="d-sm-none d-block globalnav__number-mob">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.7274 2.27258C12.2618 0.807007 10.3137 0 8.24097 0C8.24085 0 8.24036 0 8.24024 0C7.21509 0.00012207 6.21607 0.198608 5.27112 0.590088C4.32605 0.981567 3.47937 1.54761 2.7544 2.27258C1.28894 3.73804 0.481935 5.68652 0.481935 7.75903C0.481935 8.995 0.780153 10.2233 1.34522 11.3176L0.0410175 15.0435C-0.0509015 15.3063 0.014162 15.5919 0.211183 15.7888C0.349001 15.9268 0.530397 16 0.716921 16C0.796877 16 0.877687 15.9866 0.956545 15.959L4.68237 14.6549C5.77673 15.22 7.00501 15.5182 8.24097 15.5182C10.3135 15.5182 12.2618 14.7111 13.7274 13.2456C15.1929 11.7802 16 9.83167 16 7.75916C16 5.68652 15.193 3.73804 13.7274 2.27258ZM13.0638 12.582C11.7756 13.8704 10.0627 14.5797 8.24097 14.5797C7.12647 14.5797 6.01929 14.3041 5.03906 13.7823C4.86133 13.6879 4.65125 13.6716 4.46265 13.7377L1.07764 14.9224L2.26245 11.5374C2.32849 11.3485 2.31214 11.1384 2.21765 10.9608C1.69605 9.98083 1.42029 8.87366 1.42029 7.75903C1.42029 5.93726 2.12976 4.22437 3.41797 2.93616C4.70606 1.64807 6.4187 0.938599 8.24036 0.938354H8.24097C10.0629 0.938354 11.7756 1.64783 13.0638 2.93616C14.3522 4.22437 15.0616 5.93713 15.0616 7.75903C15.0616 9.58093 14.3522 11.2938 13.0638 12.582Z" id="white-power-top"></path>
+                    <path d="M10.8835 8.65755C10.5301 8.30414 9.95503 8.30414 9.60165 8.65755L9.21515 9.04407C8.25542 8.52109 7.47879 7.74442 6.95572 6.78464L7.34222 6.39811C7.69573 6.04471 7.69573 5.46964 7.34222 5.11623L6.30068 4.07463C5.94729 3.72122 5.37225 3.72122 5.01887 4.07463L4.18568 4.90786C3.70842 5.38515 3.68461 6.2057 4.11861 7.21842C4.49544 8.0977 5.18505 9.06413 6.06041 9.93955C6.93578 10.815 7.90215 11.5046 8.78139 11.8815C9.26252 12.0877 9.70014 12.1905 10.0783 12.1905C10.4961 12.1905 10.8413 12.0649 11.0918 11.8144L11.925 10.981V10.9812C12.0963 10.8099 12.1905 10.5823 12.1905 10.3402C12.1905 10.098 12.0963 9.87042 11.925 9.69927L10.8835 8.65755ZM10.4348 11.1574C10.2986 11.2936 9.87974 11.3413 9.14747 11.0276C8.37422 10.6962 7.51118 10.0764 6.71739 9.28253C5.9236 8.4887 5.30397 7.62573 4.97258 6.85244C4.65872 6.12013 4.70645 5.70109 4.84266 5.56488L5.65989 4.7476L6.66929 5.75717L6.1855 6.24111C5.96675 6.45988 5.91394 6.79165 6.05425 7.06673C6.69032 8.31405 7.68582 9.30961 8.93306 9.94572C9.20826 10.086 9.54001 10.0333 9.75876 9.81446L10.2426 9.33064L11.2521 10.3402L10.4348 11.1574Z" id="white-power-top-2"></path>
+                  </svg> <span>8(924) 607-01-75</span> </a>
+              </p>
             </div>
-            <div class="offset-10 col-2 head-offer__ball">
-                <div class="paraclass">
-                    <img src="img/icons/ball.png" alt="" data-depth="0.6">
-                </div>
+            <div class="col-auto d-md-block d-none"> <address>г. Иркутск, ул. Игошина, 1Б</address> </div>
+            <div class="col-auto d-sm-block d-none">
+              <a href="tel:89246070175" class="globalnav__contact">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.7274 2.27258C12.2618 0.807007 10.3137 0 8.24097 0C8.24085 0 8.24036 0 8.24024 0C7.21509 0.00012207 6.21607 0.198608 5.27112 0.590088C4.32605 0.981567 3.47937 1.54761 2.7544 2.27258C1.28894 3.73804 0.481935 5.68652 0.481935 7.75903C0.481935 8.995 0.780153 10.2233 1.34522 11.3176L0.0410175 15.0435C-0.0509015 15.3063 0.014162 15.5919 0.211183 15.7888C0.349001 15.9268 0.530397 16 0.716921 16C0.796877 16 0.877687 15.9866 0.956545 15.959L4.68237 14.6549C5.77673 15.22 7.00501 15.5182 8.24097 15.5182C10.3135 15.5182 12.2618 14.7111 13.7274 13.2456C15.1929 11.7802 16 9.83167 16 7.75916C16 5.68652 15.193 3.73804 13.7274 2.27258ZM13.0638 12.582C11.7756 13.8704 10.0627 14.5797 8.24097 14.5797C7.12647 14.5797 6.01929 14.3041 5.03906 13.7823C4.86133 13.6879 4.65125 13.6716 4.46265 13.7377L1.07764 14.9224L2.26245 11.5374C2.32849 11.3485 2.31214 11.1384 2.21765 10.9608C1.69605 9.98083 1.42029 8.87366 1.42029 7.75903C1.42029 5.93726 2.12976 4.22437 3.41797 2.93616C4.70606 1.64807 6.4187 0.938599 8.24036 0.938354H8.24097C10.0629 0.938354 11.7756 1.64783 13.0638 2.93616C14.3522 4.22437 15.0616 5.93713 15.0616 7.75903C15.0616 9.58093 14.3522 11.2938 13.0638 12.582Z" id="white-power-top"></path>
+                  <path d="M10.8835 8.65755C10.5301 8.30414 9.95503 8.30414 9.60165 8.65755L9.21515 9.04407C8.25542 8.52109 7.47879 7.74442 6.95572 6.78464L7.34222 6.39811C7.69573 6.04471 7.69573 5.46964 7.34222 5.11623L6.30068 4.07463C5.94729 3.72122 5.37225 3.72122 5.01887 4.07463L4.18568 4.90786C3.70842 5.38515 3.68461 6.2057 4.11861 7.21842C4.49544 8.0977 5.18505 9.06413 6.06041 9.93955C6.93578 10.815 7.90215 11.5046 8.78139 11.8815C9.26252 12.0877 9.70014 12.1905 10.0783 12.1905C10.4961 12.1905 10.8413 12.0649 11.0918 11.8144L11.925 10.981V10.9812C12.0963 10.8099 12.1905 10.5823 12.1905 10.3402C12.1905 10.098 12.0963 9.87042 11.925 9.69927L10.8835 8.65755ZM10.4348 11.1574C10.2986 11.2936 9.87974 11.3413 9.14747 11.0276C8.37422 10.6962 7.51118 10.0764 6.71739 9.28253C5.9236 8.4887 5.30397 7.62573 4.97258 6.85244C4.65872 6.12013 4.70645 5.70109 4.84266 5.56488L5.65989 4.7476L6.66929 5.75717L6.1855 6.24111C5.96675 6.45988 5.91394 6.79165 6.05425 7.06673C6.69032 8.31405 7.68582 9.30961 8.93306 9.94572C9.20826 10.086 9.54001 10.0333 9.75876 9.81446L10.2426 9.33064L11.2521 10.3402L10.4348 11.1574Z" id="white-power-top-2"></path>
+                </svg> <span>8(924) 607-01-75</span></a>
             </div>
-            <div class="col-12 d-sm-none d-block text-center">
-                <h2 class="h1 head-offer__mob-offer">школа большого
-                    тенниса в иркутске</h2>
-            </div>
-            <div class="offset-sm-1 col-sm-auto col-6 align-self-end">
-                <img src="img/head-offer/bat.png" alt="" class="head-offer__bat">
-            </div>
-            <div class="col-md-5 col-6 head-offer__offerbach align-self-end">
-                <h1 class="h1 d-sm-block d-none">школа большого
+          </nav>
+        </div>
+        <div class="offset-10 col-2 head-offer__ball">
+          <div class="paraclass"> <img src="img/icons/ball.png" alt="" data-depth="0.6"> </div>
+        </div>
+        <div class="col-12 d-sm-none d-block text-center">
+          <h2 class="h1 head-offer__mob-offer">школа большого
+                    тенниса в иркутске</h2> </div>
+        <div class="offset-sm-1 col-sm-auto col-6 align-self-end"> <img src="img/head-offer/bat.png" alt="" class="head-offer__bat"> </div>
+        <div class="col-md-5 col-6 head-offer__offerbach align-self-end">
+          <h1 class="h1 d-sm-block d-none">школа большого
                     тенниса в иркутске</h1>
-                <p>групповые и индивидуальные тренировки
-                    для взрослых и детей от 3 лет</p>
-                <button class="button-mod show-call">ЗАПИСАТЬСЯ</button>
-            </div>
-            <div class="head-offer__svgball" data-link="#main"><img src="img/icons/ball.svg" alt=""></div>
+          <p>групповые и индивидуальные тренировки для взрослых и детей от 3 лет</p>
+          <button class="button-mod show-call">ЗАПИСАТЬСЯ</button>
         </div>
+        <div class="head-offer__svgball" data-link="#main"><img src="img/icons/ball.svg" alt=""></div>
+      </div>
     </div>
-</div>
-<div class="main" id="main">
+  </div>
+  <div class="main" id="main">
     <div class="free-bat bg">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-sm-4 offset-sm-2 d-sm-block d-none">
-                    <img src="img/free-bat/bat.png" alt="" class="free-bat__bat">
-                    <div class="paraclass">
-                        <img src="img/icons/ball.png" alt="" class="free-bat__ball" data-depth="0.7">
-                    </div>
-                </div>
-                <div class="col-sm-4 col-12">
-                    <span class="free-bat__offer h2 remote-blue">Мы бесплатно выдаем ракетки и мячи</span>
-                </div>
-                <div class="col-12 d-sm-none d-block">
-                    <img src="img/free-bat/mob-composition.png" alt="" class="free-bat__mob-img">
-                </div>
-            </div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-sm-4 offset-sm-2 d-sm-block d-none"> <img src="img/free-bat/bat.png" alt="" class="free-bat__bat">
+            <div class="paraclass"> <img src="img/icons/ball.png" alt="" class="free-bat__ball" data-depth="0.7"> </div>
+          </div>
+          <div class="col-sm-4 col-12"> <span class="free-bat__offer h2 remote-blue">Мы бесплатно выдаем ракетки и мячи</span> </div>
+          <div class="col-12 d-sm-none d-block"> <img src="img/free-bat/mob-composition.png" alt="" class="free-bat__mob-img"> </div>
         </div>
-        <img src="img/free-bat/half-ball.svg" alt="" class="free-bat__half-ball absolute-width d-sm-block d-none">
-    </div>
+      </div> <img src="img/free-bat/half-ball.svg" alt="" class="free-bat__half-ball absolute-width d-sm-block d-none"> </div>
     <div class="teach-offer bg">
-        <!-- <img src="img/icons/ball.svg" alt="" class="teach-offer__ball"> -->
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-sm-3 col-12 mob-order-3">
-                    <div class="paraclass">
-                        <img src="img/teach-offer/tennis-man.png" alt="" class="teach-offer__man" data-depth="0.4">
-                    </div>
-                </div>
-                <div class="col-sm-6 col-12 mob-order-2"><span class="teach-offer__text h2">у нас преподают опытные
+      <!-- <img src="img/icons/ball.svg" alt="" class="teach-offer__ball"> -->
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-sm-3 col-12 mob-order-3">
+            <div class="paraclass"> <img src="img/teach-offer/tennis-man.png" alt="" class="teach-offer__man" data-depth="0.4"> </div>
+          </div>
+          <div class="col-sm-6 col-12 mob-order-2"><span class="teach-offer__text h2">у нас преподают опытные
                     <br>тренеры и инструкторы</span></div>
-                <div class="col-sm-3 col-12 mob-order-1">
-                    <div class="paraclass">
-                        <img src="img/teach-offer/tennis-boy.png" alt="" class="teach-offer__boy" data-depth="0.2">
-                    </div>
-                </div>
-            </div>
+          <div class="col-sm-3 col-12 mob-order-1">
+            <div class="paraclass"> <img src="img/teach-offer/tennis-boy.png" alt="" class="teach-offer__boy" data-depth="0.2"> </div>
+          </div>
         </div>
+      </div>
     </div>
-    <div class="train-offer bg">
-        <img src="img/train-offer/half-ball.svg" alt="" class="train-offer__half-ball absolute-width d-sm-block d-none">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-12 col-sm-5 offset-sm-1 mob-order-2"><img src="img/train-offer/court.png" alt="" class="train-offer__court">
-                </div>
-                <div class="col-12 col-sm-5 mob-order-1"><span class="train-offer__text h2 remote-blue">тренировки проходят на открытых и закрытых кортах</span>
-                </div>
-            </div>
+    <div class="train-offer bg"> <img src="img/train-offer/half-ball.svg" alt="" class="train-offer__half-ball absolute-width d-sm-block d-none">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-sm-5 offset-sm-1 mob-order-2"><img src="img/train-offer/court.png" alt="" class="train-offer__court"> </div>
+          <div class="col-12 col-sm-5 mob-order-1"><span class="train-offer__text h2 remote-blue">тренировки проходят на открытых и закрытых кортах</span> </div>
         </div>
-        <img src="img/train-offer/half-ball-second.svg" alt="" class="train-offer__second-ball absolute-width d-sm-block d-none">
-    </div>
+      </div> <img src="img/train-offer/half-ball-second.svg" alt="" class="train-offer__second-ball absolute-width d-sm-block d-none"> </div>
     <div class="individual bg">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-12 col-sm-4 offset-sm-2"><span class="individual__text h2">Вы можете записаться на групповые или индивидуальные занятия</span>
-                </div>
-                <div class="col-12 col-sm-6"><img src="img/individual/people.png" alt="" class="individual__people"></div>
-            </div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-sm-4 offset-sm-2"><span class="individual__text h2">Вы можете записаться на групповые или индивидуальные занятия</span> </div>
+          <div class="col-12 col-sm-6"><img src="img/individual/people.png" alt="" class="individual__people"></div>
         </div>
+      </div>
     </div>
-    <div class="half-form bg">
-        <img src="img/half-form/half-ball.svg" alt="" class="half-form__ball absolute-width d-sm-block d-none">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-6 col-sm-8 col-12">
-                    <form action="" class="half-form__form">
-                        <div class="half-form__inform-first">
-                            <img src="img/icons/ball.svg" alt="" class="half-form__half-ball">
-                            <span class="h2">Узнайте все условия и получите 1 тренировку в подарок прямо сейчас!</span>
-                        </div>
-                        <div class="half-form__inform-second">
-                            <div class="row justify-content-center">
-                                <div class="col-8">
-                                    <div class="group">
-                                        <input type="text" class="name" name="name" autocomplete="off"
-                                               placeholder="Имя*" required>
-                                        <span class="bar"></span>
-                                        <label>Имя*</label>
-                                    </div>
-                                </div>
-                                <div class="col-8">
-                                    <div class="group">
-                                        <input type="text" class="phone" name="phone" autocomplete="off"
-                                               placeholder="Телефон*" required>
-                                        <span class="bar"></span>
-                                        <label>Телефон*</label>
-                                    </div>
-                                </div>
-                                <div class="col-8">
-                                    <select name="occupation" class="select-cokes" title>
-                                        <option value="" hidden>Выберите тип занятий</option>
-                                        <option value="">Групповый</option>
-                                        <option value="">Индивидуальные</option>
-                                    </select>
-                                </div>
-                                <div class="col-auto">
-                                    <div class="political">
-                                        <input type="checkbox" id="half-form__box" checked required>
-                                        <label for="half-form__box">Я принимаю <a href="/legal/">условия политики<br>конфиденциальности</a></label>
-                                    </div>
-                                </div>
-                                <div class="col-7">
-                                    <button class="button-form d-block mx-a">ОТПРАВИТЬ</button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
+    <div class="half-form bg"> <img src="img/half-form/half-ball.svg" alt="" class="half-form__ball absolute-width d-sm-block d-none">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-sm-8 col-12">
+            <form action="" class="half-form__form">
+              <div class="half-form__inform-first"> <img src="img/icons/ball.svg" alt="" class="half-form__half-ball"> <span class="h2">Узнайте все условия и получите 1 тренировку в подарок прямо сейчас!</span> </div>
+              <div class="half-form__inform-second">
+                <div class="row justify-content-center">
+                  <div class="col-8">
+                    <div class="group">
+                      <input type="text" class="name" name="name" autocomplete="off" placeholder="Имя*" required> <span class="bar"></span>
+                      <label>Имя*</label>
+                    </div>
+                  </div>
+                  <div class="col-8">
+                    <div class="group">
+                      <input type="text" class="phone" name="phone" autocomplete="off" placeholder="Телефон*" required> <span class="bar"></span>
+                      <label>Телефон*</label>
+                    </div>
+                  </div>
+                  <div class="col-8">
+                    <select name="occupation" class="select-cokes" title>
+                      <option value="" hidden>Выберите тип занятий</option>
+                      <option value="">Групповый</option>
+                      <option value="">Индивидуальные</option>
+                    </select>
+                  </div>
+                  <div class="col-auto">
+                    <div class="political">
+                      <input type="checkbox" id="half-form__box" checked required>
+                      <label for="half-form__box">Я принимаю <a href="/legal/">условия политики<br>конфиденциальности</a></label>
+                    </div>
+                  </div>
+                  <div class="col-7">
+                    <button class="button-form d-block mx-a">ОТПРАВИТЬ</button>
+                  </div>
                 </div>
-            </div>
+              </div>
+            </form>
+          </div>
         </div>
+      </div>
     </div>
     <div class="trainers bg">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12">
-                    <h2 class="h1">Иркутский центр тенниса</h2>
-                    <span class="h2 text-center">Наша команда тренеров и инструкторов</span>
-                </div>
-                <div class="col-lg-1 d-lg-block d-none"></div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-10">
-                    <div class="trainers__item">
-                        <video muted poster="video/arkadiy-lebedev.jpg">
-                            <source src="video/arkadiy-lebedev.mp4" type="video/mp4">
-                            <source src="video/arkadiy-lebedev.mp4" type="video/ogg">
-                        </video>
-                        <div class="trainers__item-info">
-                            <div class="for-100">
-                                <span class="trainers__text-name">Аркадий Георгиевич Лебедев</span>
-                                <span class="trainers__text-about">Тренерский стаж 33 года</span>
-                                <span class="trainers__text-about">Создатель и руководитель ИЦТ с 1988г.</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-10">
-                    <div class="trainers__item">
-                        <video muted poster="video/dmitriy-lebedev.jpg">
-                            <source src="video/dmitriy-lebedev.mp4" type="video/mp4">
-                            <source src="video/dmitriy-lebedev.mp4" type="video/ogg">
-                        </video>
-                        <div class="trainers__item-info">
-                            <div class="for-100">
-                                <span class="trainers__text-name">Дмитрий Аркадьевич Лебедев</span>
-                                <span class="trainers__text-about">Тренерский стаж 14 лет</span>
-                                <span class="trainers__text-about">Чемпион Иркутской области по теннису</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-10">
-                    <div class="trainers__item">
-                        <video muted poster="video/unknown_person.jpg">
-                            <source src="video/unknown_person.mp4" type="video/mp4">
-                            <source src="video/unknown_person.mp4" type="video/ogg">
-                        </video>
-                        <div class="trainers__item-info">
-                            <div class="for-100">
-                                <span class="trainers__text-name">Артем Иринцеев</span>
-                                <span class="trainers__text-about">Играет в теннис 6 лет</span>
-                                <span class="trainers__text-about">Инструктор</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-1 d-lg-block d-none"></div>
-                <div class="col-12 d-sm-none d-none">
-                    <button class="show-call">Нажми, чтобы увидеть больше тренеров</button>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-10">
-                    <div class="trainers__item">
-                        <video muted poster="video/unknown_person1.jpg">
-                            <source src="video/unknown_person1.mp4" type="video/mp4">
-                            <source src="video/unknown_person1.mp4" type="video/ogg">
-                        </video>
-                        <div class="trainers__item-info">
-                            <div class="for-100">
-                                <span class="trainers__text-name">Сергей Закарчевский</span>
-                                <span class="trainers__text-about">Играет в теннис 16 лет</span>
-                                <span class="trainers__text-about">Инструктор</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-10">
-                    <div class="trainers__item">
-                        <video muted poster="video/unknown_person1.jpg">
-                            <source src="video/unknown_person1.mp4" type="video/mp4">
-                            <source src="video/unknown_person1.mp4" type="video/ogg">
-                        </video>
-                        <div class="trainers__item-info">
-                            <div class="for-100">
-                                <span class="trainers__text-name">Вячеслав Ушаков</span>
-                                <span class="trainers__text-about">Играет в теннис 12 лет</span>
-                                <span class="trainers__text-about">Инструктор</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <h2 class="h1">Иркутский центр тенниса</h2> <span class="h2 text-center">Наша команда тренеров и инструкторов</span> </div>
+          <div class="col-xl-1 d-xl-block d-none"></div>
+          <div class="col-10 col-sm-6 col-lg-4 col-xl-3">
+            <div class="trainers__item" data-photo="video/arkadiy-lebedev.jpg"> <img src="video/arkadiy-lebedev-mob.jpg" alt="" class="trainers__image-mob">
+              <video muted>
+                <source src="video/arkadiy-lebedev.mp4" type="video/mp4">
+                <source src="video/arkadiy-lebedev.mp4" type="video/ogg"> </video>
+              <div class="trainers__item-info">
+                <div class="for-100"> <span class="trainers__text-name">Аркадий Георгиевич Лебедев</span> <span class="trainers__text-about">Тренерский стаж 33 года</span> <span class="trainers__text-about">Создатель и руководитель ИЦТ с 1988г.</span> </div>
+              </div>
             </div>
+          </div>
+          <div class="col-10 col-sm-6 col-lg-4 col-xl-3">
+            <div class="trainers__item" data-photo="video/dmitriy-lebedev.jpg"> <img src="video/dmitriy-lebedev-mob.jpg" alt="" class="trainers__image-mob">
+              <video muted>
+                <source src="video/dmitriy-lebedev.mp4?123" type="video/mp4">
+                <source src="video/dmitriy-lebedev.mp4?123" type="video/ogg"> </video>
+              <div class="trainers__item-info">
+                <div class="for-100"> <span class="trainers__text-name">Дмитрий Аркадьевич Лебедев</span> <span class="trainers__text-about">Тренерский стаж 14 лет</span> <span class="trainers__text-about">Чемпион Иркутской области по теннису</span> </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-10 col-sm-6 col-lg-4 col-xl-3">
+            <div class="trainers__item" data-photo="video/unknown_person.jpg"> <img src="video/unknown_person-mob.jpg" alt="" class="trainers__image-mob">
+              <video muted>
+                <source src="video/unknown_person.mp4" type="video/mp4">
+                <source src="video/unknown_person.mp4" type="video/ogg"> </video>
+              <div class="trainers__item-info">
+                <div class="for-100"> <span class="trainers__text-name">Артем Иринцеев</span> <span class="trainers__text-about">Играет в теннис 6 лет</span> <span class="trainers__text-about">Инструктор</span> </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-1 d-xl-block d-none"></div>
+          <div class="col-12 d-sm-none d-none">
+            <button class="show-call">Нажми, чтобы увидеть больше тренеров</button>
+          </div>
+          <div class="col-10 col-sm-6 col-lg-4 col-xl-3">
+            <div class="trainers__item" data-photo="video/unknown_person1.jpg">
+            <img src="video/unknown_person1-mob.jpg" alt="" class="trainers__image-mob">
+              <video muted>
+                <source src="video/unknown_person1.mp4" type="video/mp4">
+                <source src="video/unknown_person1.mp4" type="video/ogg"> </video>
+              <div class="trainers__item-info">
+                <div class="for-100"> <span class="trainers__text-name">Сергей Закарчевский</span> <span class="trainers__text-about">Играет в теннис 16 лет</span> <span class="trainers__text-about">Инструктор</span> </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-10 col-sm-6 col-lg-4 col-xl-3">
+            <div class="trainers__item" data-photo="video/unknown_person1.jpg">
+            <img src="video/unknown_person1-mob.jpg" alt="" class="trainers__image-mob">
+              <video muted>
+                <source src="video/unknown_person1.mp4" type="video/mp4">
+                <source src="video/unknown_person1.mp4" type="video/ogg"> </video>
+              <div class="trainers__item-info">
+                <div class="for-100"> <span class="trainers__text-name">Вячеслав Ушаков</span> <span class="trainers__text-about">Играет в теннис 12 лет</span> <span class="trainers__text-about">Инструктор</span> </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-    <div class="about bg">
-        <img src="img/train-offer/half-ball.svg" alt="" class="about__half-ball absolute-width d-sm-block d-none">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-12">
-                    <h1 class="h1">Теннис Иркутск</h1>
+    <div class="about bg"> <img src="img/train-offer/half-ball.svg" alt="" class="about__half-ball absolute-width d-sm-block d-none">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12">
+            <h1 class="h1">Теннис Иркутск</h1> <span class="h2">О ШКОЛЕ</span> </div>
+          <div class="col-sm-6 col-12"> <img src="img/about/mob-pic_first.jpg" alt="" class="about__image d-sm-none d-block">
+            <p>"Иркутский центр тенниса".
+              <br>Школа Лебедевых – Иркутский центр тенниса создан в 1988 году, ещё в советское время, в годы перестройки, Аркадием Лебедевым.
+              <br>В этом году нам 30 лет!
+              <br>30 лет назад на базе теннисных кортов спорткомбината "Труд" в Иркутске появилась школа тенниса и "Клуб любителей тенниса", которые возглавил Аркадий Лебедев.
+              <br>Выпускниками этой школы стали многие известные иркутские теннисисты:
+              <br>- Дмитрий Лебедев, старший тренер Иркутского центра тенниса. Став одним из ведущих теннисистов области, он сначала работал в центре в качестве инструктора, затем тренера. А в этом году стал старшим тренером, взяв под свой контроль методику тренировок.
+              <br>- Станислав Нечаев, президент Федерации тенниса с 2010 по 2014 г.г., руководитель центра тенниса Юридического института ИГУ с 2004г., автор кандидатской диссертации "ПРАКТИКА ОРГАНИЗАЦИИ И ОСОБЕННОСТИ РАЗВИТИЯ
+              <br>ТЕННИСА КАК СОЦИАЛЬНО-ПОЛИТИЧЕСКОГО И
+              <br>КУЛЬТУРНОГО ЯВЛЕНИЯ В ИРКУТСКОМ РЕГИОНЕ В XX–XXI вв. <a href="https://drive.google.com/file/d/1LA9iJ_yOTJqwEOpGulKTzszwQiSGe2vI/view?usp=drivesdk" target="_blank">(исторический аспект)</a>" .
+              <br>- Мария Митюкова, кмс по теннису, победительница многих российских и международных соревнований первые годы занималась у нас, пока не уехала в теннисные академии Адлера, Италии и Москвы.
+              <br>- Дмитрий Матиенко, руководитель теннисной школы в Ангарске, осваивал азы тенниса у нас в конце 80-х. Всех не перечислить... </p> <img src="img/about/first-pic.jpg" alt="" class="about__image d-sm-block d-none"> </div>
+          <div class="col-sm-6 col-12"> <img src="img/about/second-pic.jpg" alt="" class="about__image about__image-mb">
+            <p>Теннисные корты "Труда" тогда, в конце восьмидесятых и в девяностые годы, стали центром теннисной жизни Иркутского региона.
+              <br>Здесь нами проводилось большинство областных теннисных турниров. Велся областной рейтинг игроков. Благодаря этому теннис в Иркутске стал очень популярным и массовым. На Первенстве области среди детей число участников доходило до 250-ти человек! Также для стали массовыми соревнования: первенство между школьными командами, между командами ВУЗов, турнир семейных команд, турнир "Большой чайник" и другие.
+              <br>Сборные команды области выезжали на теннисные соревнования в КНР.
+              <br>На базе "Иркутского центра тенниса" была была создана Федерация тенниса Иркутской области, которую Аркадий Лебедев возглавлял с 1990-го до 2010-го года.
+              <br>С 2010 года спортивно-тренировочной базой "Иркутского центра тенниса" стали великолепные грунтовые корты ИРНИТУ и корты Юридического института ИГУ.
+              <br>Наша школа тенниса укрупняется и развивается, совершенствуется методика тренировок, растёт тренерский коллектив.
+              <br>Занятия проводятся групповые и индивидуальные.
+              <br>Группы делятся по уровню обучения на начальные, средние и выше среднего, продвинутые.
+              <br>На наших кортах проходит большинство областных турниров, а для учеников мы проводим систему соревнований ИЦТ-ТУР, в которых победитель награждается поездкой на "Кубок Кремля" в качестве VIP-гостя.
+              <br>Записывайтесь на занятия по Большому теннису! </p>
+          </div>
+          <div class="col-12">
+            <div class="owl-carousel">
+              <div class="owl-carousel__bdrs">
+                <div class="owl-carousel__img"><img src="img/about/slider/12/1.jpg" alt=""></div>
+                <div class="owl-carousel__text"> <span class="h2">1984 год</span> <span>Аркадий Лебедев</span> </div>
+              </div>
+              <div class="owl-carousel__bdrs">
+                <div class="owl-carousel__img"><img src="img/about/slider/5/1.jpg" alt=""></div>
+                <div class="owl-carousel__text"> <span class="h2">1988 год</span> <span>Аркадий Лебедев на кортах Труда</span> </div>
+              </div>
+              <div class="owl-carousel__bdrs">
+                <div class="owl-carousel__img"><img src="img/about/slider/2/1.jpg" alt=""></div>
+                <div class="owl-carousel__text"> <span class="h2">1997 год</span> <span>Турнир во Дворце Спорта "Труд" команда "Иркутского центра тенниса"</span> </div>
+              </div>
+              <div class="owl-carousel__bdrs">
+                <div class="owl-carousel__img"><img src="img/about/slider/6/1.jpg" alt=""></div>
+                <div class="owl-carousel__text"> <span class="h2">1998 год</span> <span>Корты Труда</span> </div>
+              </div>
+              <div class="owl-carousel__bdrs">
+                <div class="owl-carousel__img">
+                  <div class="inner-carousel">
+                    <div><img src="img/about/slider/7/1.jpg" alt="Теннис Иркутск"></div>
+                    <div><img src="img/about/slider/7/2.jpg" alt="Теннис Иркутск"></div>
+                  </div>
                 </div>
-                <div class="col-sm-6 col-12">
-                    <img src="img/about/mob-pic_first.jpg" alt="" class="about__image d-sm-none d-block">
-                    <p>"Иркутский центр тенниса".
-                        <br>Школа Лебедевых – Иркутский центр тенниса создан в 1988 году, ещё в советское время, в годы перестройки, Аркадием Лебедевым.
-                        <br>В этом году нам 30 лет!
-                        <br>30 лет назад на базе теннисных кортов спорткомбината "Труд" в Иркутске появилась школа тенниса и "Клуб любителей тенниса", которые возглавил Аркадий Лебедев.
-                        <br>Выпускниками этой школы стали многие известные иркутские теннисисты:
-                        <br>- Дмитрий Лебедев, старший тренер Иркутского центра тенниса. Став одним из ведущих теннисистов области, он сначала работал в центре в качестве инструктора, затем тренера. А в этом году стал старшим тренером, взяв под свой контроль методику тренировок.
-                        <br>- Станислав Нечаев, президент Федерации тенниса с 2010 по 2014 г.г., руководитель центра тенниса Юридического института ИГУ с 2004г., автор кандидатской диссертации "ПРАКТИКА ОРГАНИЗАЦИИ И ОСОБЕННОСТИ РАЗВИТИЯ
-                        <br>ТЕННИСА КАК СОЦИАЛЬНО-ПОЛИТИЧЕСКОГО И
-                        <br>КУЛЬТУРНОГО ЯВЛЕНИЯ В ИРКУТСКОМ РЕГИОНЕ В XX–XXI вв.
-                        <a href="https://drive.google.com/file/d/1LA9iJ_yOTJqwEOpGulKTzszwQiSGe2vI/view?usp=drivesdk" target="_blank">(исторический аспект)</a>" .
-                        <br>- Мария Митюкова, кмс по теннису, победительница многих российских и международных соревнований первые годы занималась у нас, пока не уехала в теннисные академии Адлера, Италии и Москвы.
-                        <br>- Дмитрий Матиенко, руководитель теннисной школы в Ангарске, осваивал азы тенниса у нас в конце 80-х. Всех не перечислить...
-                    </p>
-                    <img src="img/about/first-pic.jpg" alt="" class="about__image d-sm-block d-none">
+                <div class="owl-carousel__text"> <span class="h2">2000 год</span> <span>Аркадий Лебедев</span> </div>
+              </div>
+              <div class="owl-carousel__bdrs">
+                <div class="owl-carousel__img"><img src="img/about/slider/11/1.jpg" alt=""></div>
+                <div class="owl-carousel__text"> <span class="h2">2001 год</span> <span>Аркадий и Дмитрий Лебедевы</span> </div>
+              </div>
+              <div class="owl-carousel__bdrs">
+                <div class="owl-carousel__img"><img src="img/about/slider/10/1.jpg" alt=""></div>
+                <div class="owl-carousel__text"> <span class="h2">2002 год</span> <span>Дмитрий берет автограф у Винус Уильямс на Кубке Кремля</span> </div>
+              </div>
+              <div class="owl-carousel__bdrs">
+                <div class="owl-carousel__img"><img src="img/about/slider/1/1.jpg" alt=""></div>
+                <div class="owl-carousel__text"> <span class="h2">2002 год</span> <span>Аркадий Лебедев и Дмитрий Лебедев, теннисные корты Спорткомбината Труд</span> </div>
+              </div>
+              <div class="owl-carousel__bdrs">
+                <div class="owl-carousel__img">
+                  <div class="inner-carousel">
+                    <div><img src="img/about/slider/4/1.jpg" alt="Теннис. Турнир семейных команд"></div>
+                    <div><img src="img/about/slider/4/2.jpg" alt="Теннис. Турнир семейных команд"></div>
+                    <div><img src="img/about/slider/4/3.jpg" alt="Теннис. Турнир семейных команд"></div>
+                    <div><img src="img/about/slider/4/4.jpg" alt="Теннис. Турнир семейных команд"></div>
+                  </div>
                 </div>
-                <div class="col-sm-6 col-12">
-                    <img src="img/about/second-pic.jpg" alt="" class="about__image about__image-mb">
-                    <p>Теннисные корты "Труда" тогда, в конце восьмидесятых и в девяностые годы, стали центром теннисной жизни Иркутского региона.
-                        <br>Здесь нами проводилось большинство областных теннисных турниров. Велся областной рейтинг игроков. Благодаря этому теннис в Иркутске стал очень популярным и массовым. На Первенстве области среди детей число участников доходило до 250-ти человек! Также для стали массовыми соревнования: первенство между школьными командами, между командами ВУЗов, турнир семейных команд, турнир  "Большой чайник" и другие.
-                        <br>Сборные команды области выезжали на теннисные соревнования в КНР.
-                        <br>На базе "Иркутского центра тенниса" была была создана Федерация тенниса Иркутской области, которую Аркадий Лебедев возглавлял с 1990-го до 2010-го года.
-                        <br>С 2010 года спортивно-тренировочной базой "Иркутского центра тенниса" стали великолепные грунтовые корты ИРНИТУ и корты Юридического института ИГУ.
-                        <br>Наша школа тенниса укрупняется и развивается, совершенствуется методика тренировок, растёт тренерский коллектив.
-                        <br>Занятия проводятся групповые и индивидуальные.
-                        <br>Группы делятся по уровню обучения на начальные, средние и выше среднего, продвинутые.
-                        <br>На наших кортах проходит большинство областных турниров, а для учеников мы проводим систему соревнований ИЦТ-ТУР, в которых победитель награждается поездкой на "Кубок Кремля" в качестве VIP-гостя.
-                        <br>Записывайтесь на занятия по Большому теннису!
-                    </p>
-                </div>
-                <div class="col-12">
-                    <div class="owl-carousel">
-                        <div class="owl-carousel__bdrs">
-                            <div class="owl-carousel__img"><img src="img/about/slider/12/1.jpg" alt=""></div>
-                            <div class="owl-carousel__text">
-                                <span class="h2">1984 год</span>
-                                <span>Аркадий Лебедев</span>
-                            </div>
-                        </div>
-                        <div class="owl-carousel__bdrs">
-                            <div class="owl-carousel__img"><img src="img/about/slider/5/1.jpg" alt=""></div>
-                            <div class="owl-carousel__text">
-                                <span class="h2">1988 год</span>
-                                <span>Аркадий Лебедев на кортах Труда</span>
-                            </div>
-                        </div>
-                        <div class="owl-carousel__bdrs">
-                            <div class="owl-carousel__img"><img src="img/about/slider/2/1.jpg" alt=""></div>
-                            <div class="owl-carousel__text">
-                                <span class="h2">1997 год</span>
-                                <span>Турнир во Дворце Спорта "Труд" команда "Иркутского центра тенниса"</span>
-                            </div>
-                        </div>
-                        <div class="owl-carousel__bdrs">
-                            <div class="owl-carousel__img"><img src="img/about/slider/6/1.jpg" alt=""></div>
-                            <div class="owl-carousel__text">
-                                <span class="h2">1998 год</span>
-                                <span>Корты Труда</span>
-                            </div>
-                        </div>
-                        <div class="owl-carousel__bdrs">
-                            <div class="owl-carousel__img">
-                                <div class="inner-carousel">
-                                    <div><img src="img/about/slider/7/1.jpg" alt="Теннис Иркутск"></div>
-                                    <div><img src="img/about/slider/7/2.jpg" alt="Теннис Иркутск"></div>
-                                </div>
-                            </div>
-                            <div class="owl-carousel__text">
-                                <span class="h2">2000 год</span>
-                                <span>Аркадий Лебедев</span>
-                            </div>
-                        </div>
-                        <div class="owl-carousel__bdrs">
-                            <div class="owl-carousel__img"><img src="img/about/slider/11/1.jpg" alt=""></div>
-                            <div class="owl-carousel__text">
-                                <span class="h2">2001 год</span>
-                                <span>Аркадий и Дмитрий Лебедевы</span>
-                            </div>
-                        </div>
-                        <div class="owl-carousel__bdrs">
-                            <div class="owl-carousel__img"><img src="img/about/slider/10/1.jpg" alt=""></div>
-                            <div class="owl-carousel__text">
-                                <span class="h2">2002 год</span>
-                                <span>Беру автограф у Винус Уильямс на Кубке Кремля</span>
-                            </div>
-                        </div>
-                        <div class="owl-carousel__bdrs">
-                            <div class="owl-carousel__img"><img src="img/about/slider/1/1.jpg" alt=""></div>
-                            <div class="owl-carousel__text">
-                                <span class="h2">2002 год</span>
-                                <span>Аркадий Лебедев и Дмитрий Лебедев, теннисные корты Спорткомбината Труд</span>
-                            </div>
-                        </div>
-                        <div class="owl-carousel__bdrs">
-                            <div class="owl-carousel__img">
-                                <div class="inner-carousel">
-                                    <div><img src="img/about/slider/4/1.jpg" alt="Теннис. Турнир семейных команд"></div>
-                                    <div><img src="img/about/slider/4/2.jpg" alt="Теннис. Турнир семейных команд"></div>
-                                    <div><img src="img/about/slider/4/3.jpg" alt="Теннис. Турнир семейных команд"></div>
-                                    <div><img src="img/about/slider/4/4.jpg" alt="Теннис. Турнир семейных команд"></div>
-                                </div>
-                            </div>
-                            <div class="owl-carousel__text">
-                                <span class="h2">2002 год</span>
-                                <span>Турнир семейных команд</span>
-                            </div>
-                        </div>
-                        <div class="owl-carousel__bdrs">
-                            <div class="owl-carousel__img"><img src="img/about/slider/13/1.jpg" alt=""></div>
-                            <div class="owl-carousel__text">
-                                <span class="h2">2002 год</span>
-                                <span>Аркадий и Дмитрий Лебедевы</span>
-                            </div>
-                        </div>
-                        <div class="owl-carousel__bdrs">
-                            <div class="owl-carousel__img"><img src="img/about/slider/8/1.jpg" alt=""></div>
-                            <div class="owl-carousel__text">
-                                <span class="h2">2003 год</span>
-                                <span>Аркадий Лебедев</span>
-                            </div>
-                        </div>
-                        <div class="owl-carousel__bdrs">
-                            <div class="owl-carousel__img"><img src="img/about/slider/3/1.jpg" alt=""></div>
-                            <div class="owl-carousel__text">
-                                <span class="h2">Первое место</span>
-                                <span>По Иркутской области</span>
-                            </div>
-                        </div>
-                        <div class="owl-carousel__bdrs">
-                            <div class="owl-carousel__img"><img src="img/about/slider/9/1.jpg" alt=""></div>
-                            <div class="owl-carousel__text">
-                                <span class="h2">Аркадий Лебедев</span>
-                                <span>Корты Труда</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <div class="owl-carousel__text"> <span class="h2">2002 год</span> <span>Турнир семейных команд</span> </div>
+              </div>
+              <div class="owl-carousel__bdrs">
+                <div class="owl-carousel__img"><img src="img/about/slider/13/1.jpg" alt=""></div>
+                <div class="owl-carousel__text"> <span class="h2">2002 год</span> <span>Аркадий и Дмитрий Лебедевы</span> </div>
+              </div>
+              <div class="owl-carousel__bdrs">
+                <div class="owl-carousel__img"><img src="img/about/slider/8/1.jpg" alt=""></div>
+                <div class="owl-carousel__text"> <span class="h2">2003 год</span> <span>Аркадий Лебедев</span> </div>
+              </div>
+              <div class="owl-carousel__bdrs">
+                <div class="owl-carousel__img"><img src="img/about/slider/3/1.jpg" alt=""></div>
+                <div class="owl-carousel__text"> <span class="h2">Первое место</span> <span>По Иркутской области</span> </div>
+              </div>
+              <div class="owl-carousel__bdrs">
+                <div class="owl-carousel__img"><img src="img/about/slider/9/1.jpg" alt=""></div>
+                <div class="owl-carousel__text"> <span class="h2">Аркадий Лебедев</span> <span>Корты Труда</span> </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
     <div class="instagram bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <a href="https://www.instagram.com/tennis___irkutsk/" target="_blank" class="instagram__link">
-                        <img src="img/icons/inst.svg" alt="" class="instagram__link-icon">
-                    </a>
-                </div>
-                <div class="col-sm-4 col-12">
-                    <a href="https://www.instagram.com/p/BlFSQvmCI58/?taken-by=tennis___irkutsk" target="_blank" class="instagram__pic">
-                        <img src="img/instagram/first.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 col-12">
-                    <a href="https://www.instagram.com/p/BoQgWl7Bd4Q/?taken-by=tennis___irkutsk" target="_blank" class="instagram__pic">
-                        <img src="img/instagram/second.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 col-12">
-                    <a href="https://www.instagram.com/p/BoqeAlEhvho/?taken-by=tennis___irkutsk" target="_blank" class="instagram__pic">
-                        <img src="img/instagram/third.jpg" alt="">
-                    </a>
-                </div>
-                <a href="https://www.instagram.com/tennis___irkutsk/" target="_blank" class="instagram__button">МЫ В INSTAGRAM</a>
-            </div>
-        </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <a href="https://www.instagram.com/tennis___irkutsk/" target="_blank" class="instagram__link"> <img src="img/icons/inst.svg" alt="" class="instagram__link-icon"> </a>
+          </div>
+          <div class="col-sm-4 col-6">
+            <a href="https://www.instagram.com/p/BlFSQvmCI58/?taken-by=tennis___irkutsk" target="_blank" class="instagram__pic"> <img src="img/instagram/first.jpg" alt=""> </a>
+          </div>
+          <div class="col-sm-4 col-6">
+            <a href="https://www.instagram.com/p/BoQgWl7Bd4Q/?taken-by=tennis___irkutsk" target="_blank" class="instagram__pic"> <img src="img/instagram/second.jpg" alt=""> </a>
+          </div>
+          <div class="col-sm-4 col-6">
+            <a href="https://www.instagram.com/p/BoqeAlEhvho/?taken-by=tennis___irkutsk" target="_blank" class="instagram__pic"> <img src="img/instagram/third.jpg" alt=""> </a>
+          </div> <a href="https://www.instagram.com/tennis___irkutsk/" target="_blank" class="instagram__button">МЫ В INSTAGRAM</a> </div>
+      </div>
     </div>
-    <div class="learn bg">
-        <img src="img/learn/half-ball.svg" alt="" class="learn__half-ball d-sm-block d-none">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-4 col-sm-6 col-12 mob-order-2">
-                    <img src="img/learn/man.png" alt="" class="learn__man">
-                </div>
-                <div class="col-lg-8 col-sm-6 col-12 mob-order-1">
-                    <h3 class="h1">научим играть в теннис, даже если вы никогда раньше не пробовали</h3>
-                    <p>поможем стать частью уникального сообщества и незаметно преодолеть все барьеры в игре</p>
-                    <button class="button-mod show-call">ЗАПИСАТЬСЯ</button>
-                </div>
-            </div>
+    <div class="learn bg"> <img src="img/learn/half-ball.svg" alt="" class="learn__half-ball d-sm-block d-none">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-4 col-sm-6 col-12 mob-order-2"> <img src="img/learn/man.png" alt="" class="learn__man"> </div>
+          <div class="col-lg-8 col-sm-6 col-12 mob-order-1">
+            <h3 class="h1">научим играть в теннис, даже если вы никогда раньше не пробовали</h3>
+            <p>поможем стать частью уникального сообщества и незаметно преодолеть все барьеры в игре</p>
+            <button class="button-mod show-call">ЗАПИСАТЬСЯ</button>
+          </div>
         </div>
-        <div class="learn__inMap">
-            <div class="container align-self-center">
-                <div class="row align-items-center justify-content-end">
-                    <div class="col-lg-5 col-sm-6 col-12">
-                        <form action="" class="learn__form">
-                            <div class="learn__form-first">
-                                <span class="h2">Найдите ближайший к вам корт на карте Иркутска</span>
-                            </div>
-                            <div class="learn__form-second">
-                                <div class="row justify-content-center">
-                                    <div class="col-8">
-                                        <span class="learn__form-spanec">Если у вас возникли вопросы - оставьте заявку сейчас и мы Вам перезвоним</span>
-                                    </div>
-                                    <div class="col-9">
-                                        <div class="group">
-                                            <input type="text" class="phone" name="phone" autocomplete="off"
-                                                   placeholder="Телефон*" required>
-                                            <span class="bar"></span>
-                                            <label>Телефон*</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-auto">
-                                        <div class="political">
-                                            <input type="checkbox" id="learn-box" checked required>
-                                            <label for="learn-box">Я принимаю <a href="/legal/">условия политики<br>конфиденциальности</a></label>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-7 col-9">
-                                        <button class="button-form d-block mx-a">ПЕРЕЗВОНИТЕ МНЕ</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
+      </div>
+      <div class="learn__inMap">
+        <div class="container align-self-center">
+          <div class="row align-items-center justify-content-end">
+            <div class="col-lg-5 col-sm-6 col-12">
+              <form action="" class="learn__form">
+                <div class="learn__form-first"> <span class="h2">Найдите ближайший к вам корт на карте Иркутска</span> </div>
+                <div class="learn__form-second">
+                  <div class="row justify-content-center">
+                    <div class="col-8"> <span class="learn__form-spanec">Если у вас возникли вопросы - оставьте заявку сейчас и мы Вам перезвоним</span> </div>
+                    <div class="col-9">
+                      <div class="group">
+                        <input type="text" class="phone" name="phone" autocomplete="off" placeholder="Телефон*" required> <span class="bar"></span>
+                        <label>Телефон*</label>
+                      </div>
                     </div>
+                    <div class="col-auto">
+                      <div class="political">
+                        <input type="checkbox" id="learn-box" checked required>
+                        <label for="learn-box">Я принимаю <a href="/legal/">условия политики<br>конфиденциальности</a></label>
+                      </div>
+                    </div>
+                    <div class="col-md-7 col-9">
+                      <button class="button-form d-block mx-a">ПЕРЕЗВОНИТЕ МНЕ</button>
+                    </div>
+                  </div>
                 </div>
+              </form>
             </div>
-            <div id="map"></div>
+          </div>
         </div>
+        <div id="map"></div>
+      </div>
     </div>
     <div class="contacts bg">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-7 col-md-8 col-9">
-                    <h2>Контакты</h2>
-                    <p>Мы проводим тренировки по теннису в разных районах Иркутска.
-                        <br>Позвоните или напишите нам в WhatsApp и узнайте ближайший корт и условия тренировок.</p>
-                    <a href="tel:89246070175" class="contacts__number">
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M13.7274 2.27258C12.2618 0.807007 10.3137 0 8.24097 0C8.24085 0 8.24036 0 8.24024 0C7.21509 0.00012207 6.21607 0.198608 5.27112 0.590088C4.32605 0.981567 3.47937 1.54761 2.7544 2.27258C1.28894 3.73804 0.481935 5.68652 0.481935 7.75903C0.481935 8.995 0.780153 10.2233 1.34522 11.3176L0.0410175 15.0435C-0.0509015 15.3063 0.014162 15.5919 0.211183 15.7888C0.349001 15.9268 0.530397 16 0.716921 16C0.796877 16 0.877687 15.9866 0.956545 15.959L4.68237 14.6549C5.77673 15.22 7.00501 15.5182 8.24097 15.5182C10.3135 15.5182 12.2618 14.7111 13.7274 13.2456C15.1929 11.7802 16 9.83167 16 7.75916C16 5.68652 15.193 3.73804 13.7274 2.27258ZM13.0638 12.582C11.7756 13.8704 10.0627 14.5797 8.24097 14.5797C7.12647 14.5797 6.01929 14.3041 5.03906 13.7823C4.86133 13.6879 4.65125 13.6716 4.46265 13.7377L1.07764 14.9224L2.26245 11.5374C2.32849 11.3485 2.31214 11.1384 2.21765 10.9608C1.69605 9.98083 1.42029 8.87366 1.42029 7.75903C1.42029 5.93726 2.12976 4.22437 3.41797 2.93616C4.70606 1.64807 6.4187 0.938599 8.24036 0.938354H8.24097C10.0629 0.938354 11.7756 1.64783 13.0638 2.93616C14.3522 4.22437 15.0616 5.93713 15.0616 7.75903C15.0616 9.58093 14.3522 11.2938 13.0638 12.582Z"
-                                  id="white-power"></path>
-                            <path d="M10.8835 8.65755C10.5301 8.30414 9.95503 8.30414 9.60165 8.65755L9.21515 9.04407C8.25542 8.52109 7.47879 7.74442 6.95572 6.78464L7.34222 6.39811C7.69573 6.04471 7.69573 5.46964 7.34222 5.11623L6.30068 4.07463C5.94729 3.72122 5.37225 3.72122 5.01887 4.07463L4.18568 4.90786C3.70842 5.38515 3.68461 6.2057 4.11861 7.21842C4.49544 8.0977 5.18505 9.06413 6.06041 9.93955C6.93578 10.815 7.90215 11.5046 8.78139 11.8815C9.26252 12.0877 9.70014 12.1905 10.0783 12.1905C10.4961 12.1905 10.8413 12.0649 11.0918 11.8144L11.925 10.981V10.9812C12.0963 10.8099 12.1905 10.5823 12.1905 10.3402C12.1905 10.098 12.0963 9.87042 11.925 9.69927L10.8835 8.65755ZM10.4348 11.1574C10.2986 11.2936 9.87974 11.3413 9.14747 11.0276C8.37422 10.6962 7.51118 10.0764 6.71739 9.28253C5.9236 8.4887 5.30397 7.62573 4.97258 6.85244C4.65872 6.12013 4.70645 5.70109 4.84266 5.56488L5.65989 4.7476L6.66929 5.75717L6.1855 6.24111C5.96675 6.45988 5.91394 6.79165 6.05425 7.06673C6.69032 8.31405 7.68582 9.30961 8.93306 9.94572C9.20826 10.086 9.54001 10.0333 9.75876 9.81446L10.2426 9.33064L11.2521 10.3402L10.4348 11.1574Z"
-                                  id="white-power-2"></path>
-                        </svg>
-                        <span>8(924) 607-01-75</span></a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-7 col-md-8 col-9">
+            <h2>Контакты</h2>
+            <p>Мы проводим тренировки по теннису в разных районах Иркутска.
+              <br>Позвоните или напишите нам в WhatsApp и узнайте ближайший корт и условия тренировок.</p>
+            <a href="tel:89246070175" class="contacts__number">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.7274 2.27258C12.2618 0.807007 10.3137 0 8.24097 0C8.24085 0 8.24036 0 8.24024 0C7.21509 0.00012207 6.21607 0.198608 5.27112 0.590088C4.32605 0.981567 3.47937 1.54761 2.7544 2.27258C1.28894 3.73804 0.481935 5.68652 0.481935 7.75903C0.481935 8.995 0.780153 10.2233 1.34522 11.3176L0.0410175 15.0435C-0.0509015 15.3063 0.014162 15.5919 0.211183 15.7888C0.349001 15.9268 0.530397 16 0.716921 16C0.796877 16 0.877687 15.9866 0.956545 15.959L4.68237 14.6549C5.77673 15.22 7.00501 15.5182 8.24097 15.5182C10.3135 15.5182 12.2618 14.7111 13.7274 13.2456C15.1929 11.7802 16 9.83167 16 7.75916C16 5.68652 15.193 3.73804 13.7274 2.27258ZM13.0638 12.582C11.7756 13.8704 10.0627 14.5797 8.24097 14.5797C7.12647 14.5797 6.01929 14.3041 5.03906 13.7823C4.86133 13.6879 4.65125 13.6716 4.46265 13.7377L1.07764 14.9224L2.26245 11.5374C2.32849 11.3485 2.31214 11.1384 2.21765 10.9608C1.69605 9.98083 1.42029 8.87366 1.42029 7.75903C1.42029 5.93726 2.12976 4.22437 3.41797 2.93616C4.70606 1.64807 6.4187 0.938599 8.24036 0.938354H8.24097C10.0629 0.938354 11.7756 1.64783 13.0638 2.93616C14.3522 4.22437 15.0616 5.93713 15.0616 7.75903C15.0616 9.58093 14.3522 11.2938 13.0638 12.582Z" id="white-power"></path>
+                <path d="M10.8835 8.65755C10.5301 8.30414 9.95503 8.30414 9.60165 8.65755L9.21515 9.04407C8.25542 8.52109 7.47879 7.74442 6.95572 6.78464L7.34222 6.39811C7.69573 6.04471 7.69573 5.46964 7.34222 5.11623L6.30068 4.07463C5.94729 3.72122 5.37225 3.72122 5.01887 4.07463L4.18568 4.90786C3.70842 5.38515 3.68461 6.2057 4.11861 7.21842C4.49544 8.0977 5.18505 9.06413 6.06041 9.93955C6.93578 10.815 7.90215 11.5046 8.78139 11.8815C9.26252 12.0877 9.70014 12.1905 10.0783 12.1905C10.4961 12.1905 10.8413 12.0649 11.0918 11.8144L11.925 10.981V10.9812C12.0963 10.8099 12.1905 10.5823 12.1905 10.3402C12.1905 10.098 12.0963 9.87042 11.925 9.69927L10.8835 8.65755ZM10.4348 11.1574C10.2986 11.2936 9.87974 11.3413 9.14747 11.0276C8.37422 10.6962 7.51118 10.0764 6.71739 9.28253C5.9236 8.4887 5.30397 7.62573 4.97258 6.85244C4.65872 6.12013 4.70645 5.70109 4.84266 5.56488L5.65989 4.7476L6.66929 5.75717L6.1855 6.24111C5.96675 6.45988 5.91394 6.79165 6.05425 7.06673C6.69032 8.31405 7.68582 9.30961 8.93306 9.94572C9.20826 10.086 9.54001 10.0333 9.75876 9.81446L10.2426 9.33064L11.2521 10.3402L10.4348 11.1574Z" id="white-power-2"></path>
+              </svg> <span>8(924) 607-01-75</span></a>
+          </div>
         </div>
+      </div>
     </div>
     <div class="form-last bg">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-6 col-sm-8 col-12">
-                    <form action="" class="form-last__form">
-                        <div class="form-last__head">
-                            <span class="h2">остались вопросы?  Мы с удовольствием на них ответим! Оставьте заявку!</span>
-                        </div>
-                        <div class="form-last__sub-head">
-                            <div class="row justify-content-center">
-                                <div class="col-9">
-                                    <div class="group">
-                                        <input type="text" class="name" name="name" autocomplete="off"
-                                               placeholder="Имя*" required>
-                                        <span class="bar"></span>
-                                        <label>Имя*</label>
-                                    </div>
-                                </div>
-                                <div class="col-9">
-                                    <div class="group">
-                                        <input type="text" class="phone" name="phone" autocomplete="off"
-                                               placeholder="Телефон*" required>
-                                        <span class="bar"></span>
-                                        <label>Телефон*</label>
-                                    </div>
-                                </div>
-                                <div class="col-9">
-                                    <div class="group">
-                                        <input type="text" class="question" name="question" autocomplete="off"
-                                               placeholder="Вопрос">
-                                        <span class="bar"></span>
-                                        <label>Вопрос</label>
-                                    </div>
-                                </div>
-                                <div class="col-auto">
-                                    <div class="political">
-                                        <input type="checkbox" id="form-last__box" checked required>
-                                        <label for="form-last__box">Я принимаю <a href="/legal/">условия политики<br>конфиденциальности</a></label>
-                                    </div>
-                                </div>
-                                <div class="col-7">
-                                    <button class="button-form d-block mx-a">ОТПРАВИТЬ</button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-sm-8 col-12">
+            <form action="" class="form-last__form">
+              <div class="form-last__head"> <span class="h2">остались вопросы?
+ Мы с удовольствием на них ответим! Оставьте заявку!</span> </div>
+              <div class="form-last__sub-head">
+                <div class="row justify-content-center">
+                  <div class="col-9">
+                    <div class="group">
+                      <input type="text" class="name" name="name" autocomplete="off" placeholder="Имя*" required> <span class="bar"></span>
+                      <label>Имя*</label>
+                    </div>
+                  </div>
+                  <div class="col-9">
+                    <div class="group">
+                      <input type="text" class="phone" name="phone" autocomplete="off" placeholder="Телефон*" required> <span class="bar"></span>
+                      <label>Телефон*</label>
+                    </div>
+                  </div>
+                  <div class="col-9">
+                    <div class="group">
+                      <input type="text" class="question" name="question" autocomplete="off" placeholder="Вопрос"> <span class="bar"></span>
+                      <label>Вопрос</label>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="political">
+                      <input type="checkbox" id="form-last__box" checked required>
+                      <label for="form-last__box">Я принимаю <a href="/legal/">условия политики<br>конфиденциальности</a></label>
+                    </div>
+                  </div>
+                  <div class="col-7">
+                    <button class="button-form d-block mx-a">ОТПРАВИТЬ</button>
+                  </div>
                 </div>
-            </div>
+              </div>
+            </form>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<div class="footer">
+  </div>
+  <div class="footer">
     <div class="container">
-        <div class="row align-items-center justify-content-sm-between justify-content-center">
-            <div class="col-sm-4 col-auto mob-order-2">
-                <img src="img/logo.png" alt="" class="footer__logo">
-                <p class="footer__school-name">ШКОЛА ЛЕБЕДЕВЫХ
-                    <br>ИРКУТСКИЙ ЦЕНТР ТЕННИСА</p>
-            </div>
-            <div class="col-sm-4 col-12 footer__social mob-order-1">
-                <a href="" target="_blank">
-                    <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="21.5" cy="21.5" r="21" stroke="#E9E9E9" class="vk__circle_blue"></circle>
-                        <mask id="path-2-inside-1" fill="white">
-                            <path d="M34.8515 28.4498C34.8176 28.3766 34.786 28.3159 34.7566 28.2672C34.2708 27.3909 33.3425 26.3154 31.9722 25.0402L31.9432 25.011L31.9287 24.9966L31.914 24.982H31.8993C31.2774 24.3882 30.8836 23.9889 30.7186 23.7845C30.4169 23.3951 30.3493 23.001 30.5142 22.6016C30.6307 22.2999 31.0684 21.6627 31.8263 20.6891C32.2249 20.1732 32.5406 19.7596 32.7738 19.4481C34.4553 17.2092 35.1843 15.7784 34.9606 15.1554L34.8738 15.0098C34.8154 14.9221 34.6648 14.842 34.4221 14.7688C34.1788 14.6959 33.8679 14.6838 33.4888 14.7324L29.2903 14.7615C29.2223 14.7373 29.1252 14.7396 28.9986 14.7688C28.8723 14.7981 28.809 14.8128 28.809 14.8128L28.736 14.8493L28.678 14.8933C28.6294 14.9223 28.5759 14.9734 28.5175 15.0464C28.4595 15.1192 28.4109 15.2046 28.3721 15.3019C27.915 16.4797 27.3953 17.5748 26.812 18.5871C26.4524 19.1907 26.1221 19.7138 25.8205 20.1567C25.5193 20.5995 25.2666 20.9257 25.0627 21.1349C24.8584 21.3442 24.6741 21.5119 24.5086 21.6385C24.3433 21.7653 24.2171 21.8188 24.1297 21.7992C24.0422 21.7796 23.9597 21.7602 23.8816 21.7408C23.7456 21.6531 23.6363 21.5339 23.5538 21.383C23.471 21.2322 23.4152 21.0423 23.3861 20.8135C23.3571 20.5846 23.3399 20.3877 23.335 20.2222C23.3305 20.0569 23.3326 19.823 23.3424 19.5213C23.3525 19.2194 23.3571 19.0151 23.3571 18.908C23.3571 18.5381 23.3643 18.1366 23.3787 17.7034C23.3934 17.2703 23.4053 16.9271 23.4153 16.6742C23.4252 16.4211 23.4298 16.1534 23.4298 15.8711C23.4298 15.5888 23.4126 15.3674 23.3787 15.2067C23.3452 15.0462 23.2938 14.8904 23.226 14.7394C23.1579 14.5886 23.0581 14.4719 22.9272 14.389C22.796 14.3063 22.6329 14.2406 22.4388 14.1918C21.9237 14.0751 21.2677 14.0119 20.4706 14.0021C18.6629 13.9826 17.5014 14.0996 16.9863 14.3526C16.7822 14.4596 16.5976 14.6057 16.4324 14.7905C16.2574 15.0047 16.233 15.1216 16.3594 15.1409C16.9426 15.2284 17.3555 15.4377 17.5985 15.7686L17.686 15.944C17.7541 16.0705 17.8222 16.2945 17.8902 16.6157C17.9582 16.9368 18.0021 17.2921 18.0214 17.6813C18.0699 18.392 18.0699 19.0004 18.0214 19.5064C17.9727 20.0127 17.9267 20.4069 17.8829 20.6892C17.839 20.9715 17.7734 21.2002 17.686 21.3754C17.5985 21.5506 17.5402 21.6577 17.511 21.6965C17.4818 21.7354 17.4575 21.7599 17.4382 21.7695C17.3119 21.818 17.1805 21.8427 17.0445 21.8427C16.9084 21.8427 16.7432 21.7745 16.5489 21.6381C16.3546 21.5018 16.153 21.3145 15.944 21.076C15.735 20.8374 15.4993 20.504 15.2368 20.0758C14.9745 19.6475 14.7023 19.1414 14.4205 18.5574L14.1873 18.1338C14.0415 17.8614 13.8423 17.4646 13.5896 16.9439C13.3368 16.4231 13.1133 15.9192 12.919 15.4325C12.8413 15.2281 12.7246 15.0725 12.5692 14.9654L12.4962 14.9215C12.4477 14.8826 12.3698 14.8413 12.263 14.7974C12.156 14.7534 12.0444 14.7219 11.9277 14.7025L7.9332 14.7316C7.52501 14.7316 7.24806 14.8242 7.10222 15.0092L7.04386 15.0967C7.01471 15.1454 7 15.2233 7 15.3304C7 15.4375 7.02916 15.5689 7.08752 15.7245C7.67064 17.0972 8.30477 18.4209 8.98991 19.6961C9.67506 20.9712 10.2704 21.9984 10.7757 22.7766C11.281 23.5554 11.7961 24.2905 12.321 24.9814C12.8459 25.6726 13.1933 26.1155 13.3633 26.3101C13.5335 26.505 13.6671 26.6508 13.7643 26.7481L14.1288 27.0985C14.3621 27.3321 14.7046 27.612 15.1566 27.938C15.6086 28.2642 16.1091 28.5854 16.6582 28.902C17.2074 29.2181 17.8463 29.476 18.5753 29.6755C19.3042 29.8752 20.0137 29.9554 20.7038 29.9167H22.3803C22.7203 29.8873 22.9779 29.7802 23.153 29.5954L23.211 29.5222C23.25 29.4641 23.2866 29.3739 23.3203 29.2524C23.3544 29.1307 23.3713 28.9967 23.3713 28.8509C23.3614 28.4324 23.3932 28.0553 23.4659 27.7195C23.5385 27.3838 23.6214 27.1307 23.714 26.9602C23.8066 26.7899 23.911 26.6462 24.0273 26.5297C24.1438 26.413 24.2268 26.3423 24.2756 26.3179C24.324 26.2934 24.3626 26.2768 24.3918 26.2668C24.625 26.189 24.8995 26.2644 25.2157 26.4933C25.5316 26.7221 25.8279 27.0045 26.1051 27.3402C26.3821 27.6762 26.7149 28.0532 27.1036 28.4716C27.4925 28.8903 27.8326 29.2015 28.1241 29.4062L28.4155 29.5814C28.6102 29.6983 28.8629 29.8054 29.1739 29.9027C29.4844 30 29.7565 30.0243 29.9901 29.9757L33.722 29.9174C34.0911 29.9174 34.3784 29.8562 34.5821 29.7347C34.7862 29.6131 34.9075 29.479 34.9466 29.3332C34.9856 29.1873 34.9877 29.0217 34.954 28.8365C34.9195 28.6519 34.8854 28.5227 34.8515 28.4498Z"></path>
-                        </mask>
-                        <path d="M34.8515 28.4498C34.8176 28.3766 34.786 28.3159 34.7566 28.2672C34.2708 27.3909 33.3425 26.3154 31.9722 25.0402L31.9432 25.011L31.9287 24.9966L31.914 24.982H31.8993C31.2774 24.3882 30.8836 23.9889 30.7186 23.7845C30.4169 23.3951 30.3493 23.001 30.5142 22.6016C30.6307 22.2999 31.0684 21.6627 31.8263 20.6891C32.2249 20.1732 32.5406 19.7596 32.7738 19.4481C34.4553 17.2092 35.1843 15.7784 34.9606 15.1554L34.8738 15.0098C34.8154 14.9221 34.6648 14.842 34.4221 14.7688C34.1788 14.6959 33.8679 14.6838 33.4888 14.7324L29.2903 14.7615C29.2223 14.7373 29.1252 14.7396 28.9986 14.7688C28.8723 14.7981 28.809 14.8128 28.809 14.8128L28.736 14.8493L28.678 14.8933C28.6294 14.9223 28.5759 14.9734 28.5175 15.0464C28.4595 15.1192 28.4109 15.2046 28.3721 15.3019C27.915 16.4797 27.3953 17.5748 26.812 18.5871C26.4524 19.1907 26.1221 19.7138 25.8205 20.1567C25.5193 20.5995 25.2666 20.9257 25.0627 21.1349C24.8584 21.3442 24.6741 21.5119 24.5086 21.6385C24.3433 21.7653 24.2171 21.8188 24.1297 21.7992C24.0422 21.7796 23.9597 21.7602 23.8816 21.7408C23.7456 21.6531 23.6363 21.5339 23.5538 21.383C23.471 21.2322 23.4152 21.0423 23.3861 20.8135C23.3571 20.5846 23.3399 20.3877 23.335 20.2222C23.3305 20.0569 23.3326 19.823 23.3424 19.5213C23.3525 19.2194 23.3571 19.0151 23.3571 18.908C23.3571 18.5381 23.3643 18.1366 23.3787 17.7034C23.3934 17.2703 23.4053 16.9271 23.4153 16.6742C23.4252 16.4211 23.4298 16.1534 23.4298 15.8711C23.4298 15.5888 23.4126 15.3674 23.3787 15.2067C23.3452 15.0462 23.2938 14.8904 23.226 14.7394C23.1579 14.5886 23.0581 14.4719 22.9272 14.389C22.796 14.3063 22.6329 14.2406 22.4388 14.1918C21.9237 14.0751 21.2677 14.0119 20.4706 14.0021C18.6629 13.9826 17.5014 14.0996 16.9863 14.3526C16.7822 14.4596 16.5976 14.6057 16.4324 14.7905C16.2574 15.0047 16.233 15.1216 16.3594 15.1409C16.9426 15.2284 17.3555 15.4377 17.5985 15.7686L17.686 15.944C17.7541 16.0705 17.8222 16.2945 17.8902 16.6157C17.9582 16.9368 18.0021 17.2921 18.0214 17.6813C18.0699 18.392 18.0699 19.0004 18.0214 19.5064C17.9727 20.0127 17.9267 20.4069 17.8829 20.6892C17.839 20.9715 17.7734 21.2002 17.686 21.3754C17.5985 21.5506 17.5402 21.6577 17.511 21.6965C17.4818 21.7354 17.4575 21.7599 17.4382 21.7695C17.3119 21.818 17.1805 21.8427 17.0445 21.8427C16.9084 21.8427 16.7432 21.7745 16.5489 21.6381C16.3546 21.5018 16.153 21.3145 15.944 21.076C15.735 20.8374 15.4993 20.504 15.2368 20.0758C14.9745 19.6475 14.7023 19.1414 14.4205 18.5574L14.1873 18.1338C14.0415 17.8614 13.8423 17.4646 13.5896 16.9439C13.3368 16.4231 13.1133 15.9192 12.919 15.4325C12.8413 15.2281 12.7246 15.0725 12.5692 14.9654L12.4962 14.9215C12.4477 14.8826 12.3698 14.8413 12.263 14.7974C12.156 14.7534 12.0444 14.7219 11.9277 14.7025L7.9332 14.7316C7.52501 14.7316 7.24806 14.8242 7.10222 15.0092L7.04386 15.0967C7.01471 15.1454 7 15.2233 7 15.3304C7 15.4375 7.02916 15.5689 7.08752 15.7245C7.67064 17.0972 8.30477 18.4209 8.98991 19.6961C9.67506 20.9712 10.2704 21.9984 10.7757 22.7766C11.281 23.5554 11.7961 24.2905 12.321 24.9814C12.8459 25.6726 13.1933 26.1155 13.3633 26.3101C13.5335 26.505 13.6671 26.6508 13.7643 26.7481L14.1288 27.0985C14.3621 27.3321 14.7046 27.612 15.1566 27.938C15.6086 28.2642 16.1091 28.5854 16.6582 28.902C17.2074 29.2181 17.8463 29.476 18.5753 29.6755C19.3042 29.8752 20.0137 29.9554 20.7038 29.9167H22.3803C22.7203 29.8873 22.9779 29.7802 23.153 29.5954L23.211 29.5222C23.25 29.4641 23.2866 29.3739 23.3203 29.2524C23.3544 29.1307 23.3713 28.9967 23.3713 28.8509C23.3614 28.4324 23.3932 28.0553 23.4659 27.7195C23.5385 27.3838 23.6214 27.1307 23.714 26.9602C23.8066 26.7899 23.911 26.6462 24.0273 26.5297C24.1438 26.413 24.2268 26.3423 24.2756 26.3179C24.324 26.2934 24.3626 26.2768 24.3918 26.2668C24.625 26.189 24.8995 26.2644 25.2157 26.4933C25.5316 26.7221 25.8279 27.0045 26.1051 27.3402C26.3821 27.6762 26.7149 28.0532 27.1036 28.4716C27.4925 28.8903 27.8326 29.2015 28.1241 29.4062L28.4155 29.5814C28.6102 29.6983 28.8629 29.8054 29.1739 29.9027C29.4844 30 29.7565 30.0243 29.9901 29.9757L33.722 29.9174C34.0911 29.9174 34.3784 29.8562 34.5821 29.7347C34.7862 29.6131 34.9075 29.479 34.9466 29.3332C34.9856 29.1873 34.9877 29.0217 34.954 28.8365C34.9195 28.6519 34.8854 28.5227 34.8515 28.4498Z"
-                              stroke="white" stroke-width="1.86739" mask="url(#path-2-inside-1)"></path>
-                    </svg>
-                </a>
-                <a href="" target="_blank">
-                    <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="21.5" cy="21.5" r="21" stroke="#E9E9E9" class="inst__circle_gradient"></circle>
-                        <circle cx="21" cy="22" r="8.5" stroke="white"></circle>
-                        <circle cx="32" cy="12" r="2.5" stroke="white"></circle>
-                    </svg>
-                    <defs>
-                        <radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-                                        gradientTransform="translate(35.5 6.5) rotate(131.248) scale(43.2261)">
-                            <stop stop-color="#9B36BA" offset=""></stop>
-                            <stop offset="0.464088" stop-color="#E4405B"></stop>
-                            <stop offset="1" stop-color="#FDB04B"></stop>
-                        </radialGradient>
-                    </defs>
-                </a>
-            </div>
-            <div class="col-sm-4 col-12 mob-order-3">
-                <a href="https://litvinenko.digital/" target="_blank" class="footer__rights"><img
-                        src="img/icons/rights-logo.svg" alt=""></a>
-            </div>
+      <div class="row align-items-center justify-content-sm-between justify-content-center">
+        <div class="col-sm-4 col-auto mob-order-2"> <img src="img/logo.png" alt="" class="footer__logo">
+          <p class="footer__school-name">ШКОЛА ЛЕБЕДЕВЫХ
+            <br>ИРКУТСКИЙ ЦЕНТР ТЕННИСА</p>
         </div>
+        <div class="col-sm-4 col-12 footer__social mob-order-1">
+          <a href="https://vk.com/tennis___irkutsk" target="_blank">
+            <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="21.5" cy="21.5" r="21" stroke="#E9E9E9" class="vk__circle_blue"></circle>
+              <mask id="path-2-inside-1" fill="white">
+                <path d="M34.8515 28.4498C34.8176 28.3766 34.786 28.3159 34.7566 28.2672C34.2708 27.3909 33.3425 26.3154 31.9722 25.0402L31.9432 25.011L31.9287 24.9966L31.914 24.982H31.8993C31.2774 24.3882 30.8836 23.9889 30.7186 23.7845C30.4169 23.3951 30.3493 23.001 30.5142 22.6016C30.6307 22.2999 31.0684 21.6627 31.8263 20.6891C32.2249 20.1732 32.5406 19.7596 32.7738 19.4481C34.4553 17.2092 35.1843 15.7784 34.9606 15.1554L34.8738 15.0098C34.8154 14.9221 34.6648 14.842 34.4221 14.7688C34.1788 14.6959 33.8679 14.6838 33.4888 14.7324L29.2903 14.7615C29.2223 14.7373 29.1252 14.7396 28.9986 14.7688C28.8723 14.7981 28.809 14.8128 28.809 14.8128L28.736 14.8493L28.678 14.8933C28.6294 14.9223 28.5759 14.9734 28.5175 15.0464C28.4595 15.1192 28.4109 15.2046 28.3721 15.3019C27.915 16.4797 27.3953 17.5748 26.812 18.5871C26.4524 19.1907 26.1221 19.7138 25.8205 20.1567C25.5193 20.5995 25.2666 20.9257 25.0627 21.1349C24.8584 21.3442 24.6741 21.5119 24.5086 21.6385C24.3433 21.7653 24.2171 21.8188 24.1297 21.7992C24.0422 21.7796 23.9597 21.7602 23.8816 21.7408C23.7456 21.6531 23.6363 21.5339 23.5538 21.383C23.471 21.2322 23.4152 21.0423 23.3861 20.8135C23.3571 20.5846 23.3399 20.3877 23.335 20.2222C23.3305 20.0569 23.3326 19.823 23.3424 19.5213C23.3525 19.2194 23.3571 19.0151 23.3571 18.908C23.3571 18.5381 23.3643 18.1366 23.3787 17.7034C23.3934 17.2703 23.4053 16.9271 23.4153 16.6742C23.4252 16.4211 23.4298 16.1534 23.4298 15.8711C23.4298 15.5888 23.4126 15.3674 23.3787 15.2067C23.3452 15.0462 23.2938 14.8904 23.226 14.7394C23.1579 14.5886 23.0581 14.4719 22.9272 14.389C22.796 14.3063 22.6329 14.2406 22.4388 14.1918C21.9237 14.0751 21.2677 14.0119 20.4706 14.0021C18.6629 13.9826 17.5014 14.0996 16.9863 14.3526C16.7822 14.4596 16.5976 14.6057 16.4324 14.7905C16.2574 15.0047 16.233 15.1216 16.3594 15.1409C16.9426 15.2284 17.3555 15.4377 17.5985 15.7686L17.686 15.944C17.7541 16.0705 17.8222 16.2945 17.8902 16.6157C17.9582 16.9368 18.0021 17.2921 18.0214 17.6813C18.0699 18.392 18.0699 19.0004 18.0214 19.5064C17.9727 20.0127 17.9267 20.4069 17.8829 20.6892C17.839 20.9715 17.7734 21.2002 17.686 21.3754C17.5985 21.5506 17.5402 21.6577 17.511 21.6965C17.4818 21.7354 17.4575 21.7599 17.4382 21.7695C17.3119 21.818 17.1805 21.8427 17.0445 21.8427C16.9084 21.8427 16.7432 21.7745 16.5489 21.6381C16.3546 21.5018 16.153 21.3145 15.944 21.076C15.735 20.8374 15.4993 20.504 15.2368 20.0758C14.9745 19.6475 14.7023 19.1414 14.4205 18.5574L14.1873 18.1338C14.0415 17.8614 13.8423 17.4646 13.5896 16.9439C13.3368 16.4231 13.1133 15.9192 12.919 15.4325C12.8413 15.2281 12.7246 15.0725 12.5692 14.9654L12.4962 14.9215C12.4477 14.8826 12.3698 14.8413 12.263 14.7974C12.156 14.7534 12.0444 14.7219 11.9277 14.7025L7.9332 14.7316C7.52501 14.7316 7.24806 14.8242 7.10222 15.0092L7.04386 15.0967C7.01471 15.1454 7 15.2233 7 15.3304C7 15.4375 7.02916 15.5689 7.08752 15.7245C7.67064 17.0972 8.30477 18.4209 8.98991 19.6961C9.67506 20.9712 10.2704 21.9984 10.7757 22.7766C11.281 23.5554 11.7961 24.2905 12.321 24.9814C12.8459 25.6726 13.1933 26.1155 13.3633 26.3101C13.5335 26.505 13.6671 26.6508 13.7643 26.7481L14.1288 27.0985C14.3621 27.3321 14.7046 27.612 15.1566 27.938C15.6086 28.2642 16.1091 28.5854 16.6582 28.902C17.2074 29.2181 17.8463 29.476 18.5753 29.6755C19.3042 29.8752 20.0137 29.9554 20.7038 29.9167H22.3803C22.7203 29.8873 22.9779 29.7802 23.153 29.5954L23.211 29.5222C23.25 29.4641 23.2866 29.3739 23.3203 29.2524C23.3544 29.1307 23.3713 28.9967 23.3713 28.8509C23.3614 28.4324 23.3932 28.0553 23.4659 27.7195C23.5385 27.3838 23.6214 27.1307 23.714 26.9602C23.8066 26.7899 23.911 26.6462 24.0273 26.5297C24.1438 26.413 24.2268 26.3423 24.2756 26.3179C24.324 26.2934 24.3626 26.2768 24.3918 26.2668C24.625 26.189 24.8995 26.2644 25.2157 26.4933C25.5316 26.7221 25.8279 27.0045 26.1051 27.3402C26.3821 27.6762 26.7149 28.0532 27.1036 28.4716C27.4925 28.8903 27.8326 29.2015 28.1241 29.4062L28.4155 29.5814C28.6102 29.6983 28.8629 29.8054 29.1739 29.9027C29.4844 30 29.7565 30.0243 29.9901 29.9757L33.722 29.9174C34.0911 29.9174 34.3784 29.8562 34.5821 29.7347C34.7862 29.6131 34.9075 29.479 34.9466 29.3332C34.9856 29.1873 34.9877 29.0217 34.954 28.8365C34.9195 28.6519 34.8854 28.5227 34.8515 28.4498Z"></path>
+              </mask>
+              <path d="M34.8515 28.4498C34.8176 28.3766 34.786 28.3159 34.7566 28.2672C34.2708 27.3909 33.3425 26.3154 31.9722 25.0402L31.9432 25.011L31.9287 24.9966L31.914 24.982H31.8993C31.2774 24.3882 30.8836 23.9889 30.7186 23.7845C30.4169 23.3951 30.3493 23.001 30.5142 22.6016C30.6307 22.2999 31.0684 21.6627 31.8263 20.6891C32.2249 20.1732 32.5406 19.7596 32.7738 19.4481C34.4553 17.2092 35.1843 15.7784 34.9606 15.1554L34.8738 15.0098C34.8154 14.9221 34.6648 14.842 34.4221 14.7688C34.1788 14.6959 33.8679 14.6838 33.4888 14.7324L29.2903 14.7615C29.2223 14.7373 29.1252 14.7396 28.9986 14.7688C28.8723 14.7981 28.809 14.8128 28.809 14.8128L28.736 14.8493L28.678 14.8933C28.6294 14.9223 28.5759 14.9734 28.5175 15.0464C28.4595 15.1192 28.4109 15.2046 28.3721 15.3019C27.915 16.4797 27.3953 17.5748 26.812 18.5871C26.4524 19.1907 26.1221 19.7138 25.8205 20.1567C25.5193 20.5995 25.2666 20.9257 25.0627 21.1349C24.8584 21.3442 24.6741 21.5119 24.5086 21.6385C24.3433 21.7653 24.2171 21.8188 24.1297 21.7992C24.0422 21.7796 23.9597 21.7602 23.8816 21.7408C23.7456 21.6531 23.6363 21.5339 23.5538 21.383C23.471 21.2322 23.4152 21.0423 23.3861 20.8135C23.3571 20.5846 23.3399 20.3877 23.335 20.2222C23.3305 20.0569 23.3326 19.823 23.3424 19.5213C23.3525 19.2194 23.3571 19.0151 23.3571 18.908C23.3571 18.5381 23.3643 18.1366 23.3787 17.7034C23.3934 17.2703 23.4053 16.9271 23.4153 16.6742C23.4252 16.4211 23.4298 16.1534 23.4298 15.8711C23.4298 15.5888 23.4126 15.3674 23.3787 15.2067C23.3452 15.0462 23.2938 14.8904 23.226 14.7394C23.1579 14.5886 23.0581 14.4719 22.9272 14.389C22.796 14.3063 22.6329 14.2406 22.4388 14.1918C21.9237 14.0751 21.2677 14.0119 20.4706 14.0021C18.6629 13.9826 17.5014 14.0996 16.9863 14.3526C16.7822 14.4596 16.5976 14.6057 16.4324 14.7905C16.2574 15.0047 16.233 15.1216 16.3594 15.1409C16.9426 15.2284 17.3555 15.4377 17.5985 15.7686L17.686 15.944C17.7541 16.0705 17.8222 16.2945 17.8902 16.6157C17.9582 16.9368 18.0021 17.2921 18.0214 17.6813C18.0699 18.392 18.0699 19.0004 18.0214 19.5064C17.9727 20.0127 17.9267 20.4069 17.8829 20.6892C17.839 20.9715 17.7734 21.2002 17.686 21.3754C17.5985 21.5506 17.5402 21.6577 17.511 21.6965C17.4818 21.7354 17.4575 21.7599 17.4382 21.7695C17.3119 21.818 17.1805 21.8427 17.0445 21.8427C16.9084 21.8427 16.7432 21.7745 16.5489 21.6381C16.3546 21.5018 16.153 21.3145 15.944 21.076C15.735 20.8374 15.4993 20.504 15.2368 20.0758C14.9745 19.6475 14.7023 19.1414 14.4205 18.5574L14.1873 18.1338C14.0415 17.8614 13.8423 17.4646 13.5896 16.9439C13.3368 16.4231 13.1133 15.9192 12.919 15.4325C12.8413 15.2281 12.7246 15.0725 12.5692 14.9654L12.4962 14.9215C12.4477 14.8826 12.3698 14.8413 12.263 14.7974C12.156 14.7534 12.0444 14.7219 11.9277 14.7025L7.9332 14.7316C7.52501 14.7316 7.24806 14.8242 7.10222 15.0092L7.04386 15.0967C7.01471 15.1454 7 15.2233 7 15.3304C7 15.4375 7.02916 15.5689 7.08752 15.7245C7.67064 17.0972 8.30477 18.4209 8.98991 19.6961C9.67506 20.9712 10.2704 21.9984 10.7757 22.7766C11.281 23.5554 11.7961 24.2905 12.321 24.9814C12.8459 25.6726 13.1933 26.1155 13.3633 26.3101C13.5335 26.505 13.6671 26.6508 13.7643 26.7481L14.1288 27.0985C14.3621 27.3321 14.7046 27.612 15.1566 27.938C15.6086 28.2642 16.1091 28.5854 16.6582 28.902C17.2074 29.2181 17.8463 29.476 18.5753 29.6755C19.3042 29.8752 20.0137 29.9554 20.7038 29.9167H22.3803C22.7203 29.8873 22.9779 29.7802 23.153 29.5954L23.211 29.5222C23.25 29.4641 23.2866 29.3739 23.3203 29.2524C23.3544 29.1307 23.3713 28.9967 23.3713 28.8509C23.3614 28.4324 23.3932 28.0553 23.4659 27.7195C23.5385 27.3838 23.6214 27.1307 23.714 26.9602C23.8066 26.7899 23.911 26.6462 24.0273 26.5297C24.1438 26.413 24.2268 26.3423 24.2756 26.3179C24.324 26.2934 24.3626 26.2768 24.3918 26.2668C24.625 26.189 24.8995 26.2644 25.2157 26.4933C25.5316 26.7221 25.8279 27.0045 26.1051 27.3402C26.3821 27.6762 26.7149 28.0532 27.1036 28.4716C27.4925 28.8903 27.8326 29.2015 28.1241 29.4062L28.4155 29.5814C28.6102 29.6983 28.8629 29.8054 29.1739 29.9027C29.4844 30 29.7565 30.0243 29.9901 29.9757L33.722 29.9174C34.0911 29.9174 34.3784 29.8562 34.5821 29.7347C34.7862 29.6131 34.9075 29.479 34.9466 29.3332C34.9856 29.1873 34.9877 29.0217 34.954 28.8365C34.9195 28.6519 34.8854 28.5227 34.8515 28.4498Z" stroke="white" stroke-width="1.86739" mask="url(#path-2-inside-1)"></path>
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/tennis___irkutsk" target="_blank">
+            <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="21.5" cy="21.5" r="21" stroke="#E9E9E9" class="inst__circle_gradient"></circle>
+              <circle cx="21" cy="22" r="8.5" stroke="white"></circle>
+              <circle cx="32" cy="12" r="2.5" stroke="white"></circle>
+            </svg>
+            <defs>
+              <radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(35.5 6.5) rotate(131.248) scale(43.2261)">
+                <stop stop-color="#9B36BA" offset=""></stop>
+                <stop offset="0.464088" stop-color="#E4405B"></stop>
+                <stop offset="1" stop-color="#FDB04B"></stop>
+              </radialGradient>
+            </defs>
+          </a>
+        </div>
+        <div class="col-sm-4 col-12 mob-order-3">
+          <a href="https://litvinenko.digital/" target="_blank" class="footer__rights"><img src="img/icons/rights-logo.svg" alt=""></a>
+        </div>
+      </div>
     </div>
-    <div class="footer__political">
-        <a href="/legal" class="">Политика конфиденциальности</a>
-    </div>
-</div>
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/index.js"></script>
-<!--<script src="js/parallax.js"></script>-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-<script>
-    for(i=0;i<$('.paraclass').length;i++) {
-        var scene = new Parallax($('.paraclass').get(i), {
-            calibrateX: true
-        });
+    <div class="footer__political"> <a href="/legal" class="">Политика конфиденциальности</a> </div>
+  </div>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/index.js"></script>
+  <!--<script src="js/parallax.js"></script>-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+  <script>
+    for (i = 0; i < $('.paraclass').length; i++) {
+      var scene = new Parallax($('.paraclass').get(i), {
+        calibrateX: true
+      });
     }
-
-</script>
-<script src="js/owl.carousel.min.js"></script>
-<script>
-    $( window ).on( "load",function () {
-        $(".owl-carousel").owlCarousel({
-            responsive: {
-                0: {
-                    margin: 30,
-                    items: 1,
-                    center: true
-                },
-                768: {
-                    margin: 30,
-                    items: 1.3,
-                    center: true
-                },
-                900: {
-                    margin: 30,
-                    items: 1.5
-                },
-                1200: {
-                    margin: 30,
-                    items: 2
-                }
-            }
-        });
-        $('.inner-carousel').owlCarousel({
-            items: 1,
-            loop: true,
-            mouseDrag: false,
-            nav: true,
-            autoplay: true,
-            autoplayTimeout: 2000
-        });
+  </script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script>
+    $(window).on("load", function () {
+      $(".owl-carousel").owlCarousel({
+        responsive: {
+          0: {
+            margin: 30
+            , items: 1.4
+            , autoHeight:true
+          }
+          , 768: {
+            margin: 30
+            , items: 1.3
+            , center: true
+          }
+          , 900: {
+            margin: 30
+            , items: 1.5
+          }
+          , 1200: {
+            margin: 30
+            , items: 2
+          }
+        }
+      });
+      $('.inner-carousel').owlCarousel({
+        items: 1
+        , loop: true
+        , mouseDrag: false
+        , nav: true
+        , autoplay: true
+        , autoplayTimeout: 3000
+      });
     });
-</script>
+  </script>
 </body>
+
 </html>

@@ -41,13 +41,13 @@ body {
   font-size: 16px;
   min-width: 320px;
   position: relative;
-  line-height: 1.38;
   margin: 0;
   font-family: 'Helvetica', serif;
   font-weight: normal;
   font-style: normal;
   width: 100%;
   color: #fff;
+  overflow: hidden;
 }
 
 /* line 26, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
@@ -89,56 +89,62 @@ button {
 }
 
 /* line 46, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
-h1, h2, h3, h4, h5, p, a, i, button, span, address, li, label, small {
+h1, h2, h3, h4, h5, p, a, i, span, address, li, label, small {
   font-size: 18px;
   margin: 0;
-  line-height: 1.36;
+  line-height: 1.3;
   font-style: normal;
 }
 
 /* line 51, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
-h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, p::selection, a::selection, i::selection, button::selection, span::selection, address::selection, li::selection, label::selection, small::selection {
+h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, p::selection, a::selection, i::selection, span::selection, address::selection, li::selection, label::selection, small::selection {
   background-color: #599255;
   color: #FFF;
 }
 
 /* line 54, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
-h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, p::-moz-selection, a::-moz-selection, i::-moz-selection, button::-moz-selection, span::-moz-selection, address::-moz-selection, li::-moz-selection, label::-moz-selection, small::-moz-selection {
+h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, p::-moz-selection, a::-moz-selection, i::-moz-selection, span::-moz-selection, address::-moz-selection, li::-moz-selection, label::-moz-selection, small::-moz-selection {
   background-color: #599255;
   color: #FFF;
 }
 
 /* line 57, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+button {
+  font-size: 18px;
+  margin: 0;
+}
+
+/* line 60, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
 h1, h2, h3, h4, h5, p, span, address, li, label, a:not([href]):not([tabindex]) {
   cursor: default;
 }
 
-/* line 59, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+/* line 62, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
 a {
   color: #FFF;
   text-decoration: none;
 }
 
-/* line 62, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+/* line 65, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
 h2 {
   text-align: center;
 }
 
-/* line 64, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+/* line 67, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
 h2, h3 {
   text-transform: uppercase;
   font-size: 36px;
   font-weight: 900;
 }
 
-/* line 68, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+/* line 71, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
 ul, li, ol {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-/* line 72, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+/* line 75, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
 .button-mod {
   font-size: 1.2em;
   background-color: #95AF0D;
@@ -149,14 +155,14 @@ ul, li, ol {
   border-radius: 30px;
 }
 
-/* line 80, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+/* line 83, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
 .button-mod:hover {
   background-color: #FFF;
   color: #4A5680;
   border-color: #4A5680;
 }
 
-/* line 84, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+/* line 87, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
 .button-form {
   font-size: 1.2em;
   background-color: #4a5680;
@@ -167,81 +173,81 @@ ul, li, ol {
   border-radius: 30px;
 }
 
-/* line 92, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+/* line 95, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
 .button-form:hover {
   background-color: #FFF;
   color: #4a5680;
   border-color: #4a5680;
 }
 
-/* line 96, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+/* line 99, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
 .overfloff {
   overflow: hidden;
   width: 100%;
 }
 
-/* line 99, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+/* line 102, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
 .text-left {
   text-align: left !important;
 }
 
-/* line 101, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+/* line 104, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
 .text-center {
   text-align: center !important;
 }
 
-/* line 103, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+/* line 106, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
 .text-right {
   text-align: right !important;
 }
 
-/* line 105, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+/* line 108, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
 .w-100 {
   width: 100%;
 }
 
-/* line 107, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+/* line 110, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
 .h-100 {
   height: 100%;
 }
 
-/* line 109, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+/* line 112, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
 .db {
   display: block;
 }
 
-/* line 111, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+/* line 114, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
 .mx-a {
   margin-right: auto;
   margin-left: auto;
 }
 
-/* line 114, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+/* line 117, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
 .political {
   text-align: left;
   position: relative;
   margin-bottom: 30px;
 }
 
-/* line 118, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+/* line 121, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
 .political label {
   display: inline-block;
   padding-left: 30px;
 }
 
-/* line 121, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+/* line 124, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
 .political label, .political a {
   color: #4a5680;
   line-height: 1em;
 }
 
-/* line 124, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+/* line 127, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
 .political [type="checkbox"] {
   position: absolute;
   opacity: 0;
 }
 
-/* line 128, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+/* line 131, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
 .political [type="checkbox"] + label:before, .political [type="checkbox"] + label:after {
   content: '';
   position: absolute;
@@ -253,15 +259,16 @@ ul, li, ol {
   transition: 0.3s;
 }
 
-/* line 134, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+/* line 137, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
 .political [type="checkbox"] + label:after {
   content: url("../img/icons/politicalYes.svg");
   margin-top: 7px;
   margin-left: 4px;
+  will-change: transform;
   transform-origin: left bottom;
 }
 
-/* line 139, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+/* line 143, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
 .political [type="checkbox"] + label:before {
   width: 20px;
   height: 20px;
@@ -273,7 +280,7 @@ ul, li, ol {
   background: transparent;
 }
 
-/* line 150, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+/* line 154, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
 .political [type="checkbox"]:checked + label:after {
   -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
@@ -281,12 +288,12 @@ ul, li, ol {
   transform: scale(1.1);
 }
 
-/* line 153, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+/* line 157, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
 .political [type="checkbox"]:not(:checked) + label, .political [type="checkbox"]:not(:checked) + label a {
   color: #F00;
 }
 
-/* line 155, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+/* line 159, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
 .political [type="checkbox"]:not(:checked) + label:after, .political [type="checkbox"]:not(:checked) + label a:after {
   -moz-transform: scale(0);
   -o-transform: scale(0);
@@ -295,12 +302,12 @@ ul, li, ol {
   opacity: 0;
 }
 
-/* line 158, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+/* line 162, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
 .political [type="checkbox"]:not(:checked) + label:before, .political [type="checkbox"]:not(:checked) + label a:before {
   border-color: #F00;
 }
 
-/* line 160, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+/* line 164, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
 .political a {
   text-decoration: #4a5680 solid underline;
   -moz-transition: 0.3s;
@@ -309,7 +316,7 @@ ul, li, ol {
   transition: 0.3s;
 }
 
-/* line 163, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
+/* line 167, /Users/alexanderDev/Desktop/table-tennis/sass/foundation.sass */
 .political a:hover {
   opacity: .7;
 }

@@ -74,6 +74,8 @@
     max-width: 100%
     max-height: 100%
     width: 400px
+    height: auto
+    object-fit: contain
     @include transition(.3s all)
     @include transform(scale(1))
   &.fast
@@ -89,7 +91,6 @@
       -moz-animation: 0.4s linear both preloader-die
       -o-animation: 0.4s linear both preloader-die
       animation: 0.4s linear both preloader-die
-      @include transform(scale(0))
 .modal-bg, .modal-callback, .modal-success
   position: fixed
   top: 0
@@ -112,22 +113,28 @@
     -o-animation: .3s linear .2s forwards show-callback
     animation: .3s linear .2s forwards show-callback
     transition-delay: .2s
-    @include transform(scale(1))
   &.hide
     -webkit-animation: .3s linear 0s forwards show-callback-rev
     -moz-animation: .3s linear 0s forwards show-callback-rev
     -o-animation: .3s linear 0s forwards show-callback-rev
     animation: .3s linear 0s forwards show-callback-rev
+  &__image
+    display: block
+    padding-top: 30px
+    width: 100%
   &__block
+    position: relative
+    overflow: hidden
     background-color: #fff
     overflow: hidden
     -webkit-border-radius: 10px
     -moz-border-radius: 10px
     border-radius: 10px
+    h3
+      padding: 45px 45px 10px
     p
       color: #4A5680
-    &_padding
-      padding: 45px
+      padding: 0 45px
     .button-form
       display: block
       margin: 25px auto
@@ -141,16 +148,36 @@
   &__closed
     position: absolute
     cursor: pointer
-    top: 10px
-    right: 25px
-    width: 20px
-    height: 20px
-    @include transition(.3s)
-    svg
-      width: 100%
-      height: 100%
-    &:hover
-      @include transform(scale(1.1))
+    &_desc
+      top: 13px
+      right: 15px
+      width: 20px
+      height: 20px
+      @include transition(.3s)
+      &:hover
+        @include transform(scale(1.1))
+      svg
+        width: 100%
+        height: 100%
+    &_mob
+      display: none
+      background: #FFF
+      border-radius: 50%
+      width: 70px
+      height: 70px
+      top: -20px
+      right: -20px
+      svg
+        display: block
+        width: 30%
+        height: 30%
+        position: absolute
+        bottom: 18px
+        left: 18px
+        @include transition(.3s)
+      &:hover
+        svg
+          @include transform(scale(1.1))
   &__stars
     display: flex
     margin: 5px 0
@@ -180,16 +207,15 @@
     -o-animation: .3s linear .2s forwards show-bg-form-rev
     animation: .3s linear .2s forwards show-bg-form-rev
 .modal-callback
+  display: flex
   z-index: 11
   @include transform(scale(0))
-  display: flex
   &.show
     -webkit-animation: .3s linear .2s forwards show-callback
     -moz-animation: .3s linear .2s forwards show-callback
     -o-animation: .3s linear .2s forwards show-callback
     animation: .3s linear .2s forwards show-callback
     transition-delay: .2s
-    @include transform(scale(1))
   &.hide
     -webkit-animation: .3s linear 0s forwards show-callback-rev
     -moz-animation: .3s linear 0s forwards show-callback-rev
@@ -233,7 +259,6 @@
     -o-animation: .3s linear .2s forwards show-callback
     animation: .3s linear .2s forwards show-callback
     transition-delay: .2s
-    @include transform(scale(1))
   &.hide
     -webkit-animation: .3s linear 0s forwards show-callback-rev
     -moz-animation: .3s linear 0s forwards show-callback-rev
@@ -399,14 +424,12 @@
     width: 40px
 .trainers
   padding: 120px 0
-  .col-lg-3
-    -ms-flex: 0 0 29%
-    flex: 0 0 29%
-    max-width: 29%
   .h1
     margin-bottom: 10px
   .h2
     margin-bottom: 50px
+  &__image-mob
+    display: none
   &__item
     background-color: #fff
     overflow: hidden
@@ -459,7 +482,7 @@
   &__half-ball
     top: 0
     left: 0
-  h1
+  h2
     margin-bottom: 50px
   p
     padding-bottom: 20px

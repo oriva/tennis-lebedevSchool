@@ -3,7 +3,7 @@ ymaps.ready(function () {
             center: [52.264312, 104.312261],
             zoom: 12
         }, {
-            searchControlProvider: 'yandex#search'
+            searchControlProvider: 'yandex#search',
         }),
 
         myPlacemark = new ymaps.Placemark([52.270986, 104.286388], {
@@ -75,4 +75,7 @@ ymaps.ready(function () {
         .add(myPlacemarkTwo)
         .add(myPlacemarkThree)
         .add(myPlacemarkFour);
+
+    myMap.behaviors.disable('scrollZoom');
+    myMap.behaviors.disable('drag');
 });
