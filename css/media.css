@@ -534,13 +534,13 @@
   }
   /* line 302, /Users/alexanderDev/Desktop/table-tennis/sass/media.sass */
   .learn p {
-    font-size: 1.2em;
+    font-size: .7em;
   }
   /* line 304, /Users/alexanderDev/Desktop/table-tennis/sass/media.sass */
   .learn .button-mod {
     display: block;
-    margin: 30px auto;
-    padding: 11px 50px 8px;
+    margin-top: 10px;
+    padding: 11px 20px 8px;
     font-size: .9em;
   }
   /* line 309, /Users/alexanderDev/Desktop/table-tennis/sass/media.sass */
@@ -550,8 +550,8 @@
   /* line 311, /Users/alexanderDev/Desktop/table-tennis/sass/media.sass */
   .learn__man {
     display: block;
-    width: 66%;
-    margin-left: 10%;
+    width: 100%;
+    margin-top: 40px;
   }
   /* line 315, /Users/alexanderDev/Desktop/table-tennis/sass/media.sass */
   .contacts {
