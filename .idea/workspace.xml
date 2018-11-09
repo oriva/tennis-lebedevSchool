@@ -3,23 +3,54 @@
   <component name="ChangeListManager">
     <list default="true" id="3e2ef91f-47fa-4f2b-a8c0-f9e51c2123db" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/404.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/foundation.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/foundation.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/foundation.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/foundation.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/index.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/404.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/404.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/about/mob-pic_first.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/about/mob-pic_first.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/about/second-pic.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/about/second-pic.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/bg.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/free-bat/bat.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/free-bat/bat.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/head-offer/bat.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/head-offer/bat.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/learn/man.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/learn/man.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/media.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/media.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/media.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/media.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Helvetica.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/HelveticaBlack/HelveticaBlack.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/HelveticaBlack/HelveticaBlack.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/HelveticaBlack/HelveticaBlack.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/HelveticaBlackItalic/HelveticaBlackItalic.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/HelveticaBlackItalic/HelveticaBlackItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/HelveticaBlackItalic/HelveticaBlackItalic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/HelveticaHeavy/HelveticaHeavy.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/HelveticaHeavy/HelveticaHeavy.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/HelveticaHeavy/HelveticaHeavy.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/HelveticaHeavyItalic/HelveticaHeavyItalic.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/HelveticaHeavyItalic/HelveticaHeavyItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/HelveticaHeavyItalic/HelveticaHeavyItalic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/HelveticaLight/HelveticaLight.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/HelveticaLight/HelveticaLight.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/HelveticaLight/HelveticaLight.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/HelveticaLightItalic/HelveticaLightItalic.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/HelveticaLightItalic/HelveticaLightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/HelveticaLightItalic/HelveticaLightItalic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/HelveticaThin/HelveticaThin.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/HelveticaThin/HelveticaThin.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/HelveticaThin/HelveticaThin.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/HelveticaThinItalic/HelveticaThinItalic.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/HelveticaThinItalic/HelveticaThinItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/HelveticaThinItalic/HelveticaThinItalic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/HelveticaUltraLight/HelveticaUltraLight.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/HelveticaUltraLight/HelveticaUltraLight.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/HelveticaUltraLight/HelveticaUltraLight.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/HelveticaUltraLightItalic/HelveticaUltraLightItalic.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/HelveticaUltraLightItalic/HelveticaUltraLightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/HelveticaUltraLightItalic/HelveticaUltraLightItalic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/free-bat/mob-composition.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/free-bat/mob-composition.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/instagram/first.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/instagram/first.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/instagram/second.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/instagram/second.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/instagram/third.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/instagram/third.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/legal/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/legal/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/preloader_tennis.gif" beforeDir="false" afterPath="$PROJECT_DIR$/preloader_tennis.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/foundation.sass" beforeDir="false" afterPath="$PROJECT_DIR$/sass/foundation.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/index.sass" beforeDir="false" afterPath="$PROJECT_DIR$/sass/index.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/media.sass" beforeDir="false" afterPath="$PROJECT_DIR$/sass/media.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/video/arkadiy-lebedev.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/video/arkadiy-lebedev.mp4" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -37,10 +68,10 @@
           <entry key="project.closed" value="12" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.5" value="5" />
-          <entry key="project.open.time.6" value="4" />
+          <entry key="project.open.time.6" value="5" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -49,7 +80,7 @@
           <entry key="html" value="7" />
           <entry key="js" value="14" />
           <entry key="php" value="2" />
-          <entry key="sass" value="28" />
+          <entry key="sass" value="29" />
           <entry key="svg" value="15" />
           <entry key="ts" value="1" />
         </counts>
@@ -57,10 +88,10 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="6" />
-          <entry key="html" value="4700" />
+          <entry key="html" value="4775" />
           <entry key="js" value="2117" />
           <entry key="php" value="55" />
-          <entry key="sass" value="5833" />
+          <entry key="sass" value="5913" />
           <entry key="svg" value="42" />
         </counts>
       </usages-collector>
@@ -73,29 +104,32 @@
           <entry key="JavaScript" value="14" />
           <entry key="PHP" value="2" />
           <entry key="SVG" value="15" />
-          <entry key="Sass" value="28" />
+          <entry key="Sass" value="29" />
           <entry key="TypeScript" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="6" />
-          <entry key="HTML" value="4703" />
+          <entry key="HTML" value="4778" />
           <entry key="JavaScript" value="2114" />
           <entry key="PHP" value="55" />
           <entry key="SVG" value="42" />
-          <entry key="Sass" value="5833" />
+          <entry key="Sass" value="5913" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="557">
-              <caret line="137" column="22" lean-forward="true" selection-start-line="137" selection-start-column="22" selection-end-line="137" selection-end-column="22" />
+            <state relative-caret-position="749">
+              <caret line="543" column="14" lean-forward="true" selection-start-line="543" selection-start-column="14" selection-end-line="543" selection-end-column="14" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#div#0;n#noscript#0;n#head#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -103,8 +137,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sass/index.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="58" column="8" lean-forward="true" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
+            <state relative-caret-position="-551">
+              <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sass/media.sass">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="529">
+              <caret line="339" column="15" selection-start-line="339" selection-start-column="15" selection-end-line="339" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -113,8 +156,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>font-f</find>
-      <find>аркадий</find>
       <find>modal-star__block</find>
       <find>ball</find>
       <find>head-offer</find>
@@ -143,6 +184,8 @@
       <find>transform</find>
       <find>modal-star</find>
       <find>__gogo-text</find>
+      <find>lear</find>
+      <find>контакты</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -163,7 +206,6 @@
         <option value="$PROJECT_DIR$/img/icons/closed.svg" />
         <option value="$PROJECT_DIR$/sass/_mixins.sass" />
         <option value="$PROJECT_DIR$/forms/send.php" />
-        <option value="$PROJECT_DIR$/sass/media.sass" />
         <option value="$PROJECT_DIR$/img/icons/arrow-left.svg" />
         <option value="$PROJECT_DIR$/js/owl.carousel.min.js" />
         <option value="$PROJECT_DIR$/404.php" />
@@ -174,6 +216,7 @@
         <option value="$PROJECT_DIR$/404.html" />
         <option value="$PROJECT_DIR$/legal/index.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/sass/media.sass" />
       </list>
     </option>
   </component>
@@ -197,28 +240,10 @@
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="table-tennis" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-            <path>
-              <item name="table-tennis" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="legal" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="ProjectPane" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -228,6 +253,9 @@
     <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/js" />
     </key>
@@ -266,11 +294,12 @@
       <workItem from="1541398845962" duration="10938000" />
       <workItem from="1541482598618" duration="9080000" />
       <workItem from="1541555103496" duration="268000" />
+      <workItem from="1541754697608" duration="1964000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126127000" />
+    <option name="totallyTimeSpent" value="128091000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -375,13 +404,6 @@
     <entry file="file://$PROJECT_DIR$/img/icons/closed.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/media.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/owl.carousel.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -448,15 +470,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/index.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="58" column="8" lean-forward="true" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
+        <state relative-caret-position="-551">
+          <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="557">
-          <caret line="137" column="22" lean-forward="true" selection-start-line="137" selection-start-column="22" selection-end-line="137" selection-end-column="22" />
+        <state relative-caret-position="749">
+          <caret line="543" column="14" lean-forward="true" selection-start-line="543" selection-start-column="14" selection-end-line="543" selection-end-column="14" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#noscript#0;n#head#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/media.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="339" column="15" selection-start-line="339" selection-start-column="15" selection-end-line="339" selection-end-column="15" />
         </state>
       </provider>
     </entry>

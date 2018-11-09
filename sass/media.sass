@@ -160,9 +160,10 @@
           fill: #E9E9E9
   .button-mod
     display: inline-block
-    line-height: 1.3em
     font-size: 0.7em
-    padding: 5px 15px
+    padding: 8px 15px 5px
+  .button-form
+    padding-top: 13px
   .modal-callback
     &__form
       .select-cokes
@@ -170,18 +171,27 @@
     &__closed
       width: 20px
   .modal-star
-    -webkit-overflow-scrolling: touch
-    touch-action: pan-y
     &__closed
       &_mob
         display: block
       &_desc
         display: none
     &__stars img
-      width: 20px
+      width: 40px
     &__pic-trainer
-      height: 180px
+      height: auto
+    &__gogo-text
+      padding-bottom: 30px
+    &__block
+      margin: 15px 0
+      p
+        padding: 0 20px
+      h3
+        padding: 35px 20px 15px
   .head-offer
+    height: auto
+    overflow: visible
+    z-index: 7
     &__ball
       position: absolute
       top: -15px
@@ -194,60 +204,82 @@
         padding: 0
         height: 70px
     &__svgball
+      display: none
       bottom: 10px
     &__bat
       height: auto
       width: 100%
     &__offerbach
-      margin-bottom: 140px
+      margin-bottom: auto
       p
         font-size: .9em
     &__mob-offer
       margin-bottom: 30px
+    &__mob-childrien
+      width: 145%
+      float: right
+    &__mob-man
+      width: 100%
+      margin-bottom: -40px
+    &__h2-teach
+      margin: 50px 0
   .free-bat
     &__offer
-      margin: 80px 0
+      margin: 40px 0
     &__mob-img
-      display: block
       margin: 0 auto 80px
-      width: 75%
+      width: 100%
   .teach-offer
-    &__boy, &__man
-      display: block
-    &__boy
-      margin-left: auto
-      margin-right: auto
-      width: 80%
-    &__man
-      margin: 0 auto -20px
-      width: 90%
-    &__text
-      margin: 30px 0
+    display: none
   .train-offer
     padding: 70px 0
+    background-image: url(../img/bg.jpg) !important
+    .remote-blue
+      color: #FFF
     &__court
       display: block
       margin-left: auto
       margin-right: auto
       width: 70%
   .individual
+    background-image: url(../img/bg-white.jpg) !important
+    padding-bottom: 50px
     &__text
       text-align: center
-      padding: 80px 0 20px
+      padding: 50px 0 20px
+      color: #4A5680
     &__people
       width: 100%
       margin-top: 0
   .half-form
+    display: none
     &__inform-first
       .h2
         font-size: .9em
+  .form-last
+    &__head
+      .h2
+        font-size: 1em
   .trainers
+    padding: 60px 0
+    .h2
+      margin-bottom: 0
     video
       display: none
     &__image-mob
       display: block
       width: 100%
       margin-bottom: -20px
+    &__text-mob
+      display: block
+      color: #599255
+      font-size: .7em
+      text-align: center
+    &__text-name
+      font-size: 0.8em
+      margin: 12px 0 5px
+    &__text-about
+      display: none
   .about
     padding-top: 55px
     p
@@ -272,37 +304,51 @@
       &:before
         content: none
   .learn
+    padding-top: 55px
     p
-      font-size: 1.2em
+      font-size: 0.7em
     .button-mod
       display: block
-      margin: 30px auto
-      padding: 8px 50px
-      font-size: .9em
+      margin-top: 20px
+      padding: 11px 25px 8px
+      font-size: 0.8em
     &__form
       margin: 500px 0 -320px
     &__man
       display: block
-      width: 66%
-      margin-left: 10%
+      width: 110%
+      padding-top: 40px
   .contacts
-    padding: 410px 0 70px
+    padding: 380px 0 30px
+    p
+      font-size: .7em
+  .form-last
+    padding: 60px 0 0
+    &__form
+      margin-bottom: -50px
   .footer
+    padding: 70px 0
     &__rights
       min-width: 45%
-      margin-top: 20px
+      margin-top: 10px
       margin-right: auto
     &__social
-      margin-bottom: 20px
+      margin-top: 20px
       a
         width: 50px
     &__logo
-      width: 95px
+      width: 70px
     &__school-name
       font-size: .75em
+    &__political
+      bottom: 30px
   .head-political
     padding-bottom: 60px
   .legal-page
     padding: 50px 0
     p
       font-size: 0.8em
+  .page-form
+    background-color: #000
+    padding: 15px 30px
+    
