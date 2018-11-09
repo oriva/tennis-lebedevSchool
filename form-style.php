@@ -88,7 +88,6 @@
 
 <body>
   <div class="page-form">
-    <div class="modal-bg"></div>
     <div class="container">
       <div class="row align-items-center justify-content-center">
         <div class="col-sm-4 col-12">
@@ -126,7 +125,6 @@
   $('.modal-star__closed_mob').on('click', function(){
     window.close();
   });
-    
 
   </script>
 </body>
