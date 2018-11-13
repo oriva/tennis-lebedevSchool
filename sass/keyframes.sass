@@ -43,3 +43,18 @@
     @include transform(scale(1))
   100%
     @include transform(scale(0))
++keyframes(play-boom)
+  0%
+    @include transform(scale(.85))
+  20%
+    @include transform(scale(.9))
++keyframes(pulse)
+  0%
+    @include transform(scale(.6))
+    opacity: 0
+  50%
+    opacity: 1
+    @include transform(scale(.85))
+  100%
+    @include transform(scale(1.3))
+    opacity: 0
