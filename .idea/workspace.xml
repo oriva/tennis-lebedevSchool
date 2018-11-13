@@ -2,11 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e2ef91f-47fa-4f2b-a8c0-f9e51c2123db" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/table-tennis.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/foundation.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/foundation.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/index.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/input.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/input.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/keyframes.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/keyframes.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/media.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/media.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/media.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/media.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/form-style.php" beforeDir="false" afterPath="$PROJECT_DIR$/form-style.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forms/send.php" beforeDir="false" afterPath="$PROJECT_DIR$/forms/send.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/train-offer/court.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/train-offer/court.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/mapYand.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/mapYand.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/legal/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/legal/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/index.sass" beforeDir="false" afterPath="$PROJECT_DIR$/sass/index.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/input.sass" beforeDir="false" afterPath="$PROJECT_DIR$/sass/input.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/media.sass" beforeDir="false" afterPath="$PROJECT_DIR$/sass/media.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/video/arkadiy-lebedev.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/video/arkadiy-lebedev.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/video/unkonown_person.mp4" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,57 +41,59 @@
     <session id="1171418386">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
+          <entry key="project.closed" value="14" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.5" value="5" />
-          <entry key="project.open.time.6" value="5" />
+          <entry key="project.open.time.5" value="6" />
+          <entry key="project.open.time.6" value="6" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="4" />
-          <entry key="html" value="7" />
-          <entry key="js" value="14" />
-          <entry key="php" value="2" />
-          <entry key="sass" value="29" />
-          <entry key="svg" value="15" />
+          <entry key="css" value="9" />
+          <entry key="html" value="8" />
+          <entry key="js" value="16" />
+          <entry key="php" value="5" />
+          <entry key="png" value="2" />
+          <entry key="sass" value="32" />
+          <entry key="svg" value="31" />
           <entry key="ts" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="6" />
-          <entry key="html" value="4843" />
-          <entry key="js" value="2117" />
-          <entry key="php" value="55" />
-          <entry key="sass" value="5937" />
-          <entry key="svg" value="42" />
+          <entry key="html" value="5462" />
+          <entry key="js" value="2275" />
+          <entry key="php" value="218" />
+          <entry key="sass" value="6190" />
+          <entry key="svg" value="61" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
       <usages-collector id="statistics.vcs.git.usages" />
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="4" />
-          <entry key="HTML" value="7" />
-          <entry key="JavaScript" value="14" />
-          <entry key="PHP" value="2" />
-          <entry key="SVG" value="15" />
-          <entry key="Sass" value="29" />
+          <entry key="CSS" value="9" />
+          <entry key="HTML" value="8" />
+          <entry key="Image" value="2" />
+          <entry key="JavaScript" value="16" />
+          <entry key="PHP" value="5" />
+          <entry key="SVG" value="31" />
+          <entry key="Sass" value="32" />
           <entry key="TypeScript" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="6" />
-          <entry key="HTML" value="4846" />
-          <entry key="JavaScript" value="2114" />
-          <entry key="PHP" value="55" />
-          <entry key="SVG" value="42" />
-          <entry key="Sass" value="5937" />
+          <entry key="HTML" value="5465" />
+          <entry key="JavaScript" value="2272" />
+          <entry key="PHP" value="218" />
+          <entry key="SVG" value="61" />
+          <entry key="Sass" value="6190" />
         </counts>
       </usages-collector>
     </session>
@@ -81,29 +103,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="509" column="73" selection-start-line="509" selection-start-column="73" selection-end-line="509" selection-end-column="73" />
+            <state relative-caret-position="123">
+              <caret line="122" column="48" selection-start-line="122" selection-start-column="48" selection-end-line="122" selection-end-column="48" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#noscript#0;n#head#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#svg#0;n#a#0;n#p#0;n#div#0;n#nav#0;n#div#0;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#svg#0;n#a#0;n#div#2;n#nav#0;n#div#0;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sass/index.sass">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/forms/send.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-551">
-              <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
+            <state relative-caret-position="46">
+              <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sass/media.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="313" column="22" selection-start-line="313" selection-start-column="22" selection-end-line="313" selection-end-column="22" />
+            <state relative-caret-position="344">
+              <caret line="151" column="22" selection-start-line="151" selection-start-column="22" selection-end-line="151" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -112,29 +136,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ball</find>
-      <find>head-offer</find>
-      <find>head</find>
-      <find>paracla</find>
-      <find>owl-nav</find>
-      <find>owl</find>
-      <find>nav</find>
-      <find>disabled</find>
-      <find>caro</find>
-      <find>../</find>
-      <find>what0</find>
-      <find>svg</find>
-      <find>traine</find>
-      <find>indi</find>
-      <find>autoplay</find>
-      <find>window</find>
-      <find>1984</find>
-      <find>video</find>
-      <find>tra</find>
-      <find>show-call</find>
-      <find>trainer</find>
-      <find>about</find>
-      <find>star</find>
       <find>trans</find>
       <find>transform</find>
       <find>modal-star</find>
@@ -142,6 +143,29 @@
       <find>lear</find>
       <find>контакты</find>
       <find>learn</find>
+      <find>svg</find>
+      <find>\&lt;svg width\=\&quot;16\&quot; height\=\&quot;16\&quot; viewBox\=\&quot;0 0 16 16\&quot; fill\=\&quot;none\&quot; xmlns\=\&quot;http\:\/\/www\.w3\.org\/2000\/svg\&quot;\&gt;\n                    \&lt;path d\=\&quot;M13\.7274 2\.27258C12\.2618 0\.807007 10\.3137 0 8\.24097 0C8\.24085 0 8\.24036 0 8\.24024 0C7\.21509 0\.00012207 6\.21607 0\.198608 5\.27112 0\.590088C4\.32605 0\.981567 3\.47937 1\.54761 2\.7544 2\.27258C1\.28894 3\.73804 0\.481935 5\.68652 0\.481935 7\.75903C0\.481935 8\.995 0\.780153 10\.2233 1\.34522 11\.3176L0\.0410175 15\.0435C\-0\.0509015 15\.3063 0\.014162 15\.5919 0\.211183 15\.7888C0\.349001 15\.9268 0\.530397 16 0\.716921 16C0\.796877 16 0\.877687 15\.9866 0\.956545 15\.959L4\.68237 14\.6549C5\.77673 15\.22 7\.00501 15\.5182 8\.24097 15\.5182C10\.3135 15\.5182 12\.2618 14\.7111 13\.7274 13\.2456C15\.1929 11\.7802 16 9\.83167 16 7\.75916C16 5\.68652 15\.193 3\.73804 13\.7274 2\.27258ZM13\.0638 12\.582C11\.7756 13\.8704 10\.0627 14\.5797 8\.24097 14\.5797C7\.12647 14\.5797 6\.01929 14\.3041 5\.03906 13\.7823C4\.86133 13\.6879 4\.65125 13\.6716 4\.46265 13\.7377L1\.07764 14\.9224L2\.26245 11\.5374C2\.32849 11\.3485 2\.31214 11\.1384 2\.21765 10\.9608C1\.69605 9\.98083 1\.42029 8\.87366 1\.42029 7\.75903C1\.42029 5\.93726 2\.12976 4\.22437 3\.41797 2\.93616C4\.70606 1\.64807 6\.4187 0\.938599 8\.24036 0\.938354H8\.24097C10\.0629 0\.938354 11\.7756 1\.64783 13\.0638 2\.93616C14\.3522 4\.22437 15\.0616 5\.93713 15\.0616 7\.75903C15\.0616 9\.58093 14\.3522 11\.2938 13\.0638 12\.582Z\&quot; id\=\&quot;white\-power\-top\&quot;\&gt;\&lt;\/path\&gt;\n                    \&lt;path d\=\&quot;M10\.8835 8\.65755C10\.5301 8\.30414 9\.95503 8\.30414 9\.60165 8\.65755L9\.21515 9\.04407C8\.25542 8\.52109 7\.47879 7\.74442 6\.95572 6\.78464L7\.34222 6\.39811C7\.69573 6\.04471 7\.69573 5\.46964 7\.34222 5\.11623L6\.30068 4\.07463C5\.94729 3\.72122 5\.37225 3\.72122 5\.01887 4\.07463L4\.18568 4\.90786C3\.70842 5\.38515 3\.68461 6\.2057 4\.11861 7\.21842C4\.49544 8\.0977 5\.18505 9\.06413 6\.06041 9\.93955C6\.93578 10\.815 7\.90215 11\.5046 8\.78139 11\.8815C9\.26252 12\.0877 9\.70014 12\.1905 10\.0783 12\.1905C10\.4961 12\.1905 10\.8413 12\.0649 11\.0918 11\.8144L11\.925 10\.981V10\.9812C12\.0963 10\.8099 12\.1905 10\.5823 12\.1905 10\.3402C12\.1905 10\.098 12\.0963 9\.87042 11\.925 9\.69927L10\.8835 8\.65755ZM10\.4348 11\.1574C10\.2986 11\.2936 9\.87974 11\.3413 9\.14747 11\.0276C8\.37422 10\.6962 7\.51118 10\.0764 6\.71739 9\.28253C5\.9236 8\.4887 5\.30397 7\.62573 4\.97258 6\.85244C4\.65872 6\.12013 4\.70645 5\.70109 4\.84266 5\.56488L5\.65989 4\.7476L6\.66929 5\.75717L6\.1855 6\.24111C5\.96675 6\.45988 5\.91394 6\.79165 6\.05425 7\.06673C6\.69032 8\.31405 7\.68582 9\.30961 8\.93306 9\.94572C9\.20826 10\.086 9\.54001 10\.0333 9\.75876 9\.81446L10\.2426 9\.33064L11\.2521 10\.3402L10\.4348 11\.1574Z\&quot; id\=\&quot;white\-power\-top\-2\&quot;\&gt;\&lt;\/path\&gt;\n                  \&lt;\/svg\&gt;</find>
+      <find>contact</find>
+      <find>получите</find>
+      <find>группо</find>
+      <find>stroke-width=&quot;1.</find>
+      <find>white-power</find>
+      <find>white</find>
+      <find>white-pow</find>
+      <find>&lt;svg</find>
+      <find>contac</find>
+      <find>групповый</find>
+      <find>групповые</find>
+      <find>option</find>
+      <find>show-call</find>
+      <find>отправить</find>
+      <find>записать</find>
+      <find>trainers</find>
+      <find>occupation</find>
+      <find>name=&quot;about-form&quot;</find>
+      <find>.white-power</find>
+      <find>footer</find>
+      <find>trainers__item</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -155,24 +179,27 @@
         <option value="$PROJECT_DIR$/css/owl.carousel.min.css" />
         <option value="$PROJECT_DIR$/js/jquery.selectBoxIt.js" />
         <option value="$PROJECT_DIR$/css/jquery.selectBoxIt.css" />
-        <option value="$PROJECT_DIR$/js/mapYand.js" />
-        <option value="$PROJECT_DIR$/sass/input.sass" />
         <option value="$PROJECT_DIR$/img/icons/inst(ball).svg" />
         <option value="$PROJECT_DIR$/img/icons/inst.svg" />
         <option value="$PROJECT_DIR$/img/icons/closed.svg" />
         <option value="$PROJECT_DIR$/sass/_mixins.sass" />
-        <option value="$PROJECT_DIR$/forms/send.php" />
         <option value="$PROJECT_DIR$/img/icons/arrow-left.svg" />
         <option value="$PROJECT_DIR$/js/owl.carousel.min.js" />
         <option value="$PROJECT_DIR$/404.php" />
         <option value="$PROJECT_DIR$/sass/keyframes.sass" />
-        <option value="$PROJECT_DIR$/js/index.js" />
         <option value="$PROJECT_DIR$/sass/foundation.sass" />
-        <option value="$PROJECT_DIR$/sass/index.sass" />
         <option value="$PROJECT_DIR$/404.html" />
+        <option value="$PROJECT_DIR$/img/icons/mobile-icon.svg" />
+        <option value="$PROJECT_DIR$/form-style.php" />
+        <option value="$PROJECT_DIR$/img/icons/call.svg" />
         <option value="$PROJECT_DIR$/legal/index.html" />
+        <option value="$PROJECT_DIR$/js/index.js" />
+        <option value="$PROJECT_DIR$/js/mapYand.js" />
+        <option value="$PROJECT_DIR$/sass/index.sass" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/sass/input.sass" />
         <option value="$PROJECT_DIR$/sass/media.sass" />
+        <option value="$PROJECT_DIR$/forms/send.php" />
       </list>
     </option>
   </component>
@@ -196,10 +223,43 @@
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="ProjectPane" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="table-tennis" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="table-tennis" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="forms" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="table-tennis" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="js" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="table-tennis" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="legal" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="table-tennis" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="sass" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -250,18 +310,20 @@
       <workItem from="1541398845962" duration="10938000" />
       <workItem from="1541482598618" duration="9080000" />
       <workItem from="1541555103496" duration="268000" />
-      <workItem from="1541754697608" duration="2752000" />
+      <workItem from="1541754697608" duration="2953000" />
+      <workItem from="1541984580256" duration="16953000" />
+      <workItem from="1542077306334" duration="3220000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128879000" />
+    <option name="totallyTimeSpent" value="149253000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2859734" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2859734" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -303,9 +365,6 @@
     <entry file="file://$PROJECT_DIR$/img/icons/vk.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/img/icons/vk(color).svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/jquery.selectBoxIt.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -320,19 +379,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/input.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/icons/inst(color).svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/icons/inst.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/img/icons/inst(ball).svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -343,32 +389,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/_mixins.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forms/send.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="98" selection-start-line="12" selection-start-column="88" selection-end-line="12" selection-end-column="98" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/icons/closed.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/owl.carousel.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="5" column="933" selection-start-line="5" selection-start-column="925" selection-end-line="5" selection-end-column="933" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/icons/arrow-left.svg">
-      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/js/owl.carousel.min.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -380,20 +406,6 @@
     <entry file="file://$PROJECT_DIR$/js/parallax.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-234" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/mapYand.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-974">
-          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/keyframes.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/foundation.sass">
@@ -410,41 +422,139 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/img/icons/inst(color).svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/icons/closed.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/icons/ball-green.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/icons/ball.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/icons/ball.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/icons/arrow-left.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/icons/inst.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/icons/mapMarket.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/icons/politicalYes.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/icons/rights-logo.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/icons/vk(color).svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/train-offer/grey-block.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/train-offer/star-yellow.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/train-offer/star-grey.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/_mixins.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/keyframes.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/form-style.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="116" column="55" selection-start-line="116" selection-start-column="55" selection-end-line="116" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/icons/mobile-icon.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/icons/call.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/legal/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="308" column="32" selection-start-line="308" selection-start-column="32" selection-end-line="308" selection-end-column="32" />
+        <state relative-caret-position="800">
+          <caret line="85" column="45" selection-start-line="85" selection-start-column="45" selection-end-line="85" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+        <state relative-caret-position="2829">
+          <caret line="123" column="73" selection-start-line="123" selection-start-column="73" selection-end-line="123" selection-end-column="73" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/mapYand.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="689">
+          <caret line="85" column="33" selection-start-line="85" selection-start-column="29" selection-end-line="85" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/legal/css/index.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/legal/css/input.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/sass/index.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-551">
-          <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
+        <state relative-caret-position="471">
+          <caret line="731" column="20" selection-start-line="731" selection-start-column="20" selection-end-line="731" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/input.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="820">
+          <caret line="75" column="22" selection-start-line="75" selection-start-column="22" selection-end-line="75" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="509" column="73" selection-start-line="509" selection-start-column="73" selection-end-line="509" selection-end-column="73" />
+        <state relative-caret-position="123">
+          <caret line="122" column="48" selection-start-line="122" selection-start-column="48" selection-end-line="122" selection-end-column="48" />
           <folding>
             <element signature="n#style#0;n#img#0;n#div#0;n#noscript#0;n#head#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#svg#0;n#a#0;n#p#0;n#div#0;n#nav#0;n#div#0;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#svg#0;n#a#0;n#div#2;n#nav#0;n#div#0;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/media.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="313" column="22" selection-start-line="313" selection-start-column="22" selection-end-line="313" selection-end-column="22" />
+        <state relative-caret-position="344">
+          <caret line="151" column="22" selection-start-line="151" selection-start-column="22" selection-end-line="151" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forms/send.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
         </state>
       </provider>
     </entry>

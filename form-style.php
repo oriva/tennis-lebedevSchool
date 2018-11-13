@@ -47,6 +47,8 @@
   <!--  css   -->
   <link rel="stylesheet" href="/css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/input.css">
+  <link rel="stylesheet" href="/css/keyframes.css?v=1.3">
   <link rel="stylesheet" href="/css/index.css?v=1.3">
   <link rel="stylesheet" href="/css/media.css?v=1.3">
   <!-- Yandex.Metrika counter -->
@@ -87,6 +89,64 @@
 </head>
 
 <body>
+
+<div class="modal-bg"></div>
+  <div class="modal-callback">
+    <div class="container align-self-center">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-sm-8 col-11">
+          <form action="" class="modal-callback__form">
+            <div class="half-form__inform-first"> <img src="img/icons/ball.svg" alt="" class="half-form__half-ball"> <img src="img/icons/closed.svg" alt="" class="modal-callback__closed"> <span class="h2">заполните форму и мы свяжемся с вами в ближайшее время!</span> </div>
+            <div class="half-form__inform-second">
+              <div class="row justify-content-center">
+                <div class="col-8">
+                  <div class="group">
+                    <input type="text" class="name" name="name" autocomplete="off" placeholder="Имя*" required> <span class="bar"></span>
+                    <label>Имя*</label>
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="group">
+                    <input type="text" class="phone" name="phone" autocomplete="off" placeholder="Телефон*" required> <span class="bar"></span>
+                    <label>Телефон*</label>
+                  </div>
+                </div>
+                <div class="col-8">
+                  <select name="occupation" class="select-cokes" title="Выберите тип занятий">
+                    <option value="Не выбрал" hidden>Выберите тип занятий</option>
+                    <option value="Групповой">Групповые</option>
+                    <option value="Индивидуальный">Индивидуальные</option>
+                  </select>
+                </div>
+                <div class="col-auto">
+                  <div class="political">
+                    <input type="checkbox" id="modal-callback__box" checked required>
+                    <label for="modal-callback__box">Я принимаю <a href="/legal/">условия политики<br>конфиденциальности</a></label>
+                  </div>
+                </div>
+                <div class="col-7">
+                  <button class="button-form d-block mx-a">ХОЧУ В ТЕННИС</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-success">
+      <div class="container align-self-center">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 col-sm-8 col-11">
+            <div class="modal-success__in-love">
+              <div class="modal-success__circler"> <img src="img/icons/ball.svg" alt="" class="modal-success__ball"> <img src="img/icons/closed.svg" alt="" class="modal-success__closed"> <span class="h2">Спасибо!<br>Ваша заявка принята!</span> </div>
+              <div class="modal-success__subcircler"> <span class="h2 remote-blue">Теннис уже близко ;)</span> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   <div class="page-form">
     <div class="container">
       <div class="row align-items-center justify-content-center">
@@ -121,6 +181,7 @@
     </div>
   </div>
   <script src="../js/jquery-3.3.1.min.js"></script>
+  <script src="js/index.js"></script>
   <script>
   $('.modal-star__closed_mob').on('click', function(){
     window.close();

@@ -1,7 +1,8 @@
 ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {
             center: [52.264312, 104.312261],
-            zoom: 12
+            zoom: 12,
+            controls: []
         }, {
             searchControlProvider: 'yandex#search',
         }),
@@ -69,7 +70,12 @@ ymaps.ready(function () {
             // её "ножки" (точки привязки).
             // iconImageOffset: [-24, -24]
         });
-
+    var zoomControl = new ymaps.control.ZoomControl({
+        options: {
+            size: "large"
+        }
+    });
+    myMap.controls.add(zoomControl);
     myMap.geoObjects
         .add(myPlacemark)
         .add(myPlacemarkTwo)

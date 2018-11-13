@@ -108,6 +108,8 @@
   .learn
     p
       font-size: 0.9em
+  .head-offer
+    height: auto
   .globalnav
     address
       display: none
@@ -126,6 +128,51 @@
       margin-right: 1px
     &__rights
       max-width: 113px
+@media screen and (max-width:768px) and (min-width:576px)
+  .modal-star
+    &__block
+      .button-form
+        font-size: 0.6em
+      h3
+        padding: 35px 35px 10px
+      p
+        padding: 0 35px
+    &__stars
+      img
+        width: 35px
+  .head-offer
+    &__bat
+      height: auto
+      width: 100%
+    &__offerbach
+      margin-bottom: 0
+  .trainers
+    padding: 75px 0
+    .h2
+      font-size: 1.6em
+      margin-bottom: 20px
+  .train-offer
+    padding: 30px 0
+  .teach-offer
+    padding: 30px 0
+    &__man
+      width: 140%
+      margin-bottom: -50px
+  .individual__people
+    margin-top: -10px
+  .footer
+    &__political
+      a
+        font-size: .6em
+    &__social
+      margin-top: 20px
+      a
+        height: 23px
+        svg
+          display: block
+  .contacts
+    h2
+      line-height: 1em
 @media screen and (max-width:575.98px)
   h1, h4, h5, p, a, i, button, span, address, li, label, small
     font-size: 16px
@@ -155,8 +202,9 @@
     &__number-mob
       svg
         width: 12px
+        height: 12px
         vertical-align: middle
-        #white-power-top, #white-power-top-2
+        .white-power
           fill: #E9E9E9
   .button-mod
     display: inline-block
@@ -188,8 +236,12 @@
         padding: 0 20px
       h3
         padding: 35px 20px 15px
+  .modal-star__block
+    .h2
+      font-size: 1.1em
+    .button-form
+      font-size: 0.7em
   .head-offer
-    height: auto
     overflow: visible
     z-index: 7
     &__ball
@@ -231,7 +283,7 @@
   .teach-offer
     display: none
   .train-offer
-    padding: 70px 0
+    padding: 40px 0
     background-image: url(../img/bg.jpg) !important
     .remote-blue
       color: #FFF
@@ -313,7 +365,13 @@
       width: 100%
       margin-top: 40px
   .contacts
-    padding: 410px 0 70px
+    padding: 410px 0 50px
+    .footer__social
+      margin: 25px 0 0
+  .form-last
+    &__head
+      .h2
+        font-size: 1.15em
   .footer
     &__rights
       min-width: 45%
