@@ -1,6 +1,6 @@
 <?
 $to = '1formarketing@gmail.com,';
-$to. = 'lebedev16@list.ru';
+$to. = 'shkola.lebedevyh@yandex.ru';
 $subject = 'Заявка с сайта тенниса!';
 $name=''; $phone=''; $question=''; $occupation='';
 if (!empty($_POST["name"])) {
