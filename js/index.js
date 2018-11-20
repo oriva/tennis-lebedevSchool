@@ -36,6 +36,7 @@ $('form').on('submit', function (e) {
         url: "/forms/send.php", //путь до php фаила отправителя
         data: form_data
         , success: function () {
+            yaCounter51033320.reachGoal('send');
             var modalCb = $('.modal-callback');
             if (modalCb.hasClass('show')) {
                 modalCb.addClass('hide');
@@ -120,9 +121,9 @@ $('.trainers__item').on({
                 break;
         }
         // $('.modal-star h3').html(offer);
+        $('.modal-star__block .show-call').attr("data-about-form", 'Заявка для ' + $('.modal-star__name-trainer').html());
         $('.modal-star__gogo-text').html(description);
         $('.modal-star__pic-trainer').attr('src', $(this).data('photo'));
-        $('.modal-callback').find('input[name="about-form"]').val('Заявка для ' + $('.modal-star__name-trainer').html());
         let allStars = $('.modal-star__stars');
         allStars.toArray().forEach(function (x, number) {
             allStars.eq(number).find('img').toArray().forEach(function (value, index) {
